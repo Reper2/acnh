@@ -41,7 +41,7 @@ a {
     text-align: center;
     background-image: url("nookphone-bg.png");
     background-repeat: no-repeat no-repeat;
-    background-size: auto;
+    background-size: cover;
     border-radius: 10vmin;
     color: white;
     font-size: 3vmin;

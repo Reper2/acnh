@@ -1,0 +1,3 @@
+[submodule "acnhMsgBox"]
+	path = acnhMsgBox
+	url = https://github.com/TheoPierne/acnhMsgBox

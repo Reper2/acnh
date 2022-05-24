@@ -10,3 +10,7 @@ desktop.ini
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
+
+# Node
+node_modules/
+package-lock.json

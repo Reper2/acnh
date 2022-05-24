@@ -1,8 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function () {
     const num_images = 47;
 
     var randomNumber = Math.floor(Math.random() * num_images);
-    var link = "https://reper2.github.io/acnh/bg/" + String(randomNumber).padStart(3, '0') + ".jpg";
+    var link = "https://reper2.github.io/acnh/assets/backgrounds/" + String(randomNumber).padStart(3, '0') + ".jpg";
     var bgImg = 'url(' + link + ')';
 
     $('body').css({

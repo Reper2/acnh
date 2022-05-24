@@ -1,0 +1,19 @@
+Last-Flower and Riches Order
+
+----------------------
+| Purple-Tulip Plant |
+| Royal Crown        |
+----------------------
+
+[
+    { 0F06 purple-tulip plant }
+    { 14BB royal crown (No Variations) }
+]
+
+Sprinkle> $order 0F06 14BB
+I've added you to the queue! I'll message you here when your order is ready
+@Reper2 - Added you to the order queue. Your position is: 1. Your order will start after the current order is complete!
+Your order is starting, please ensure your inventory is empty, then go talk to Orville and stay on the Dodo code entry screen. I will send you the Dodo code shortly.
+I'm waiting for you Reper2! You have 162 seconds to arrive. My island name is Frappe. Your Dodo code is 3S9DF
+Visitor arriving: Reper2. Your items will be in front of you once you land.
+Your order is complete, Thanks for your order! Stay awesome!

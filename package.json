@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "acnhmsgbox": "^1.0.1",
+    "http-server": "^14.1.0"
+  }
+}

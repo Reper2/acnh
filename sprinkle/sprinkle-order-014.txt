@@ -1,0 +1,67 @@
+Glowing-Moss & Vine Recipes Order
+
+-----------------------------------
+| Cave DIY                        |
+| Glow In The Dark Stickers DIY   |
+| Full-Body Glowing-Moss Suit DIY |
+| Glowing-Moss Boulder DIY        |
+| Glowing-Moss Cave Wall DIY      |
+| Glowing-Moss Flooring DIY       |
+| Glowing-Moss Forest Wall DIY    |
+| Glowing-Moss Jar Shelves DIY    |
+| Glowing-Moss Pointed Cap DIY    |
+| Glowing-Moss Pond DIY           |
+| Glowing-Moss Ruins Wall DIY     |
+| Glowing-Moss Statue DIY         |
+| Glowing-Moss Wreath DIY         |
+| Hanging Glowing-Moss DIY        |
+| Ruined Arch DIY                 |
+| Ruined Decorated Pillar DIY     |
+| Ruined Seat DIY                 |
+| Woven-Vine Pochette             |
+| Vine Outfit DIY                 |
+| Vine Lamp DIY                   |
+| Vine Garland DIY                |
+| Giant Vine DIY                  |
+| Rope-Net Wall DIY               |
+| Rope-Net Flooring DIY           |
+| Vine Ladder Set-Up Kit DIY      |
+| Glowing-Moss                    |
+| Vine                            |
+-----------------------------------
+
+[
+    { 36C1 cave: Recipe order code: 2FA000016A2 }
+    { 3787 glow-in-the-dark stickers: Recipe order code: 3E6000016A2 }
+    { 37B1 full-body glowing-moss suit (No Variations): Recipe order code: 3ED000016A2 }
+    { 3781 glowing-moss boulder: Recipe order code: 33C000016A2 }
+    { 3639 glowing-moss cave wall: Recipe order code: 304000016A2 }
+    { 3637 glowing-moss flooring: Recipe order code: 302000016A2 }
+    { 32DB glowing-moss forest wall: Recipe order code: 305000016A2 }
+    { 3786 glowing-moss-jar shelves: Recipe order code: 3E5000016A2 }
+    { 3776 glowing-moss pointed cap (No Variations): Recipe order code: 3EB000016A2 }
+    { 3784 glowing-moss pond: Recipe order code: 3E3000016A2 }
+    { 3632 glowing-moss ruins wall: Recipe order code: 2FD000016A2 }
+    { 3785 glowing-moss statue: Recipe order code: 3E4000016A2 }
+    { 3783 glowing-moss wreath: Recipe order code: 3E2000016A2 }
+    { 3782 hanging glowing moss: Recipe order code: 3E1000016A2 }
+    { 36C2 ruined arch: Recipe order code: 2FB000016A2 }
+    { 355E ruined decorated pillar: Recipe order code: 3DE000016A2 }
+    { 3A22 ruined seat: Recipe order code: 415000016A2 }
+    { 37A9 woven-vine pochette (No Variations): Recipe order code: 337000016A2 }
+    { 37A8 vine outfit (No Variations): Recipe order code: 336000016A2 }
+    { 377D vine lamp: Recipe order code: 3E0000016A2 }
+    { 377E vine garland: Recipe order code: 33D000016A2 }
+    { 3770 giant vine: Recipe order code: 33E000016A2 }
+    { 3633 rope-net wall: Recipe order code: 2FE000016A2 }
+    { 3638 rope-net flooring: Recipe order code: 303000016A2 }
+    { 34D6 vine ladder set-up kit: Recipe order code: 2F7000016A2 }
+    { 02F7 glowing-moss //Alternative ID: 3106 }
+    { 02F8 vine //Alternative ID: 3107 }
+]
+
+Sprinkle> $order 2FA000016A2 3E6000016A2 3ED000016A2 33C000016A2 304000016A2 302000016A2 305000016A2 3E5000016A2 3EB000016A2 3E3000016A2 2FD000016A2 3E4000016A2 3E1000016A2 2FB000016A2 3DE000016A2 415000016A2 337000016A2 336000016A2 3E0000016A2 33D000016A2 33E000016A2 2FE000016A2 303000016A2 2F7000016A2 3106 3107
+I've added you to the queue! I'll message you here when your order is ready
+@Reper2 - Added you to the order queue. Your position is: 1. Your order will start after the current order is complete!
+Your order is starting, please ensure your inventory is empty, then go talk to Orville and stay on the Dodo code entry screen. I will send you the Dodo code shortly.
+I'm waiting for you Reper2! You have 162 seconds to arrive. My island name is Frappe. Your Dodo code is 9L6LJ

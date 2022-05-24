@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'FOT-RodinBokutoh Pro EB'; 
+    src: url('FOT-RodinBokutoh%20Pro%20EB.otf')
+}
+@font-face {
+    font-family: 'FOT-Seurat Pro EB'; 
+    src: url('FOT-Seurat%20Pro%20EB.otf')
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow-x: hidden
+}
+
+h1, h2, h3, h4, h5, h6, p, a, summary, details {
+    font-family: 'FOT-Seurat Pro EB', sans-serif;
+    color: white;
+    -webkit-text-stroke-width: 0.25vmin;
+    -webkit-text-stroke-color: black;
+}
+
+summary {
+    color: gold;
+}
+
+a {
+    text-decoration: none;
+}
+
+#everything {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+
+.nookPhone {
+    position: flex;
+    text-align: center;
+    background-image: url("nookphone-bg.png");
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    border-radius: 10vmin;
+    color: white;
+    font-size: 3vmin;
+    width: 64vmin;
+}
+
+.nookPhone_app {
+    position: flex;
+    margin-bottom: 1vmin;
+    margin-top: 1vmin;
+    border-radius: 35%;
+    filter: drop-shadow(0.5vh 0.5vh 0.15vh rgba(0, 0, 0, 0.6));
+    cursor: pointer;
+    z-index: 1;
+    user-select: none;
+    pointer-events: all;
+    transition-duration: 0.07s;
+    transition-timing-function: ease-in-out;
+    width: 14vmin;
+}
+
+.nookPhone_app_other {
+    border-radius: 35%;
+}
+
+.nookPhone_app:active, .nookPhone_app:focus-visible, a:focus-visible .nookPhone_app {
+    animation: bounceButton 0.25s ease-in-out forwards;
+}
+
+.bottomLinks {
+    bottom: 2vmin;
+    text-align: center;
+    position: flex;
+    left: 2vmin;
+    font-size: 4vmin;
+}
+
+.rel {
+    position: relative;
+}
+
+.flex {
+    position: flex;
+}
+
+#back {
+    left: 2vmin;
+    top: 2vmin;
+    position: absolute;
+    font-size: 8vmin;
+}
+
+button {
+    background-color: #38d1fc;
+    outline-color: initial;
+    border-radius: 3vmin;
+    color: white;
+    font-size: 5vmin;
+    block-size: 12vmin;
+}
+
+button:hover {
+    transform: translateY(-1vh);
+}
+
+@keyframes bounceButton {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.12);
+    }
+    75% {
+        transform: scale(1.06);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

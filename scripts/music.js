@@ -435,7 +435,7 @@ else if (hour == '23') {
 }
 
 // Information for when audio is not playing
-console.log('If this page is not playing audio, ensure you have allowed this website to play audio and that you have not muted your device\'s audio.\nIf audio still does not play, click on the "show audio controls" button and press play on the audio player.');
+console.warn('If this page is not playing audio, ensure you have allowed this website to play audio and that you have not muted your device\'s audio.\nIf audio still does not play, click on the "show audio controls" button and press play on the audio player.');
 
 // Makes sure the music changes when a new hour starts
 var current = new Date();

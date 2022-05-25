@@ -4,4 +4,5 @@ function downloadAlbum() {
         window.open('https://github.com/Reper2/acnh-album/archive/refs/heads/master.zip');
         console.log('Downloaded album.');
     }
+    console.log('Successfully downloaded album.');
 }

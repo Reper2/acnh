@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const num_images = 47;
+    const num_images = 370;
 
     var randomNumber = Math.floor(Math.random() * num_images);
     var link = "https://reper2.github.io/acnh/assets/backgrounds/" + String(randomNumber).padStart(3, '0') + ".jpg";
@@ -12,5 +12,7 @@ $(document).ready(function () {
         'background-size': 'cover',
     });
 
-    console.log(`🔀Page background has been randomised to ${bgImg} from refresh!`);
+    console.log(`🔀Page background has been randomised to background #${randomNumber} from refresh!`);
+    console.log('random number is ' + randomNumber);
+    console.log('background image url is ' + link);
 });

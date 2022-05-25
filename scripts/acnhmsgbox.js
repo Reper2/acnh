@@ -12,4 +12,5 @@ var msgBox = new ACMsgBox({
 function draw() {
 	msgBox.draw()
 	$('#acnhmsgboxDrawBtn').hide()
+	console.log('Message box successfully drawn.')
 }

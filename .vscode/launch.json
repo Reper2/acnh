@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "https://reper2.github.io/acnh/assets/backgrounds/regular/",
+            "request": "launch",
+            "url": "https://reper2.github.io/acnh/assets/backgrounds/regular/"
+        }
+    ]
+}

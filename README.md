@@ -1,5 +1,5 @@
 # Reper2's ACNH Website
-Reper2's ACNH Website is in the form of a Nookphone. The Nookphone includes: Album, DodoCodes.com profile link, Sprinkle order files, Nookazon profile link, Custom Designs, Island Preview + Dream Address, Happy Home Network, ACNH Apps. The same hourly music in Animal Crossing plays here too as well as other special event music from the game.
+Reper2's ACNH Website is a NookPhone which includes Album, DodoCodes.com profile link, Sprinkle order files, Nookazon profile link, Custom Designs, Island Preview, Happy Home Network gallery, ACNH Apps. The same hourly and evently music from ACNH plays here too!
 
 ![Logo](logo.png)
 
@@ -7,6 +7,7 @@ Features:
 - 350+ backgrounds (that change to a different background every time you refresh the page)
 - evently backgrounds for many events that are held in acnh
 - hourly & evently music just like in the game
+- message box like in acnh (using acnhmsgbox npm library)
 
 Apps:
 - Album: download the complete album of my acnh screenshots & videos

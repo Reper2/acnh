@@ -4,7 +4,7 @@ var date = (today.getMonth() + 1) + '-' + today.getDate();
 var time = today.getHours() + ":" + today.getMinutes()
 var dateTime = date + ' ' + time;
 var dateHour = date + ' ' + hour;
-var currhmsg = 'It is currently '; // current hour message
+var currmsg = 'It is currently ';
 
 function audctrl_show() {
 	$('#music').show()
@@ -65,7 +65,7 @@ if (date == '11-25') {
 }
 
 // Toy Day
-if (date == '12-25') {
+if (date == '12-24') {
 	console.log('Today is Toy Day!');
 	$('body').append(`
 		<center>
@@ -137,7 +137,7 @@ if (dateTime == '1-1 0:00') {
 }
 
 // New Years Midnight
-if (dateTime == '1-1 0:01') {
+if (dateHour == '1-1 0') {
 	console.log('Happy New Year!');
 	$('body').append(`
 		<center>
@@ -150,7 +150,7 @@ if (dateTime == '1-1 0:01') {
 
 // Midnight
 else if (hour == '0') {
-	console.log(currhmsg + '12 AM.');
+	console.log(currmsg + '12 AM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -162,7 +162,7 @@ else if (hour == '0') {
 
 // 1 AM
 else if (hour == '1') {
-	console.log(currhmsg + '1 AM.');
+	console.log(currmsg + '1 AM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -174,7 +174,7 @@ else if (hour == '1') {
 
 // 2 AM
 else if (hour == '2') {
-	console.log(currhmsg + '2 AM.');
+	console.log(currmsg + '2 AM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -186,7 +186,7 @@ else if (hour == '2') {
 
 // 3 AM
 else if (hour == '3') {
-	console.log(currhmsg + '3 AM.');
+	console.log(currmsg + '3 AM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -198,7 +198,7 @@ else if (hour == '3') {
 
 // 4 AM
 else if (hour == '4') {
-	console.log('It is currenty 4 AM.');
+	console.log('It is currenty 4 AM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -210,7 +210,7 @@ else if (hour == '4') {
 
 // 5 AM
 else if (hour == '5') {
-	console.log(currhmsg + '5 AM.');
+	console.log(currmsg + '5 AM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -222,7 +222,7 @@ else if (hour == '5') {
 
 // 6 AM
 else if (hour == '6') {
-	console.log(currhmsg + '6 AM.');
+	console.log(currmsg + '6 AM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -234,7 +234,7 @@ else if (hour == '6') {
 
 // 7 AM
 else if (hour == '7') {
-	console.log(currhmsg + '7 AM.');
+	console.log(currmsg + '7 AM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -246,7 +246,7 @@ else if (hour == '7') {
 
 // 8 AM
 else if (hour == '8') {
-	console.log(currhmsg + '8 AM.');
+	console.log(currmsg + '8 AM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -258,7 +258,7 @@ else if (hour == '8') {
 
 // 9 AM
 else if (hour == '9') {
-	console.log(currhmsg + '9 AM.');
+	console.log(currmsg + '9 AM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -270,7 +270,7 @@ else if (hour == '9') {
 
 // 10 AM
 else if (hour == '10') {
-	console.log(currhmsg + '10 AM.');
+	console.log(currmsg + '10 AM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -282,7 +282,7 @@ else if (hour == '10') {
 
 // 11 AM
 else if (hour == '11') {
-	console.log(currhmsg + '11 AM.');
+	console.log(currmsg + '11 AM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -294,7 +294,7 @@ else if (hour == '11') {
 
 // Noon
 else if (hour == '12') {
-	console.log(currhmsg + '12 PM.');
+	console.log(currmsg + '12 PM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -306,7 +306,7 @@ else if (hour == '12') {
 
 // 1 PM
 else if (hour == '13') {
-	console.log(currhmsg + '1 PM.');
+	console.log(currmsg + '1 PM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -318,7 +318,7 @@ else if (hour == '13') {
 
 // 2 PM
 else if (hour == '14') {
-	console.log(currhmsg + '2 PM.');
+	console.log(currmsg + '2 PM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -330,7 +330,7 @@ else if (hour == '14') {
 
 // 3 PM
 else if (hour == '15') {
-	console.log(currhmsg + '3 PM.');
+	console.log(currmsg + '3 PM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -342,7 +342,7 @@ else if (hour == '15') {
 
 // 4 PM
 else if (hour == '16') {
-	console.log(currhmsg + '4 PM.');
+	console.log(currmsg + '4 PM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -354,7 +354,7 @@ else if (hour == '16') {
 
 // 5 PM
 else if (hour == '17') {
-	console.log(currhmsg + '5 PM.');
+	console.log(currmsg + '5 PM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -366,7 +366,7 @@ else if (hour == '17') {
 
 // 6 PM
 else if (hour == '18') {
-	console.log(currhmsg + '6 PM');
+	console.log(currmsg + '6 PM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -378,7 +378,7 @@ else if (hour == '18') {
 
 // 7 PM
 else if (hour == '19') {
-	console.log(currhmsg + '7 PM.');
+	console.log(currmsg + '7 PM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -390,7 +390,7 @@ else if (hour == '19') {
 
 // 8 PM
 else if (hour == '20') {
-	console.log(currhmsg + '8 PM.');
+	console.log(currmsg + '8 PM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -402,7 +402,7 @@ else if (hour == '20') {
 
 // 9 PM
 else if (hour == '21') {
-	console.log(currhmsg + '9 PM.');
+	console.log(currmsg + '9 PM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -414,7 +414,7 @@ else if (hour == '21') {
 
 // 10 PM
 else if (hour == '22') {
-	console.log(currhmsg + '10 PM.');
+	console.log(currmsg + '10 PM');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -426,7 +426,7 @@ else if (hour == '22') {
 
 // 11 PM
 else if (hour == '23') {
-	console.log(currhmsg + '11 PM.');
+	console.log(currmsg + '11 PM');
 	$('body').append(`
 		<audio id="music" controls autoplay loop style="display: none">
 			<source src="https://reper2.github.io/acnh/assets/hourly-music/11pm.mp3" type="audio/mpeg">

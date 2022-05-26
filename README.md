@@ -5,6 +5,7 @@ Reper2's ACNH Website is in the form of a Nookphone. The Nookphone includes: Alb
 
 Features:
 - 350+ backgrounds (that change to a different background every time you refresh the page)
+- evently backgrounds for many events that are held in acnh
 - hourly & evently music just like in the game
 
 Apps:

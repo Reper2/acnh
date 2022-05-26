@@ -1,10 +1,11 @@
 {
     "configurations": [
         {
-            "type": "pwa-chrome",
-            "name": "https://reper2.github.io/acnh/assets/backgrounds/regular/",
+            "name": "isdesigner.png",
             "request": "launch",
-            "url": "https://reper2.github.io/acnh/assets/backgrounds/regular/"
+            "type": "chrome",
+            "url": "https://reper2.github.io/acnh/assets/nookPhone-app_native/isdesigner.png",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }

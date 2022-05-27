@@ -125,13 +125,13 @@ if (date == '12-24') {
     });
 }
 
-// New Years Eve backgrounds
+// New Years Event - New Years Eve! backgrounds
 if (date == '12-31') {
     $(document).ready(function () {
         const num_images = 2;
 
         var randomNumber = Math.floor(Math.random() * num_images);
-        var link = "https://reper2.github.io/acnh/assets/backgrounds/new-years/nye/" + String(randomNumber).padStart(3, '0') + ".jpg";
+        var link = "https://reper2.github.io/acnh/assets/backgrounds/new-years-event/nye/" + String(randomNumber).padStart(3, '0') + ".jpg";
         var bgImg = 'url(' + link + ')';
 
         $('body').css({
@@ -147,7 +147,7 @@ if (date == '12-31') {
     });
 }
 
-// Happy New Year background
+// New Years Event - Happy New Year! background
 if (
     dateTime == '12-31 11:55' ||
     dateTime == '12-31 11:56' ||
@@ -158,7 +158,7 @@ if (
     // starts 5 min before as it takes 3.2 min for everything to finish loading
 ) {
     $(document).ready(function () {
-        var link = "https://reper2.github.io/acnh/assets/backgrounds/new-years/happy-new-year/happy-new-year.gif";
+        var link = "https://reper2.github.io/acnh/assets/backgrounds/new-years-event/happy-new-year/happy-new-year.gif";
         var bgImg = 'url(' + link + ')';
 
         $('body').css({
@@ -173,13 +173,13 @@ if (
     });
 }
 
-// New Years midnight backgrounds
+// New Years Event - New Years Eve! Midnight backgrounds
 if (dateHour == '1-1 0') {
     $(document).ready(function () {
         const num_images = 1;
 
         var randomNumber = Math.floor(Math.random() * num_images);
-        var link = "https://reper2.github.io/acnh/assets/backgrounds/new-years/midnight/" + String(randomNumber).padStart(3, '0') + ".jpg";
+        var link = "https://reper2.github.io/acnh/assets/backgrounds/new-years-event/nye-midnight/" + String(randomNumber).padStart(3, '0') + ".jpg";
         var bgImg = 'url(' + link + ')';
 
         $('body').css({

@@ -20,7 +20,7 @@ function audctrl_hide() {
 
 /**
 * On special event days, the event's soundtrack(s) will play as you browse the website.
-* On any other day, the normal hourly music will play just like in the game. 
+* On any other day, the normal hour music will play just like in the game. 
 */
 
 /**
@@ -76,73 +76,73 @@ if (date == '12-24') {
 	`)
 }
 
-// 1 hour left until New Years
+// New Years Event - One Hour Left...
 if (dateHour == '12-31 23') {
-	console.log('1 hour left until New Years!');
+	console.log('🎆New Years Event - One Hour Left...');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/event-music/nye-1h-left.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/event-music/new-years-event/nye-1h-left.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
 }
 
-// 30 minutes left until New Years
+// New Years Event - 30 Minutes Left...
 if (dateTime == '12-31 23:30') {
-	console.log('30 minutes left until New Years!');
+	console.log('🎆New Years Event - 30 Minutes Left...');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/event-music/nye-30m-left.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/event-music/new-years-event/30m-left.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
 }
 
-// 10 minutes left until New Years
+// New Years Event - 10 Minutes Left...
 if (dateTime == '12-31 23:50') {
-	console.log('10 minutes left until New Years!');
+	console.log('🎆New Years Event - 10 Minutes Left...');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/event-music/nye-10m-left.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/event-music/new-years-event/10m-left.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
 }
 
-// 5 minutes left until New Years
+// New Years Event - 5 Minutes Left...
 if (dateTime == '12-31 23:55') {
-	console.log('5 minutes left until New Years!');
+	console.log('🎆New Years Event - 5 Minutes Left...');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/event-music/nye-5m-left.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/event-music/new-years-event/5m-left.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
 }
 
-// Happy New Year!
+// New Years Event - Happy New Year!
 if (dateTime == '1-1 0:00') {
-	console.log('Happy New Year!');
+	console.log('🎆New Year Event - Happy New Year!');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/event-music/nye-happy-new-year.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/event-music/new-years-event/happy-new-year.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
 }
 
-// New Years Midnight
+// New Years Event - New Years Eve! Midnight
 if (dateHour == '1-1 0') {
-	console.log('Happy New Year!');
+	console.log('🎆New Years Event - New Years Eve! Midnight');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/event-music/nye-midnight.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/event-music/new-years-event/nye-midnight.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -154,7 +154,7 @@ else if (hour == '0') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/12am.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/12am.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -166,7 +166,7 @@ else if (hour == '1') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/1am.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/1am.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -178,7 +178,7 @@ else if (hour == '2') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/2am.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/2am.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -190,7 +190,7 @@ else if (hour == '3') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/3am.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/3am.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -202,7 +202,7 @@ else if (hour == '4') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/4am.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/4am.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -214,7 +214,7 @@ else if (hour == '5') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/5am.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/5am.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -226,7 +226,7 @@ else if (hour == '6') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/6am.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/6am.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -238,7 +238,7 @@ else if (hour == '7') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/7am.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/7am.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -250,7 +250,7 @@ else if (hour == '8') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/8am.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/8am.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -262,7 +262,7 @@ else if (hour == '9') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/9am.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/9am.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -274,7 +274,7 @@ else if (hour == '10') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/10am.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/10am.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -286,7 +286,7 @@ else if (hour == '11') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/11am.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/11am.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -298,7 +298,7 @@ else if (hour == '12') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/12pm.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/12pm.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -310,7 +310,7 @@ else if (hour == '13') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/1pm.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/1pm.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -322,7 +322,7 @@ else if (hour == '14') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/2pm.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/2pm.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -334,7 +334,7 @@ else if (hour == '15') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/3pm.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/3pm.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -346,7 +346,7 @@ else if (hour == '16') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/4pm.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/4pm.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -358,7 +358,7 @@ else if (hour == '17') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/5pm.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/5pm.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -370,7 +370,7 @@ else if (hour == '18') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/6pm.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/6pm.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -382,7 +382,7 @@ else if (hour == '19') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/7pm.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/7pm.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -394,7 +394,7 @@ else if (hour == '20') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/8pm.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/8pm.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -406,7 +406,7 @@ else if (hour == '21') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/9pm.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/9pm.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -418,7 +418,7 @@ else if (hour == '22') {
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
-				<source src="https://reper2.github.io/acnh/assets/hourly-music/10pm.mp3" type="audio/mpeg">
+				<source src="https://reper2.github.io/acnh/assets/hour-music/10pm.mp3" type="audio/mpeg">
 			</audio>
 		</center>
 	`)
@@ -429,7 +429,7 @@ else if (hour == '23') {
 	console.log(currmsg + '11 PM');
 	$('body').append(`
 		<audio id="music" controls autoplay loop style="display: none">
-			<source src="https://reper2.github.io/acnh/assets/hourly-music/11pm.mp3" type="audio/mpeg">
+			<source src="https://reper2.github.io/acnh/assets/hour-music/11pm.mp3" type="audio/mpeg">
 		</audio>
 	`)
 }

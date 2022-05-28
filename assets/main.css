@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'FOT-RodinBokutoh Pro EB'; 
-    src: url('FOT-RodinBokutoh%20Pro%20EB.otf')
+    font-family: 'FOT-RodinBokutoh Pro B'; 
+    src: url('FOT-RodinBokutoh%20Pro%20B.otf')
 }
 @font-face {
-    font-family: 'FOT-Seurat Pro EB'; 
-    src: url('FOT-Seurat%20Pro%20EB.otf')
+    font-family: 'FOT-Seurat Pro B'; 
+    src: url('FOT-Seurat%20Pro%20B.otf')
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, a, summary, details {
-    font-family: 'FOT-Seurat Pro EB', sans-serif;
+    font-family: 'FOT-RodinBokutoh Pro B', sans-serif;
     color: white;
     -webkit-text-stroke-width: 0.25vmin;
     -webkit-text-stroke-color: black;
@@ -98,19 +98,4 @@ button {
 
 button:hover {
     transform: translateY(-1vh);
-}
-
-@keyframes bounceButton {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.12);
-    }
-    75% {
-        transform: scale(1.06);
-    }
-    100% {
-        transform: scale(1.1);
-    }
 }

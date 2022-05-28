@@ -1,21 +1,25 @@
 var today = new Date();
+var year = today.getFullYear();
 var hour = today.getHours();
 var date = (today.getMonth() + 1) + '-' + today.getDate();
-var time = today.getHours() + ":" + today.getMinutes()
+var time = today.getHours() + ':' + today.getMinutes();
 var dateTime = date + ' ' + time;
 var dateHour = date + ' ' + hour;
 var currmsg = 'It is currently ';
+var tdymsg = 'Today is ';
 
 function audctrl_show() {
-	$('#music').show()
-	$('#audctrlBtn_show').hide()
-	$('#audctrlBtn_hide').show()
+	$('#music').show();
+	$('#audctrlBtn_show').hide();
+	$('#audctrlBtn_hide').show();
+	console.log('Showing audio controls');
 }
 
 function audctrl_hide() {
-	$('#music').hide()
-	$('#audctrlBtn_show').show()
-	$('#audctrlBtn_hide').hide()
+	$('#music').hide();
+	$('#audctrlBtn_show').show();
+	$('#audctrlBtn_hide').hide();
+	console.log('Hiding audio controls');
 }
 
 /**
@@ -30,7 +34,7 @@ function audctrl_hide() {
 
 // My Birthday
 if (date == '10-1') {
-	console.log('Today is Reper2\'s birthday!');
+	console.log(`🥳${tdymsg} Reper2\'s birthday! To celebrate K.K. Birthday will be playing all day.`);
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -42,7 +46,7 @@ if (date == '10-1') {
 
 // Halloween
 if (date == '10-31') {
-	console.log('Today is Halloween!');
+	console.log(`🎃${tdymsg} Halloween!`);
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -54,7 +58,7 @@ if (date == '10-31') {
 
 // Turkey Day
 if (date == '11-25') {
-	console.log('Today is Turkey Day!');
+	console.log(`🦃${tdymsg} Turkey Day!`);
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -66,7 +70,7 @@ if (date == '11-25') {
 
 // Toy Day
 if (date == '12-24') {
-	console.log('Today is Toy Day!');
+	console.log(`🎅${tdymsg} Toy Day!`);
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -78,7 +82,7 @@ if (date == '12-24') {
 
 // New Years Event - One Hour Left...
 if (dateHour == '12-31 23') {
-	console.log('🎆New Years Event - One Hour Left...');
+	console.log('🎆One hour left until the New Year!');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -90,7 +94,7 @@ if (dateHour == '12-31 23') {
 
 // New Years Event - 30 Minutes Left...
 if (dateTime == '12-31 23:30') {
-	console.log('🎆New Years Event - 30 Minutes Left...');
+	console.log('🎆30 minutes left until the New Year!');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -102,7 +106,7 @@ if (dateTime == '12-31 23:30') {
 
 // New Years Event - 10 Minutes Left...
 if (dateTime == '12-31 23:50') {
-	console.log('🎆New Years Event - 10 Minutes Left...');
+	console.log('🎆10 minutes left until the New Year!');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -114,7 +118,7 @@ if (dateTime == '12-31 23:50') {
 
 // New Years Event - 5 Minutes Left...
 if (dateTime == '12-31 23:55') {
-	console.log('🎆New Years Event - 5 Minutes Left...');
+	console.log('🎆5 minutes left until the New Year!');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -126,7 +130,7 @@ if (dateTime == '12-31 23:55') {
 
 // New Years Event - Happy New Year!
 if (dateTime == '1-1 0:00') {
-	console.log('🎆New Year Event - Happy New Year!');
+	console.log(`🎆HAPPY NEW YEAR ${year}!!!`);
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -138,7 +142,7 @@ if (dateTime == '1-1 0:00') {
 
 // New Years Event - New Years Eve! Midnight
 if (dateHour == '1-1 0') {
-	console.log('🎆New Years Event - New Years Eve! Midnight');
+	console.log('🎆It is finally ${year}! May the celebrations begin!');
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -150,7 +154,7 @@ if (dateHour == '1-1 0') {
 
 // Midnight
 else if (hour == '0') {
-	console.log(currmsg + '12 AM');
+	console.log(`${currmsg} 12 AM.`);
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">
@@ -162,7 +166,7 @@ else if (hour == '0') {
 
 // 1 AM
 else if (hour == '1') {
-	console.log(currmsg + '1 AM');
+	console.log(`$`);
 	$('body').append(`
 		<center>
 			<audio id="music" controls autoplay loop style="display: none">

@@ -5,8 +5,8 @@ var date = (today.getMonth() + 1) + '-' + today.getDate();
 var time = today.getHours() + ':' + today.getMinutes()
 var dateTime = date + ' ' + time;
 var dateHour = date + ' ' + hour;
-var currmsg = 'It is currently ';
-var tdymsg = 'Today is ';
+var currmsg = 'It is currently';
+var tdymsg = 'Today is';
 
 // International Museum Day backgrounds
 if (

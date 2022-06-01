@@ -1,35 +1,15 @@
-var today = new Date();
-var year = today.getFullYear();
-var hour = today.getHours();
-var date = (today.getMonth() + 1) + '-' + today.getDate();
-var time = today.getHours() + ':' + today.getMinutes()
-var dateTime = date + ' ' + time;
-var dateHour = date + ' ' + hour;
-var currmsg = 'It is currently';
-var tdymsg = 'Today is';
+import * as events from "./events.js";
+import * as exclude from "./exclude.js";
+import * as con from "./console.js";
+import * as timeSys from "./time.js";
 
 // International Museum Day backgrounds
-if (
-    date == '5-18' ||
-    date == '5-19' ||
-    date == '5-20' ||
-    date == '5-21' ||
-    date == '5-22' ||
-    date == '5-23' ||
-    date == '5-24' ||
-    date == '5-25' ||
-    date == '5-26' ||
-    date == '5-27' ||
-    date == '5-28' ||
-    date == '5-29' ||
-    date == '5-30' ||
-    date == '5-31'
-) {
+if (events.intlmuseumday) {
     $(document).ready(function () {
         const num_images = 39;
 
         var num = Math.floor(Math.random() * num_images);
-        var link = "https://reper2.github.io/acnh/assets/backgrounds/intl-museum-day/" + String(num).padStart(3, '0') + ".jpg";
+        var link = "https://reper2.github.io/acnh/assets/backgrounds/intl-museum-day/" + String(num).padStart(3, '0'); + ".jpg";
         var bgImg = `url(${link})`;
 
         $('body').css({
@@ -39,22 +19,12 @@ if (
             'background-size': 'cover',
         });
 
-        console.log(`🏛️${currmsg} the International Museum Day period! This calls for some museum backgrounds! Background #${num}`);
+        console.log('🏛️' + con.curr, 'the International Museum Day period! This calls for some museum backgrounds!', con.bgnum + num);
     });
 }
 
 // May Day Tour backgrounds
-if (
-    date == '4-29' ||
-    date == '4-30' ||
-    date == '5-1' ||
-    date == '5-2' ||
-    date == '5-3' ||
-    date == '5-4' ||
-    date == '5-5' ||
-    date == '5-6' ||
-    date == '5-7'
-) {
+if (events.mayday) {
     $(document).ready(function () {
         const num_images = 13;
 
@@ -69,12 +39,32 @@ if (
             'background-size': 'cover',
         });
 
-        console.log(`🏝️${currmsg} the May Day Tour period! This calls for some May Day Tour backgrounds! Background #${num}`);
+        console.log('🏝️' + con.curr, 'the May Day Tour period! This calls for some May Day Tour backgrounds!', con.bgnum + num);
+    });
+}
+
+// Wedding Season backgrounds
+if (events.weddingseason) {
+    $(document).ready(function () {
+        const num_images = 3;
+
+        var num = Math.floor(Math.random() * num_images);
+        var link = "https://reper2.github.io/acnh/assets/backgrounds/wedding-season/" + String(num).padStart(3, '0') + ".jpg";
+        var bgImg = `url(${link})`;
+
+        $('body').css({
+            'background-image': bgImg,
+            'background-position': 'center center',
+            'background-repeat': 'no-repeat no-repeat',
+            'background-size': 'cover',
+        });
+
+        console.log('💍' + con.curr, 'Wedding Season period! This calls for some Wedding Season backgrounds!', con.bgnum + num);
     });
 }
 
 // birthday backgrounds
-if (date == '10-1') {
+if (events.bday) {
     $(document).ready(function () {
         const num_images = 12;
 
@@ -89,12 +79,12 @@ if (date == '10-1') {
             'background-size': 'cover',
         });
 
-        console.log(`🥳${tdymsg} Reper2's birthday! This calls for some birthday backgrounds! Background #${num}`);
+        console.log('🥳' + con.tdy, 'Reper2\'s birthday! This calls for some birthday backgrounds!', con.bgnum + num);
     });
 }
 
 // Halloween backgrounds
-if (date == '10-31') {
+if (events.halloween) {
     $(document).ready(function () {
         const num_images = 1;
 
@@ -109,12 +99,12 @@ if (date == '10-31') {
             'background-size': 'cover',
         });
 
-        console.log(`🎃${tdymsg} Halloween! This calls for some Halloween backgrounds! Background #${num}`);
+        console.log('🎃' + con.tdy, 'Halloween! This calls for some Halloween backgrounds!', con.bgnum + num);
     });
 }
 
 // Turkey Day backgrounds
-if (date == '11-25') {
+if (events.turkeyday) {
     $(document).ready(function () {
         const num_images = 1;
 
@@ -129,12 +119,12 @@ if (date == '11-25') {
             'background-size': 'cover',
         });
 
-        console.log(`🦃${tdymsg} Turkey Day! This calls for some Turkey Day backgrounds! Background #${num}`);
+        console.log('🦃' + con.tdy, 'Turkey Day! This calls for some Turkey Day backgrounds!', con.bgnum + num);
     });
 }
 
 // Toy Day backgrounds
-if (date == '12-24') {
+if (events.toyday) {
     $(document).ready(function () {
         const num_images = 2;
 
@@ -149,20 +139,12 @@ if (date == '12-24') {
             'background-size': 'cover',
         });
 
-        console.log(`🎅${tdymsg} Toy Day! This calls for some Toy Day backgrounds! Background #${num}`);
+        console.log('🎅' + con.tdy, 'Toy Day! This calls for some Toy Day backgrounds!', con.bgnum + num);
     });
 }
 
 // New Years Event - New Years Eve! backgrounds
-if (
-    date == '12-31' &&
-    // using dateTime to be safe
-    dateTime == '12-31 11:55' ||
-    dateTime == '12-31 11:56' ||
-    dateTime == '12-31 11:57' ||
-    dateTime == '12-31 11:58' ||
-    dateTime == '12-31 11:59'
-) {
+if (events.nye) {
     $(document).ready(function () {
         const num_images = 2;
 
@@ -177,20 +159,12 @@ if (
             'background-size': 'cover',
         });
 
-        console.log(`🎆${tdymsg} New Years Eve! This calls for some New Years Eve backgrounds! Background #${num}`);
+        console.log('🎆' + con.tdy, 'New Years Eve! This calls for some New Years Eve backgrounds!', con.bgnum + num);
     });
 }
 
 // New Years Event - Happy New Year! background
-if (
-    dateTime == '12-31 11:55' ||
-    dateTime == '12-31 11:56' ||
-    dateTime == '12-31 11:57' ||
-    dateTime == '12-31 11:58' ||
-    dateTime == '12-31 11:59' ||
-    dateTime == '1-1 0:00'
-    // starts 5 min before as it takes 3.2 min for everything to finish loading
-) {
+if (events.nye_happynewyear2) {
     $(document).ready(function () {
         $('body').css({
             'background-image': 'url("https://reper2.github.io/acnh/assets/backgrounds/new-years-event/happy-new-year/happy-new-year.gif")',
@@ -199,12 +173,12 @@ if (
             'background-size': 'cover',
         });
 
-        console.log(`🎆HAPPY NEW YEAR ${year}!`);
+        console.log(`🎆HAPPY NEW YEAR ${timeSys.year}!`);
     });
 }
 
 // New Years Event - New Years Eve! Midnight backgrounds
-if (dateHour == '1-1 0') {
+if (events.nye_midnight) {
     $(document).ready(function () {
         const num_images = 1;
 
@@ -219,49 +193,12 @@ if (dateHour == '1-1 0') {
             'background-size': 'cover',
         });
 
-        console.log(`🎆Happy New Year! This calls for some firework backgrounds! Background #${num}`);
+        console.log('🎆Happy New Year! This calls for some firework backgrounds!', con.bgnum + num);
     });
 }
 
 // regular backgrounds
-else if (
-    // exclude all dates and times from above
-    date !== '4-29' &&
-    date !== '4-30' &&
-    date !== '5-1' &&
-    date !== '5-2' &&
-    date !== '5-3' &&
-    date !== '5-4' &&
-    date !== '5-5' &&
-    date !== '5-6' &&
-    date !== '5-7' &&
-    date !== '5-18' &&
-    date !== '5-19' &&
-    date !== '5-20' &&
-    date !== '5-21' &&
-    date !== '5-22' &&
-    date !== '5-23' &&
-    date !== '5-24' &&
-    date !== '5-25' &&
-    date !== '5-26' &&
-    date !== '5-27' &&
-    date !== '5-28' &&
-    date !== '5-29' &&
-    date !== '5-30' &&
-    date !== '5-31' &&
-    date !== '10-1' &&
-    date !== '10-31' &&
-    date !== '11-25' &&
-    date !== '12-24' &&
-    date !== '12-31' &&
-    dateTime !== '12-31 11:55' &&
-    dateTime !== '12-31 11:56' &&
-    dateTime !== '12-31 11:57' &&
-    dateTime !== '12-31 11:58' &&
-    dateTime !== '12-31 11:59' &&
-    dateTime !== '1-1 0:00' &&
-    dateHour !== '1-1 0'
-) {
+else if (exclude.isNotExcluded) {
     $(document).ready(function () {
         const num_images = 393;
 
@@ -276,6 +213,6 @@ else if (
             'background-size': 'cover',
         });
 
-        console.log(`🔀Page background has been randomised to background #${num}} from refresh!`);
+        console.log('🔀Page background has been randomised from refresh.', con.bgnum + num);
     });
 }

@@ -1,6 +1,7 @@
 import * as time from "./time.js"
 
 var isNotExcluded =
+    time.month !== '6' &&
     time.date !== '4-29' &&
     time.date !== '4-30' &&
     time.date !== '5-1' &&
@@ -37,4 +38,4 @@ var isNotExcluded =
     time.dateTime !== '1-1 0:00' &&
     time.dateHour !== '1-1 0';
 
-export default { isNotExcluded };
+export default isNotExcluded;

@@ -1,7 +1,7 @@
 import * as events from "./events.js";
 import * as exclude from "./exclude.js";
 import * as con from "./console.js";
-import * as timeSys from "./time.js";
+import * as time from "./time.js";
 
 // International Museum Day backgrounds
 if (events.intlmuseumday) {
@@ -173,7 +173,7 @@ if (events.nye_happynewyear2) {
             'background-size': 'cover',
         });
 
-        console.log(`🎆HAPPY NEW YEAR ${timeSys.year}!`);
+        console.log(`🎆HAPPY NEW YEAR ${time.year}!`);
     });
 }
 
@@ -203,7 +203,7 @@ else if (exclude.isNotExcluded) {
         const num_images = 393;
 
         var num = Math.floor(Math.random() * num_images);
-        var link = "https://reper2.github.io/acnh/assets/backgrounds/reg/" + String(randomNumber).padStart(3, '0') + ".jpg";
+        var link = "https://reper2.github.io/acnh/assets/backgrounds/reg/" + String(num).padStart(3, '0') + ".jpg";
         var bgImg = `url(${link})`;
 
         $('body').css({

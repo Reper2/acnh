@@ -2,7 +2,7 @@ var curr = 'It is currently';
 var tdy = 'Today is';
 var bgnum = 'Background #';
 
-export default {
+export {
     curr,
     tdy,
     bgnum,

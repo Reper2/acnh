@@ -1,21 +1,21 @@
-import * as timeSys from "./time.js";
+import * as time from "./time.js";
 import * as events from "./events.js";
 import * as hours from "./hours.js";
 import * as con from "./console.js";
 
-function audctrl_show() {
+audctrl_show => {
 	$('#music').show();
 	$('#audctrlBtn_show').hide();
 	$('#audctrlBtn_hide').show();
 	console.log('Showing audio controls.');
-}
+};
 
-function audctrl_hide() {
+audctrl_hide => {
 	$('#music').hide();
 	$('#audctrlBtn_show').show();
 	$('#audctrlBtn_hide').hide();
 	console.log('Hiding audio controls.');
-}
+};
 
 /**
 * On special event days, the event's soundtrack(s) will play as you browse the website.
@@ -159,7 +159,7 @@ if (events.nye_happynewyear1) {
 			</center>
 		`);
 
-		console.log(`🎆HAPPY NEW YEAR ${timeSys.year}!!!`);
+		console.log(`🎆HAPPY NEW YEAR ${time.year}!!!`);
 	});
 }
 
@@ -174,7 +174,7 @@ if (events.nye_midnight) {
 			</center>
 		`);
 
-		console.log(`🎆It is finally ${timeSys.year}! May the celebrations begin!`);
+		console.log(`🎆It is finally ${time.year}! May the celebrations begin!`);
 	});
 }
 

@@ -7,7 +7,7 @@ var time = hour + ':' + today.getMinutes();
 var dateTime = date + ' ' + time;
 var dateHour = date + ' ' + hour;
 
-export default {
+export {
     today,
     year,
     month,

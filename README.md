@@ -1,5 +1,5 @@
 # Reper2's ACNH Website
-Reper2's ACNH Website is a NookPhone which includes Album, DodoCodes.com profile link, Sprinkle order files, Nookazon profile link, Custom Designs, Island Preview, Happy Home Network gallery, ACNH Apps. The same hourly and evently music from ACNH plays here too!
+Reper2's ACNH Website is a NookPhone which includes a download link to Reper2's acnh album, DodoCodes.com profile link, Sprinkle order files, Nookazon profile link, Custom Designs, Island Preview, Happy Home Network gallery, ACNH Apps. The same hourly and evently music from ACNH plays here too!
 
 ![Logo](metaimg.png)
 
@@ -28,11 +28,40 @@ These are the npm libraries that make up part of the website or are invloved in 
 
 You can also view dependencies in [package.json](./package.json).
 
-# Scripts
-These are the codes that make up the functions and features of the website.
+# Modules
+| Module | Description | Imports | Exports | Used By |
+| :---: | :---: | :---: | :---: | :---: |
+| [music.js](./scripts/modules/music.js) | Hourly and evently music just like in acnh. | `time` `con` `events` `hours` | | website_html
+| [background.js](./scripts/modules/background.js) | Randomised backgrounds including evently backgrounds for some acnh events. | `time` `con` `events` `hours` `exclude` | | website_html
+| [`time`](./scripts/modules/time.js) | Common time variables. | | { `today` `year` `month` `hour` `date` `time` `dateTime` `dateHour` } | [music.js](./scripts/modules/music.js), [background.js](./scripts/modules/background.js), [events.js](./scripts/modules/events.js), [hours.js](./scripts/modules/hours.js), [exclude.js](./scripts/modules/exclude.js)
+| [`con`](./scripts/modules/console.js) | Variables for common console messages. | | { `curr` `tdy` `bgnum` } | [music.js](./scripts/modules/music.js), [background.js](./scripts/modules/background.js)
+| [`events`](./scripts/modules/events.js) | Variables for ACNH event dates. | `time` | { `intlmuseumday` `mayday` `weddingseason` `bday` `halloween` `turkeyday` `toyday` `nye` `nye_1h` `nye_30m` `nye_10m` `nye_5m` `nye_happynewyear1` `nye_happynewyear2` `nye_midnight` } | [music.js](./scripts/modules/music.js), [background.js](./scripts/modules/background.js)
+| [`exclude`](./scripts/modules/exclude.js) | Makes sure regular backgrounds don't intervene with event backgrounds. | `time` | `isNotExcluded` | [background.js](./scripts/modules/background.js)
+| [`hours`](./scripts/modules/hours.js) | Variables for each hour of the day. | `time` | { `midnight` `am_one` `am_two` `am_three` `am_four` `am_five` `am_six` `am_seven` `am_eight` `am_nine` `am_ten` `am_eleven` `noon` `pm_one` `pm_two` `pm_three` `pm_four` `pm_five` `pm_six` `pm_seven` `pm_eight` `pm_nine` `pm_ten` `pm_eleven` } | [music.js](./scripts/modules/music.js), [background.js](./scripts/modules/background.js)
+
+```mermaid
+graph TD;
+    time-->events;
+    time-->exclude;
+    time-->hours;
+    time-->music.js;
+    time-->background.js;
+
+    con-->music.js;
+    con-->background.js;
+
+    events-->music.js;
+    events-->background.js;
+
+    exclude-->background.js;
+
+    music.js-->website_html
+    background.js-->website_html
+```
+
+# Normal Scripts
+These are the regular scripts that make up the website without the imports or exports of modules.
 - [acnhmsgbox.js](./scripts/acnhmsgbox.js) - Creates a message box like in acnh using [acnhmsgbox](https://npmjs.com/package/acnhmsgbox).
-- [album.js](./scripts/album.js) - The `downloadAlbum()` function. When triggered, asks you to confirm you want to download the ginormus zip file that has my entire album of acnh screenshots and videos.
-- [background.js](./scripts/background.js) - Randomised backgrounds including evently backgrounds for some acnh events.
+- [album.js](./scripts/album.js) - The `downloadAlbum()` function. When triggered, asks you to confirm you want to download the ginormous zip file that has my entire album of acnh screenshots and videos.
 - [download.js](./scripts/download.js) - The `downloadFile(filename)` function. When triggered, asks you to confirm you want to download the file in context.
 - [footer.js](./scripts/footer.js) - Appends the footer to the page.
-- [music.js](./scripts/music.js) - Hourly and evently music just like in acnh.

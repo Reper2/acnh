@@ -1,0 +1,26 @@
+{
+  "name": "acnhmsgbox",
+  "version": "1.0.2",
+  "description": "Create message box like Animal Crossing (New Horizon) message box.",
+  "main": "acnhMessageBox.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "acnh",
+    "messagebox",
+    "animal crossing",
+    "message box animal crossing",
+    "animal crossing new horizon"
+  ],
+  "author": "Théo Pierné <theo.pierne2@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/TheoPierne/acnhMsgBox",
+  "bugs": {
+    "url": "https://github.com/TheoPierne/acnhMsgBox/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheoPierne/acnhMsgBox.git"
+  }
+}

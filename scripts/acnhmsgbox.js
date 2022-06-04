@@ -7,10 +7,6 @@ var msgBox = new ACMsgBox({
 		2: ["Above are some apps for you to use."],
 		3: ["Enjoy :)"]
 	}
-})
+});
 
-function draw() {
-	msgBox.draw()
-	$('#acnhmsgboxDrawBtn').hide()
-	console.log('Message box successfully drawn.')
-}
+msgBox.draw().then(console.log('Message box successfully drawn.'));

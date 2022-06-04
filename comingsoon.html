@@ -1,15 +1,18 @@
 <html lang="en">
 	<head>
 		<title>Coming Soon - Reper2's ACNH Website</title>
-		<meta charset="UTF-8"/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Refresh" content="10; url='./'" />
 		<style>
-			body {
-				background-image: linear-gradient(#171718, #171717) !important;
+			h1, h2 {
+				font-family: sans-serif;
 			}
 
-			h1, h2, h3, p {
-				font-family: Arial, Helvetica, sans-serif;
-				color: white;
+			body {
+				margin: 0;
+				padding: 0;
+				background: #e4d4ac;
+				overflow-x: hidden
 			}
 		</style>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -25,17 +28,25 @@
 
 	<body>
 		<center>
-			<br><br><br><br>
-			<img src="assets/nookPhone-app_native/isdesigner.png" width="20%"/>
+			<img src="assets/nookPhone-app_native/isdesigner.png" width="20%" />
 			<h2>Page Under Construction</h2>
-
-			<p>
-				The page you seek is still yet to be developed.<br>
-				Maybe check again later.
-			</p>
-
-			<h3>Return to <a href=".">HOME</a></h3>
+			<div id="acnhmsgbox"><img src="assets/Lloid.png" width="11%" style="position: absolute;" /></div>
 		</center>
 	</body>
 	<script type="text/javascript" src="https://livejs.com/live.js"></script>
+	<script type="text/javascript" src="https://reper2.github.io/acnh/scripts/submodules/acnhMsgBox/acnhMessageBox.js"></script>
+	<script>
+		var msgBox = new ACMsgBox({
+			title: "Lloid",
+			idDiv: "acnhmsgbox",
+			textWriteInProcess: true,
+			lines: {
+				1: ["This page hasn't been developed yet."],
+				2: ["Maybe check again some other time"],
+				3: ["to see if it's ready yet."]
+			}
+		})
+
+		msgBox.draw()
+	</script>
 </html>

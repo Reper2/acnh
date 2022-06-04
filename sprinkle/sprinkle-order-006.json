@@ -1,0 +1,40 @@
+{
+    "item_list": {
+        "item_1": "Black-Rose Plant",
+        "item_2": "Crown",
+        "item_3": "Royal Crown"
+    },
+    "item_codes": [
+        {
+            "item_code": "0F22",
+            "recipe_code": "",
+            "customised_code": "",
+            "item_name": "black-rose plant"
+        },
+        {
+            "item_code": "1F40",
+            "recipe_code": "",
+            "customised_code": "",
+            "item_name": "crown"
+        },
+        {
+            "item_code": "14BB",
+            "recipe_code": "",
+            "customised_code": "",
+            "item_name": "royal crown"
+        }
+    ],
+    "Sprinkle": [
+        {
+            "command": "$order 0F22 0F22 0F22 0F22 1F40 14BB",
+            "responses": {
+                "message_1": "I've added you to the queue! I'll message you here when your order is ready",
+                "message_2": "@Reper2 - Added you to the order queue. Your position is: 1. Your order will start after the current order is complete!",
+                "message_3": "Your order is starting, please ensure your inventory is empty, then go talk to Orville and stay on the Dodo code entry screen. I will send you the Dodo code shortly.",
+                "message_4": "I'm waiting for you Reper2! You have 162 seconds to arrive. My island name is Frappe. Your Dodo code is 6PNRX",
+                "message_5": "Visitor arriving: Reper2. Your items will be in front of you once you land.",
+                "message_6": "Your order is complete, Thanks for your order! Stay awesome!"
+            }
+        }
+    ]
+}

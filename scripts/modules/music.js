@@ -3,19 +3,8 @@ import * as events from "./events.js";
 import * as hours from "./hours.js";
 import * as con from "./console.js";
 
-audctrl_show => {
-	$('#music').show();
-	$('#audctrlBtn_show').hide();
-	$('#audctrlBtn_hide').show();
-	console.log('Showing audio controls.');
-};
-
-audctrl_hide => {
-	$('#music').hide();
-	$('#audctrlBtn_show').show();
-	$('#audctrlBtn_hide').hide();
-	console.log('Hiding audio controls.');
-};
+// information for when audio is not playing
+console.info('If audio does not play, click on the "show audio controls" button and press play on the audio player.');
 
 /**
 * On special event days, the event's soundtrack(s) will play as you browse the website.
@@ -43,7 +32,7 @@ if (events.bday) {
 }
 
 // Halloween
-if (events.halloween) {
+if (events.h) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -58,9 +47,8 @@ if (events.halloween) {
 }
 
 // Turkey Day
-if (events.turkeyday) {
+if (events.turkey) {
 	$(document).ready(function () {
-		console.log(`🦃${time.tdymsg} Turkey Day!`);
 		$('body').append(`
 			<center>
 				<audio id="music" controls autoplay loop style="display: none">
@@ -74,7 +62,7 @@ if (events.turkeyday) {
 }
 
 // Toy Day
-if (events.toyday) {
+if (events.toy) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -149,7 +137,7 @@ if (events.nye_5m) {
 }
 
 // New Years Event - Happy New Year!
-if (events.nye_happynewyear1) {
+if (events.nye_hny1) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -159,12 +147,12 @@ if (events.nye_happynewyear1) {
 			</center>
 		`);
 
-		console.log(`🎆HAPPY NEW YEAR ${time.year}!!!`);
+		console.log(`🎆HAPPY NEW YEAR ${time.Y}!!!`);
 	});
 }
 
 // New Years Event - New Years Eve! Midnight
-if (events.nye_midnight) {
+if (events.nye_midn) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -174,12 +162,12 @@ if (events.nye_midnight) {
 			</center>
 		`);
 
-		console.log(`🎆It is finally ${time.year}! May the celebrations begin!`);
+		console.log(`🎆It is finally ${time.Y}! May the celebrations begin!`);
 	});
 }
 
 // Midnight
-else if (hours.midnight) {
+else if (hours.am_12) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -188,13 +176,11 @@ else if (hours.midnight) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '12 AM.');
 	});
 }
 
 // 1 AM
-else if (hours.am_one) {
+else if (hours.am_01) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -203,13 +189,11 @@ else if (hours.am_one) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '1 AM.');
 	});
 }
 
 // 2 AM
-else if (hours.am_two) {
+else if (hours.am_02) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -218,13 +202,11 @@ else if (hours.am_two) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '2 AM.');
 	});
 }
 
 // 3 AM
-else if (hours.am_three) {
+else if (hours.am_03) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -233,13 +215,11 @@ else if (hours.am_three) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '3 AM.');
 	});
 }
 
 // 4 AM
-else if (hours.am_four) {
+else if (hours.am_04) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -248,13 +228,11 @@ else if (hours.am_four) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '4 AM.');
 	});
 }
 
 // 5 AM
-else if (hours.am_five) {
+else if (hours.am_05) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -263,13 +241,11 @@ else if (hours.am_five) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '5 AM.');
 	});
 }
 
 // 6 AM
-else if (hours.am_six) {
+else if (hours.am_06) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -278,13 +254,11 @@ else if (hours.am_six) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '6 AM.');
 	});
 }
 
 // 7 AM
-else if (hours.am_seven) {
+else if (hours.am_07) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -293,13 +267,11 @@ else if (hours.am_seven) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '7 AM.');
 	});
 }
 
 // 8 AM
-else if (hours.am_eight) {
+else if (hours.am_08) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -308,13 +280,11 @@ else if (hours.am_eight) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '8 AM.');
 	});
 }
 
 // 9 AM
-else if (hours.am_nine) {
+else if (hours.am_09) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -323,13 +293,11 @@ else if (hours.am_nine) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '9 AM.');
 	});
 }
 
 // 10 AM
-else if (hours.am_ten) {
+else if (hours.am_10) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -338,13 +306,11 @@ else if (hours.am_ten) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '10 AM.');
 	});
 }
 
 // 11 AM
-else if (hours.am_eleven) {
+else if (hours.am_11) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -353,13 +319,11 @@ else if (hours.am_eleven) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '11 AM.');
 	});
 }
 
 // Noon
-else if (hours.noon) {
+else if (hours.pm_12) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -368,13 +332,11 @@ else if (hours.noon) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '12 PM (noon).');
 	});
 }
 
 // 1 PM
-else if (hours.pm_one) {
+else if (hours.pm_01) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -383,13 +345,11 @@ else if (hours.pm_one) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '1 PM.');
 	});
 }
 
 // 2 PM
-else if (hours.pm_two) {
+else if (hours.pm_02) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -398,13 +358,11 @@ else if (hours.pm_two) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '2 PM.');
 	});
 }
 
 // 3 PM
-else if (hours.pm_three) {
+else if (hours.pm_03) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -413,13 +371,11 @@ else if (hours.pm_three) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '3 PM.');
 	});
 }
 
 // 4 PM
-else if (hours.pm_four) {
+else if (hours.pm_04) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -428,13 +384,11 @@ else if (hours.pm_four) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '4 PM.');
 	});
 }
 
 // 5 PM
-else if (hours.pm_five) {
+else if (hours.pm_05) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -443,13 +397,11 @@ else if (hours.pm_five) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '5 PM.');
 	});
 }
 
 // 6 PM
-else if (hours.pm_six) {
+else if (hours.pm_06) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -458,13 +410,11 @@ else if (hours.pm_six) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '6 PM.');
 	});
 }
 
 // 7 PM
-else if (hours.pm_seven) {
+else if (hours.pm_07) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -473,13 +423,11 @@ else if (hours.pm_seven) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '7 PM.');
 	});
 }
 
 // 8 PM
-else if (hours.pm_eight) {
+else if (hours.pm_08) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -488,13 +436,11 @@ else if (hours.pm_eight) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '8 PM.');
 	});
 }
 
 // 9 PM
-else if (hours.pm_nine) {
+else if (hours.pm_09) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -503,13 +449,11 @@ else if (hours.pm_nine) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '9 PM.');
 	});
 }
 
 // 10 PM
-else if (hours.pm_ten) {
+else if (hours.pm_10) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>
@@ -518,28 +462,21 @@ else if (hours.pm_ten) {
 				</audio>
 			</center>
 		`);
-
-		console.log(con.curr, '10 PM.');
 	});
 }
 
 // 11 PM
-else if (hours.pm_eleven) {
+else if (hours.pm_11) {
 	$(document).ready(function () {
 		$('body').append(`
 			<audio id="music" controls autoplay loop style="display: none">
 				<source src="https://reper2.github.io/acnh/assets/hour-music/11pm.mp3" type="audio/mpeg">
 			</audio>
 		`);
-
-		console.log(con.curr, '11 PM.');
 	});
 }
 
-// Information for when audio is not playing
-console.warn('If this page is not playing audio, ensure you have allowed this website to play audio and that you have not muted your device\'s audio.\nIf audio still does not play, click on the "show audio controls" button and press play on the audio player.');
-
-// Makes sure the music changes when a new hour starts
+// ensure the music changes when a new hour starts
 var current = new Date();
 var future = new Date();
 future.setTime(future.getTime() + 3600000); //3600000 = 1 hour
@@ -550,7 +487,7 @@ var timeout = (future.getTime() - current.getTime());
 setTimeout(
 	function () {
 		window.location.reload(true);
-		console.log('Page has been refreshed as it\'s a new hour! Changing music to the current hour\'s music.')
+		console.log('Page has been refreshed as it\'s a new hour! Changing music to the current hour\'s music.');
 	},
 	timeout
 );

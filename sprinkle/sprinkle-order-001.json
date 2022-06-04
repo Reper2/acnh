@@ -1,0 +1,28 @@
+{
+    "item_list": {
+        "item_1": "Jack's Face"
+    },
+
+    "item_codes": [
+        {
+            "item_code": "32CA",
+            "recipe_code": "",
+            "customised_code": "",
+            "item_name": "Jack's face (No Variations)"
+        }
+    ],
+
+    "Sprinkle": [
+        {
+            "command": "$order 32CA",
+            "responses": {
+                "message_1": "I've added you to the queue! I'll message you here when your order is ready",
+                "message_2": "@Reper2 - Added you to the order queue. Your position is: 2. Your predicted ETA is 16m: 35s",
+                "message_3": "Your order is starting, please ensure your inventory is empty, then go talk to Orville and stay on the Dodo code entry screen. I will send you the Dodo code shortly.",
+                "message_4": "I'm waiting for you Reper2! You have 162 seconds to arrive. My island name is Frappe. Your Dodo code is MVT9B",
+                "message_5": "Visitor arriving: Reper2. Your items will be in front of you once you land.",
+                "message_6": "Your order is complete, Thanks for your order! Stay awesome!"
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "item_list": {
+        "item_1": ""
+    },
+    "item_codes": [
+        {
+            "item_code": "",
+            "recipe_code": "",
+            "customised_code": "",
+            "item_name": ""
+        }
+    ],
+    "Sprinkle": [
+        {
+            "command": "$",
+            "responses": {
+                "message_1": ""
+            }
+        }
+    ]
+}

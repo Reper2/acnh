@@ -1,0 +1,110 @@
+{
+    "item_list": {
+        "item_1": "Black-Rose Plant",
+        "item_2": "Cherry-Blossom Bonsai DIY",
+        "item_3": "Cherry-Blossom Branches DIY",
+        "item_4": "Cherry-Blossom Clock DIY",
+        "item_5": "Cherry-Blossom Flooring DIY",
+        "item_6": "Cherry-Blossom Pochette DIY",
+        "item_7": "Cherry-Blossom Pond Stone DIY",
+        "item_8": "Cherry-Blossom Rug DIY",
+        "item_9": "Cherry-Blossom Umbrella DIY",
+        "item_10": "Cherry-Blossom Wand DIY",
+        "item_11": "Cherry-Blossom-Petal Pile DIY",
+        "item_12": "Cherry-Blossom-Trees Wall DIY",
+        "item_13": "Cherry-Blossom Petal"
+    },
+    "item_codes": [
+        {
+            "item_code": "0F22",
+            "recipe_code": "",
+            "customised_code": "",
+            "item_name": "black-rose plant"
+        },
+        {
+            "item_code": "178E",
+            "recipe_code": "177000016A2",
+            "customised_code": "",
+            "item_name": "cherry-blossom bonsai"
+        },
+        {
+            "item_code": "178F",
+            "recipe_code": "1A3000016A2",
+            "customised_code": "",
+            "item_name": "cherry-blossom branches"
+        },
+        {
+            "item_code": "1AB0",
+            "recipe_code": "1AA000016A2",
+            "customised_code": "",
+            "item_name": "cherry-blossom clock"
+        },
+        {
+            "item_code": "1C24",
+            "recipe_code": "1DF000016A2",
+            "customised_code": "",
+            "item_name": "cherry-blossom flooring"
+        },
+        {
+            "item_code": "1D42",
+            "recipe_code": "276000016A2",
+            "customised_code": "",
+            "item_name": "cherry-blossom pochette"
+        },
+        {
+            "item_code": "1CF1",
+            "recipe_code": "1FF000016A2",
+            "customised_code": "",
+            "item_name": "cherry-blossom pond stone"
+        },
+        {
+            "item_code": "303F",
+            "recipe_code": "347000016A2",
+            "customised_code": "",
+            "item_name": "cherry-blossom rug"
+        },
+        {
+            "item_code": "26D9",
+            "recipe_code": "275000016",
+            "customised_code": "",
+            "item_name": "cherry-blossom umbrella"
+        },
+        {
+            "item_code": "1DA5",
+            "recipe_code": "219000016A2",
+            "customised_code": "",
+            "item_name": "cherry-blossom wand"
+        },
+        {
+            "item_code": "1790",
+            "recipe_code": "1A2000016A2",
+            "customised_code": "",
+            "item_name": "cherry-blossom-petal pile"
+        },
+        {
+            "item_code": "1C25",
+            "recipe_code": "1E0000016A2",
+            "customised_code": "",
+            "item_name": "cherry-blossom-trees wall"
+        },
+        {
+            "item_code": "16E3",
+            "recipe_code": "",
+            "customised_code": "",
+            "item_name": "cherry-blossom petal"
+        }
+    ],
+    "Sprinkle": [
+        {
+            "command": "$order 0F22 0F22 0F22 0F22 0F22 0F22 0F22 0F22 0F22 0F22 0F22 0F22 0F22 0F22 177000016A2 1A3000016A2 1AA000016A2 1DF000016A2 276000016A2 1FF000016A2 347000016A2 275000016 219000016A2 1A2000016A2 1E0000016A2 16E3",
+            "responses": {
+                "message_1": "I've added you to the queue! I'll message you here when your order is ready",
+                "message_2": "@Reper2 - Added you to the order queue. Your position is: 1. Your order will start after the current order is complete!",
+                "message_3": "Your order is starting, please ensure your inventory is empty, then go talk to Orville and stay on the Dodo code entry screen. I will send you the Dodo code shortly.",
+                "message_4": "I'm waiting for you Reper2! You have 162 seconds to arrive. My island name is Frappe. Your Dodo code is 49DMM",
+                "message_5": "Visitor arriving: Reper2. Your items will be in front of you once you land.",
+                "message_6": "Your order is complete, Thanks for your order! Stay awesome!"
+            }
+        }
+    ]
+}

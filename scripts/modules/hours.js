@@ -1,53 +1,31 @@
 import * as time from "./time.js";
 
-var midnight = time.hour == '0';
-var am_one = time.hour == '1';
-var am_two = time.hour == '2';
-var am_three = time.hour == '3';
-var am_four = time.hour == '4';
-var am_five = time.hour == '5';
-var am_six = time.hour == '6';
-var am_seven = time.hour == '7';
-var am_eight = time.hour == '8';
-var am_nine = time.hour == '9';
-var am_ten = time.hour == '10';
-var am_eleven = time.hour == '11';
-var noon = time.hour == '12';
-var pm_one = time.hour == '13';
-var pm_two = time.hour == '14';
-var pm_three = time.hour == '15';
-var pm_four = time.hour == '16';
-var pm_five = time.hour == '17';
-var pm_six = time.hour == '18';
-var pm_seven = time.hour == '19';
-var pm_eight = time.hour == '20';
-var pm_nine = time.hour == '21';
-var pm_ten = time.hour == '22';
-var pm_eleven = time.hour == '23';
+var am_12 = time.h == '0';
+var am_01 = time.h == '1';
+var am_02 = time.h == '2';
+var am_03 = time.h == '3';
+var am_04 = time.h == '4';
+var am_05 = time.h == '5';
+var am_06 = time.h == '6';
+var am_07 = time.h == '7';
+var am_08 = time.h == '8';
+var am_09 = time.h == '9';
+var am_10 = time.h == '10';
+var am_11 = time.h == '11';
+var pm_12 = time.h == '12';
+var pm_01 = time.h == '13';
+var pm_02 = time.h == '14';
+var pm_03 = time.h == '15';
+var pm_04 = time.h == '16';
+var pm_05 = time.h == '17';
+var pm_06 = time.h == '18';
+var pm_07 = time.h == '19';
+var pm_08 = time.h == '20';
+var pm_09 = time.h == '21';
+var pm_10 = time.h == '22';
+var pm_11 = time.h == '23';
 
 export {
-    midnight,
-    am_one,
-    am_two,
-    am_three,
-    am_four,
-    am_five,
-    am_six,
-    am_seven,
-    am_eight,
-    am_nine,
-    am_ten,
-    am_eleven,
-    noon,
-    pm_one,
-    pm_two,
-    pm_three,
-    pm_four,
-    pm_five,
-    pm_six,
-    pm_seven,
-    pm_eight,
-    pm_nine,
-    pm_ten,
-    pm_eleven
+    am_12, am_01, am_02, am_03, am_04, am_05, am_06, am_07, am_08, am_09, am_10, am_11,
+    pm_12, pm_01, pm_02, pm_03, pm_04, pm_05, pm_06, pm_07, pm_08, pm_09, pm_10, pm_11
 };

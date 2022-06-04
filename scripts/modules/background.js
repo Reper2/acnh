@@ -4,12 +4,12 @@ import * as con from "./console.js";
 import * as time from "./time.js";
 
 // International Museum Day backgrounds
-if (events.intlmuseumday) {
+if (events.intlmus) {
     $(document).ready(function () {
         const num_images = 39;
 
         var num = Math.floor(Math.random() * num_images);
-        var link = "https://reper2.github.io/acnh/assets/backgrounds/intl-museum-day/" + String(num).padStart(3, '0'); + ".jpg";
+        var link = "https://reper2.github.io/acnh/assets/backgrounds/intl-mus-day/" + String(num).padStart(3, '0'); + ".jpg";
         var bgImg = `url(${link})`;
 
         $('body').css({
@@ -19,12 +19,12 @@ if (events.intlmuseumday) {
             'background-size': 'cover',
         });
 
-        console.log('🏛️' + con.curr, 'the International Museum Day period! This calls for some museum backgrounds!', con.bgnum + num);
+        console.log('🏛️' + con.curr, 'the International Museum Day period! This calls for some museum backgrounds!', con.bg + num);
     });
 }
 
 // May Day Tour backgrounds
-if (events.mayday) {
+if (events.maydaytour) {
     $(document).ready(function () {
         const num_images = 13;
 
@@ -39,17 +39,17 @@ if (events.mayday) {
             'background-size': 'cover',
         });
 
-        console.log('🏝️' + con.curr, 'the May Day Tour period! This calls for some May Day Tour backgrounds!', con.bgnum + num);
+        console.log('🏝️' + con.curr, 'the May Day Tour period! This calls for some May Day Tour backgrounds!', con.bg + num);
     });
 }
 
 // Wedding Season backgrounds
-if (events.weddingseason) {
+if (events.wedseas) {
     $(document).ready(function () {
         const num_images = 3;
 
         var num = Math.floor(Math.random() * num_images);
-        var link = "https://reper2.github.io/acnh/assets/backgrounds/wedding-season/" + String(num).padStart(3, '0') + ".jpg";
+        var link = "https://reper2.github.io/acnh/assets/backgrounds/wed-seas/" + String(num).padStart(3, '0') + ".jpg";
         var bgImg = `url(${link})`;
 
         $('body').css({
@@ -59,7 +59,7 @@ if (events.weddingseason) {
             'background-size': 'cover',
         });
 
-        console.log('💍' + con.curr, 'Wedding Season period! This calls for some Wedding Season backgrounds!', con.bgnum + num);
+        console.log('💍' + con.curr, 'Wedding Season period! This calls for some Wedding Season backgrounds!', con.bg + num);
     });
 }
 
@@ -79,12 +79,12 @@ if (events.bday) {
             'background-size': 'cover',
         });
 
-        console.log('🥳' + con.tdy, 'Reper2\'s birthday! This calls for some birthday backgrounds!', con.bgnum + num);
+        console.log('🥳' + con.tdy, 'Reper2\'s birthday! This calls for some birthday backgrounds!', con.bg + num);
     });
 }
 
 // Halloween backgrounds
-if (events.halloween) {
+if (events.h) {
     $(document).ready(function () {
         const num_images = 1;
 
@@ -99,12 +99,12 @@ if (events.halloween) {
             'background-size': 'cover',
         });
 
-        console.log('🎃' + con.tdy, 'Halloween! This calls for some Halloween backgrounds!', con.bgnum + num);
+        console.log('🎃' + con.tdy, 'Halloween! This calls for some Halloween backgrounds!', con.bg + num);
     });
 }
 
 // Turkey Day backgrounds
-if (events.turkeyday) {
+if (events.turkey) {
     $(document).ready(function () {
         const num_images = 1;
 
@@ -119,12 +119,12 @@ if (events.turkeyday) {
             'background-size': 'cover',
         });
 
-        console.log('🦃' + con.tdy, 'Turkey Day! This calls for some Turkey Day backgrounds!', con.bgnum + num);
+        console.log('🦃' + con.tdy, 'Turkey Day! This calls for some Turkey Day backgrounds!', con.bg + num);
     });
 }
 
 // Toy Day backgrounds
-if (events.toyday) {
+if (events.toy) {
     $(document).ready(function () {
         const num_images = 2;
 
@@ -139,7 +139,7 @@ if (events.toyday) {
             'background-size': 'cover',
         });
 
-        console.log('🎅' + con.tdy, 'Toy Day! This calls for some Toy Day backgrounds!', con.bgnum + num);
+        console.log('🎅' + con.tdy, 'Toy Day! This calls for some Toy Day backgrounds!', con.bg + num);
     });
 }
 
@@ -159,31 +159,31 @@ if (events.nye) {
             'background-size': 'cover',
         });
 
-        console.log('🎆' + con.tdy, 'New Years Eve! This calls for some New Years Eve backgrounds!', con.bgnum + num);
+        console.log('🎆' + con.tdy, 'New Years Eve! This calls for some New Years Eve backgrounds!', con.bg + num);
     });
 }
 
 // New Years Event - Happy New Year! background
-if (events.nye_happynewyear2) {
+if (events.nye_hny2) {
     $(document).ready(function () {
         $('body').css({
-            'background-image': 'url("https://reper2.github.io/acnh/assets/backgrounds/new-years-event/happy-new-year/happy-new-year.gif")',
+            'background-image': 'url("https://reper2.github.io/acnh/assets/backgrounds/new-years-event/hny/hny.gif")',
             'background-position': 'center center',
             'background-repeat': 'no-repeat no-repeat',
             'background-size': 'cover',
         });
 
-        console.log(`🎆HAPPY NEW YEAR ${time.year}!`);
+        console.log(`🎆HAPPY NEW YEAR ${time.Y}!`);
     });
 }
 
 // New Years Event - New Years Eve! Midnight backgrounds
-if (events.nye_midnight) {
+if (events.nye_midn) {
     $(document).ready(function () {
         const num_images = 1;
 
         var num = Math.floor(Math.random() * num_images);
-        var link = "https://reper2.github.io/acnh/assets/backgrounds/new-years-event/nye-midnight/" + String(num).padStart(3, '0') + ".jpg";
+        var link = "https://reper2.github.io/acnh/assets/backgrounds/new-years-event/nye-midn/" + String(num).padStart(3, '0') + ".jpg";
         var bgImg = `url(${link})`;
 
         $('body').css({
@@ -193,7 +193,7 @@ if (events.nye_midnight) {
             'background-size': 'cover',
         });
 
-        console.log('🎆Happy New Year! This calls for some firework backgrounds!', con.bgnum + num);
+        console.log('🎆Happy New Year! This calls for some firework backgrounds!', con.bg + num);
     });
 }
 

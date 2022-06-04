@@ -1,9 +1,5 @@
 var curr = 'It is currently';
 var tdy = 'Today is';
-var bgnum = 'Background #';
+var bg = 'Background #';
 
-export {
-    curr,
-    tdy,
-    bgnum,
-};
+export { curr, tdy, bg };

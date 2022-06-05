@@ -38,4 +38,12 @@
     <script type="module" src="../scripts/modules/music.js"></script>
 	<script type="module" src="../scripts/modules/clock.js"></script>
 	<script type="text/javascript" src="../scripts/footer.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          // Register a service worker after the load event
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('../sw.js');
+          });
+        }
+    </script>
 </html>

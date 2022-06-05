@@ -137,7 +137,7 @@ if (events.nye_5m) {
 }
 
 // New Years Event - Happy New Year!
-if (events.nye_hny1) {
+if (events.nye_hny) {
 	$(document).ready(function () {
 		$('body').append(`
 			<center>

@@ -36,18 +36,10 @@ var nye_1h = time.dh == '12-31 23';
 var nye_30m = time.D_t == '12-31 23:30';
 var nye_10m = time.D_t == '12-31 23:50';
 var nye_5m = time.D_t == '12-31 23:55';
-var nye_hny1 = time.D_t == '1-1 0:00';
-var nye_hny2 =
-    // starts 5 min before as it takes 3.2 min for everything to finish loading and if the user hasn't already got the file cached
-    time.D_t == '12-31 11:55' ||
-    time.D_t == '12-31 11:56' ||
-    time.D_t == '12-31 11:57' ||
-    time.D_t == '12-31 11:58' ||
-    time.D_t == '12-31 11:59' ||
-    nye_hny1;
+var nye_hny = time.D_t == '1-1 0:00';
 var nye_midn = time.D_t == '1-1 0';
 
 export {
     intlmus, maydaytour, wedseas, bday, h, turkey, toy,
-    nye, nye_1h, nye_30m, nye_10m, nye_5m, nye_hny1, nye_hny2, nye_midn
+    nye, nye_1h, nye_30m, nye_10m, nye_5m, nye_hny, nye_midn
 };

@@ -164,7 +164,7 @@ if (events.nye) {
 }
 
 // New Years Event - Happy New Year! background
-if (events.nye_hny2) {
+if (events.nye_hny) {
     $(document).ready(function () {
         $('body').css({
             'background-image': 'url("https://reper2.github.io/acnh/assets/backgrounds/new-years-event/hny/hny.gif")',

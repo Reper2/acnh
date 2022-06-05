@@ -30,11 +30,6 @@ var isNotExcluded =
     time.D !== '11-25' &&
     time.D !== '12-24' &&
     time.D !== '12-31' &&
-    time.D_t !== '12-31 11:55' &&
-    time.D_t !== '12-31 11:56' &&
-    time.D_t !== '12-31 11:57' &&
-    time.D_t !== '12-31 11:58' &&
-    time.D_t !== '12-31 11:59' &&
     time.D_h !== '1-1 0';
 
 export default isNotExcluded;

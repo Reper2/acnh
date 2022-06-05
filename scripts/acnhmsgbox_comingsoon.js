@@ -9,4 +9,5 @@ var msgBox = new ACMsgBox({
     }
 })
 
-msgBox.draw()
+msgBox.draw(),
+console.log('Message box successfully drawn.');

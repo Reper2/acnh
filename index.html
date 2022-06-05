@@ -67,7 +67,7 @@
             console.log('Service worker available.')
             // Register a service worker after the load event
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js').then(console.log('Service worker successfully installed.'));
+                navigator.serviceWorker.register('./sw.js').then(console.log('Service worker successfully installed.'));
             });
         }
     </script>

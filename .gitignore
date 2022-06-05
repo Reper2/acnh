@@ -21,8 +21,5 @@ desktop.ini
 node_modules/
 package-lock.json
 
-# CI - To check if all files have a corresponding rule in .gitattributes
-gitattributes_check.sh
-
 # Private Node Projects
 node/

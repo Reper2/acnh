@@ -29,10 +29,6 @@ a {
     text-decoration: none;
 }
 
-#everything {
-    min-height: 100%;
-}
-
 .nookPhone {
     position: flex;
     text-align: center;

@@ -30,11 +30,12 @@ These are the npm libraries that make up part of the website or are invloved in 
 [View Submodules](./.gitmodules)
 
 # Modules
+<!-- even I find this table confusing and messy -->
 | Module | Description | Imported Modules | Exported Variables, Functions, etc. | Used By
 | :---: | :---: | :---: | :---: | :---:
-| [music.js](./scripts/modules/music.js) | Hourly and evently music just like in acnh. | `time` `con` `events` `hours` | | [index.html (root)](./index.html)
-| [background.js](./scripts/modules/background.js) | Randomised backgrounds including evently backgrounds for some acnh events. | `time` `con` `events` `hours` `exclude` | | [index.html (root)](./index.html)
-| [clock.js](./scripts/modules/clock.js) | Sends the current time to console in the format, "It is currently `time.Y_M_d_t_s_ms__t`" | `time` `con` | | [index.html (root)](./index.html)
+| [music.js](./scripts/modules/music.js) | Hourly and evently music just like in acnh. | `time` `con` `events` `hours` | | [index.html (root)](./index.html), [index.html (sprinkle)](./sprinkle/index.html), [index.html (designs)](./designs/index.html), [index.html (designs/sets)](./designs/sets/index.html), [index.html (island)](./island/index.html), [index.html (hhn)](./hhn/index.html)
+| [background.js](./scripts/modules/background.js) | Randomised backgrounds including evently backgrounds for some acnh events. | `time` `con` `events` `hours` `exclude` | | [index.html (root)](./index.html), [index.html (sprinkle)](./sprinkle/index.html), [index.html (designs)](./designs/index.html), [index.html (designs/sets)](./designs/sets/index.html), [index.html (island)](./island/index.html), [index.html (hhn)](./hhn/index.html)
+| [clock.js](./scripts/modules/clock.js) | Sends the current time to console in the format, "It is currently `time.Y_M_d_t_s_ms__t`" | `time` `con` | | [index.html (root)](./index.html), [index.html (sprinkle)](./sprinkle/index.html), [index.html (designs)](./designs/index.html), [index.html (designs/sets)](./designs/sets/index.html), [index.html (island)](./island/index.html), [index.html (hhn)](./hhn/index.html)
 | [`time`](./scripts/modules/time.js) | Common time variables. | | `tdy` `Y` `M` `d` `D` `h` `m` `s` `ms` `t` `Y_M_d_t_s_ms__t` `D_h` `D_t` | [music.js](./scripts/modules/music.js), [background.js](./scripts/modules/background.js), [events.js](./scripts/modules/events.js), [hours.js](./scripts/modules/hours.js), [exclude.js](./scripts/modules/exclude.js)
 | [`con`](./scripts/modules/console.js) | Variables for common console messages. | | `curr` `tdy` `bg`  | [music.js](./scripts/modules/music.js), [background.js](./scripts/modules/background.js)
 | [`events`](./scripts/modules/events.js) | Variables for ACNH event dates. | `time` | `intlmus` `maydaytour` `wedseas` `bday` `h` `turkey` `toy` `nye` `nye_1h` `nye_30m` `nye_10m` `nye_5m` `nye_hny1` `nye_hny2` `nye_midn` | [music.js](./scripts/modules/music.js), [background.js](./scripts/modules/background.js)

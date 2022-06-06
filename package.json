@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "acnhmsgbox": "^1.0.2",
-    "http-server": "^14.1.0"
+    "acnhmsgbox": "^1.0.2"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }

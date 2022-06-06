@@ -12,7 +12,7 @@ function downloadFile(filename) {
                 document.body.appendChild(a);
                 a.click();
                 window.URL.revokeObjectURL(url);
-			})
+			}),
         console.log(`${filename} has been downloaded!`);
-	}
-}
+	};
+};

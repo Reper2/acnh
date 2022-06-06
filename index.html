@@ -15,7 +15,7 @@
         <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
-        <link rel="manifest" href="site.webmanifest"/>
+        <link rel="manifest" href="site.webmanifest" />
         <meta id="meta-title" property="og:title" content="Reper2's ACNH Website" />
 		<meta id="meta-desc" property="og:description" content="Reper2's ACNH Website is a NookPhone which includes Album, DodoCodes.com profile link, Sprinkle order files, Nookazon profile link, Custom Designs, Island Preview, Happy Home Network gallery, ACNH Apps. The same hourly and evently music from ACNH plays here too! Read github.com/Reper2/acnh#readme for more information about features." />
 		<meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/metaimg.png" />
@@ -25,32 +25,34 @@
     </head>
 
     <body>
-        <center>
-            <br>
-            <div class="nookPhone">
-                <p>
-                    <br><br><br><br>
-                    <a onclick="downloadAlbum()" title="Album"><img src="assets/nookPhone-app_native/camera.png" class="nookPhone_app" /></a>
-                    <a target="_blank" href="https://dodocodes.com/user/Reper2_acnh" title="DodoCodes.com Profile"><img src="assets/nookPhone-app_other/dodocodes.png" class="nookPhone_app nookPhone_app_other" /></a>
-                    <a href="sprinkle/" title="Sprinkle Order Files"><img src="assets/nookPhone-app_other/sprinkle.png" class="nookPhone_app nookPhone_app_other" /></a>
-                    <br>
-                    <a target="_blank" href="/acnh-apps/" title="ACNH Apps"><img src="assets/nookPhone-app_other/acnh-apps.ico" class="nookPhone_app nookPhone_app_other" /></a>
-                    <a target="_blank" href="https://nookazon.com/profile/2566680955" title="Nookazon Profile"><img src="assets/nookPhone-app_other/nookazon.png" class="nookPhone_app nookPhone_app_other" /></a>
-                    <a target="_blank" href="https://github.com/Reper2/acnh" title="GitHub Repository"><img src="assets/nookPhone-app_native/isdesigner.png" class="nookPhone_app" /></a>
-                    <br>
-                    <a href="designs/" title="Custom Designs, Design Sets"><img src="assets/nookPhone-app_native/designs.png" class="nookPhone_app" /></a>
-                    <a href="island/" title="Island Preview"><img src="assets/nookPhone-app_native/map.png" class="nookPhone_app" /></a>
-                    <a href="hhn/" title="Happy Home Network Gallery"><img src="assets/nookPhone-app_native/hhn.png" class="nookPhone_app" /></a>
-                </p>
-            </div>
+        <main>
+            <center>
+                <br>
+                <div class="nookPhone">
+                    <p>
+                        <br><br><br><br>
+                        <a onclick="downloadAlbum()" title="Album"><img src="assets/nookPhone-app_native/camera.png" class="nookPhone_app" /></a>
+                        <a target="_blank" href="https://dodocodes.com/user/Reper2_acnh" title="DodoCodes.com Profile"><img src="assets/nookPhone-app_other/dodocodes.png" class="nookPhone_app nookPhone_app_other" /></a>
+                        <a href="sprinkle/" title="Sprinkle Order Files"><img src="assets/nookPhone-app_other/sprinkle.png" class="nookPhone_app nookPhone_app_other" /></a>
+                        <br>
+                        <a target="_blank" href="/acnh-apps/" title="ACNH Apps"><img src="assets/nookPhone-app_other/acnh-apps.png" class="nookPhone_app nookPhone_app_other" /></a>
+                        <a target="_blank" href="https://nookazon.com/profile/2566680955" title="Nookazon Profile"><img src="assets/nookPhone-app_other/nookazon.png" class="nookPhone_app nookPhone_app_other" /></a>
+                        <a target="_blank" href="https://github.com/Reper2/acnh" title="GitHub Repository"><img src="assets/nookPhone-app_native/isdesigner.png" class="nookPhone_app" /></a>
+                        <br>
+                        <a href="designs/" title="Custom Designs, Design Sets"><img src="assets/nookPhone-app_native/designs.png" class="nookPhone_app" /></a>
+                        <a href="island/" title="Island Preview"><img src="assets/nookPhone-app_native/map.png" class="nookPhone_app" /></a>
+                        <a href="hhn/" title="Happy Home Network Gallery"><img src="assets/nookPhone-app_native/hhn.png" class="nookPhone_app" /></a>
+                    </p>
+                </div>
 
-            <br>
+                <br>
 
-            <div id="acnhmsgbox"><a target="_blank" href="/"><img src="logo.png" width="10%" style="position: absolute; border-radius: 26%;" /></a></div>
+                <div id="acnhmsgbox"><a target="_blank" href="/"><img src="logo.png" width="10%" style="position: absolute; border-radius: 26%;" /></a></div>
 
-            <button id="audctrlBtn_show" class="flex" onclick="audctrl_show()">show audio controls</button>
-            <button id="audctrlBtn_hide" class="flex" onclick="audctrl_hide()" style="display: none;">hide audio controls</button>
-        </center>
+                <button id="audctrlBtn_show" class="flex" onclick="audctrl_show()">show audio controls</button>
+                <button id="audctrlBtn_hide" class="flex" onclick="audctrl_hide()" style="display: none;">hide audio controls</button>
+            </center>
+        </main>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/submodules/acnhMsgBox/acnhMessageBox.js"></script>
@@ -63,11 +65,21 @@
     <script type="text/javascript" src="scripts/album.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
-            console.log('Service worker available.')
             // Register a service worker after the load event
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js').then(console.log('Service worker successfully installed.'));
+            addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js').then(console.log('Service worker successfully installed.'))
             });
-        }
+        };
+
+        onappinstalled = event => {
+            console.log('Thank you for installing the app!');
+        };
+
+        if (matchMedia('(display-mode: standalone)').matches) {
+            $('#audctrlBtn_show').hide(),
+            console.log("The 'show audio controls' button is disabled in the app."),
+            $('#audctrlBtn_hide').hide(),
+            console.log("The 'hide audio controls' button is disabled in the app.");
+        };
     </script>
 </html>

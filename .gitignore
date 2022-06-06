@@ -20,6 +20,3 @@ desktop.ini
 # Node & lock files
 node_modules/
 package-lock.json
-
-# Private Node Projects
-node/

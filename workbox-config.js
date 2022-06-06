@@ -5,7 +5,7 @@ module.exports = {
 	],
 
 	maximumFileSizeToCacheInBytes: 100000000, //100MB
-	swDest: 'C:/Users/ethan/Documents/GitHub/repos/acnh/sw.js',
+	swDest: './sw.js',
 	ignoreURLParametersMatching: [
 		/^utm_/,
 		/^fbclid$/

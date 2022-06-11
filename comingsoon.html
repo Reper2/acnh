@@ -28,25 +28,33 @@
 
 	<body>
 		<center>
-			<img src="assets/nookPhone-app_native/isdesigner.png" width="20%" />
-			<h2>Page Under Construction</h2>
-			<div id="acnhmsgbox"><img src="assets/Lloid.png" width="11%" style="position: absolute;" /></div>
+			<main id="mainContent" class="flex"></main>
+				<img src="assets/nookPhone-app_native/isdesigner.png" width="20%" />
+				<h2>Page Under Construction</h2>
+				<div id="acnhmsgbox"></div>
+			</main>
 		</center>
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script type="text/javascript" src="https://reper2.github.io/acnh/scripts/submodules/acnhMsgBox/acnhMessageBox.js"></script>
+	<script type="text/javascript" src="scripts/submodules/acnhMsgBox/acnhMessageBox.js"></script>
 	<script type="text/javascript" src="scripts/acnhmsgbox_comingsoon.js"></script>
-	<script type="text/javascript" src="scripts/footer.js"></script>
+	<script type="module" src="scripts/modules/clock.mjs"></script>
 	<script>
-        if ('serviceWorker' in navigator) {
-            // Register a service worker after the load event
-            addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js').then(console.log('Service worker successfully installed.'))
-            });
-        };
+		if ('serviceWorker' in navigator) {
+			// Register a service worker after the load event
+			addEventListener('load', () => {
+				navigator.serviceWorker.register('./sw.js').then(console.log('Service worker successfully installed.'));
 
-        onappinstalled = event => {
-            console.log('Thank you for installing the app!');
-        };
+				if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
+					console.log('Executing app install reminder.'),
+					// reminds the user they can install the app
+					alert('Install the app!\nDesktop Browser - click install button in top-right of address bar\nMobile Browser - click Add To Homescreen after clicking share button');
+				};
+			});
+		};
+
+		onappinstalled = event => {
+			console.log('Thank you for installing the app!');
+		};
     </script>
 </html>

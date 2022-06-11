@@ -25,24 +25,32 @@
 		<meta property="twitter:card" content="summary" />
     </head>
 
-    <body>
-        <main>
-            <center>
+    <body id="bg">
+        <center>
+            <main id="mainContent" class="flex">
                 <h1>Reper2's Custom Designs</h1>
-            </center>
-        </main>
+            </main>
+
+            <footer id="footerContent" class="flex bottomLinks"></footer>
+        </center>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script type="module" src="../scripts/modules/background.js"></script>
-    <script type="module" src="../scripts/modules/music.js"></script>
-	<script type="module" src="../scripts/modules/clock.js"></script>
+	<script type="module" src="../scripts/modules/background.mjs"></script>
+    <script type="module" src="../scripts/modules/music.mjs"></script>
+	<script type="module" src="../scripts/modules/clock.mjs"></script>
 	<script type="text/javascript" src="../scripts/footer.js"></script>
     <script type="text/javascript" src="../scripts/download.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             // Register a service worker after the load event
             addEventListener('load', () => {
-                navigator.serviceWorker.register('../sw.js').then(console.log('Service worker successfully installed.'))
+                navigator.serviceWorker.register('../sw.js').then(console.log('Service worker successfully installed.'));
+
+                if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
+                    console.log('Executing app install reminder.'),
+                    // reminds the user they can install the app
+                    alert('Install the app!\nDesktop Browser - click install button in top-right of address bar\nMobile Browser - click Add To Homescreen after clicking share button');
+                };
             });
         };
 

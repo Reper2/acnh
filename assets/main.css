@@ -1,9 +1,10 @@
 @font-face {
-    font-family: 'FOT-RodinBokutoh Pro B'; 
+    font-family: 'FOT-RodinBokutoh Pro B';
     src: url('FOT-RodinBokutoh%20Pro%20B.otf')
 }
+
 @font-face {
-    font-family: 'FOT-Seurat Pro B'; 
+    font-family: 'FOT-Seurat Pro B';
     src: url('FOT-Seurat%20Pro%20B.otf')
 }
 
@@ -11,10 +12,18 @@ body {
     margin: 0;
     padding: 0;
     background: lightskyblue;
-    overflow-x: hidden
 }
 
-h1, h2, h3, h4, h5, h6, p, a, summary, details {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+summary,
+details {
     font-family: 'FOT-RodinBokutoh Pro B', sans-serif;
     color: white;
     -webkit-text-stroke-width: 0.25vmin;
@@ -60,7 +69,9 @@ a {
     border-radius: 35%;
 }
 
-.nookPhone_app:active, .nookPhone_app:focus-visible, a:focus-visible .nookPhone_app {
+.nookPhone_app:active,
+.nookPhone_app:focus-visible,
+a:focus-visible .nookPhone_app {
     animation: bounceButton 0.25s ease-in-out forwards;
 }
 
@@ -68,7 +79,6 @@ a {
     bottom: 2vmin;
     text-align: center;
     position: flex;
-    left: 2vmin;
     font-size: 4vmin;
 }
 

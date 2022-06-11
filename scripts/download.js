@@ -1,5 +1,5 @@
 function downloadFile(filename) {
-    var r = confirm(`Do you want to download:\n${filename}`);
+    var r = confirm(`Are you sure you want to download:\n${filename}`);
     if (r) {
         fetch(`./${filename}`)
             .then(resp => resp.blob())
@@ -13,6 +13,6 @@ function downloadFile(filename) {
                 a.click();
                 window.URL.revokeObjectURL(url);
 			}),
-        console.log(`${filename} has been downloaded!`);
+        console.log(`${filename} is downloading.`);
 	};
 };

@@ -9,5 +9,25 @@ var msgBox = new ACMsgBox({
 	}
 });
 
-msgBox.draw(),
-console.log('Message box successfully drawn.');
+const
+	acnhmsgbox = document.getElementById('acnhmsgbox'),
+	a = document.createElement('a'),
+	img = document.createElement('img')
+;
+
+acnhmsgbox.class = 'flex';
+
+a.target = '_blank';
+a.href = '/';
+a.class = 'flex';
+
+img.src = 'logo.png';
+img.class = 'flex';
+img.style.position = 'absolute';
+img.style.width = '10%';
+img.style.borderRadius = '26%';
+
+a.appendChild(img);
+acnhmsgbox.appendChild(a);
+msgBox.draw();
+console.log('Message box has completed drawing.');

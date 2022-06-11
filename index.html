@@ -59,7 +59,6 @@
     <script type="text/javascript" src="scripts/submodules/acnhMsgBox/acnhMessageBox.js"></script>
     <script type="text/javascript" src="scripts/acnhmsgbox_home.js"></script>
     <script type="text/javascript" src="scripts/audio-controls.js"></script>
-    <script type="text/javascript" src="scripts/header.js"></script>
     <script type="text/javascript" src="scripts/footer.js"></script>
     <script type="module" src="scripts/modules/background.mjs"></script>
     <script type="module" src="scripts/modules/music.mjs"></script>
@@ -74,7 +73,7 @@
                 if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
                     console.log('Executing app install reminder.'),
                     // reminds the user they can install the app
-                    alert('Consider installing the app!\nDesktop Browser - click install button in top-right of address bar\nMobile Browser - click Add To Homescreen after clicking share button');
+                    alert('Install the app!\nDesktop Browser - click install button in top-right of address bar\nMobile Browser - click Add To Homescreen after clicking share button');
                 };
             });
         };

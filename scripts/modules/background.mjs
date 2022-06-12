@@ -8,7 +8,7 @@ const
 
     // dev
     //path = '/assets/backgrounds/',
-    path = 'https://reper2.github.io/acnh/assets/backgrounds/',
+    path = '/acnh/assets/backgrounds/',
     nyePath = `${path}new-years-event/`
 ;
 

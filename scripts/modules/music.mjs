@@ -9,7 +9,7 @@ const
 
 	// dev
 	//path = '/assets/music/',
-	path = 'https://reper2.github.io/acnh/assets/music/',
+	path = '/acnh/assets/music/',
 	eventsPath = `${path}event/`,
 	nyePath = `${eventsPath}new-years-event/`,
 	hoursPath = `${path}hour/`

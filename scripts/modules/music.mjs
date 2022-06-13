@@ -312,7 +312,7 @@ future.setSeconds(0);
 var timeout = (future.getTime() - current.getTime());
 setTimeout(
 	function () {
-		setInterval(myTimer, 0);
+		window.location.reload();
 		console.log("Page has been refreshed as it's a new hour! Changing music to the current hour's music.");
 	},
 	timeout

@@ -21,6 +21,10 @@ music.loop = 'true';
 music.preload = 'auto';
 music.style.display = 'none';
 
+if (music.paused) {
+	music.play();
+};
+
 musicSrc.type = 'audio/mpeg';
 
 // information for when audio is not playing

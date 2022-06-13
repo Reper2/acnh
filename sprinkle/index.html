@@ -1,63 +1,88 @@
 <html lang="en">
-	<head>
-		<title>Sprinkle Orders - Reper2's ACNH Website</title>
-		<meta charset="UTF-8" />
-		<link href="../assets/main.css" rel="stylesheet" type="text/css" />
-		<meta http-equiv="Refresh" content="3; url='../comingsoon.html'" />
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL97YTBZQV"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
 
-            gtag('config', 'G-FL97YTBZQV');
-        </script>
-		<link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
-		<link rel="manifest" href="../site.webmanifest" />
-		<meta id="meta-title" property="og:title" content="Sprinkle Order Files - Reper2's ACNH Website" />
-		<meta id="meta-desc" property="og:description" content="In this section of Reper2's ACNH Website you can download Reper2's Sprinkle order files. Sprinkle is an Animal Crossing treasure island bot that you can use yourself in Sprinkletopia (discord.gg/itsprinkles)." />
-		<meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/assets/nookPhone-app_other/sprinkle.png" />
-		<meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io" />
-		<meta name="theme-color" content="#14d8ee" />
-		<meta property="twitter:card" content="summary" />
-	</head>
+<head>
+	<title>Sprinkle Orders - Reper2's ACNH Website</title>
+	<meta charset="UTF-8" />
+	<link href="../assets/main.css" rel="stylesheet" type="text/css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FL97YTBZQV"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	<body id="bg">
-		<center>
-			<main id="mainContent" class="flex">
-				<h1>Reper2's Sprinkle Order Files</h1>
-			</main>
+		gtag('config', 'G-FL97YTBZQV');
+	</script>
+	<link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
+	<link rel="manifest" href="../site.webmanifest" />
+	<meta id="meta-title" property="og:title" content="Sprinkle Order Files - Reper2's ACNH Website" />
+	<meta id="meta-desc" property="og:description" content="In this section of Reper2's ACNH Website you can download Reper2's Sprinkle order files. Sprinkle is an Animal Crossing treasure island bot that you can use yourself in Sprinkletopia (discord.gg/itsprinkles)." />
+	<meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/assets/nookPhone-app_other/sprinkle.png" />
+	<meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io" />
+	<meta name="theme-color" content="#14d8ee" />
+	<meta property="twitter:card" content="summary" />
+</head>
+
+<body id="bg">
+	<div id="back"></div>
+
+	<center>
+		<main id="mainContent" class="flex">
+			<h1>Reper2's Sprinkle Order Files</h1>
+
+			<div id="sprinkle" class="lightblueBox">
+				<h3>
+					<a onclick="downloadFile('sprinkle-order-001.jsonc')" title="sprinkle-order-001.jsonc">001</a>,
+					<a onclick="downloadFile('sprinkle-order-002.jsonc')" title="sprinkle-order-002.jsonc">002</a>,
+					<a onclick="downloadFile('sprinkle-order-003.jsonc')" title="sprinkle-order-003.jsonc">003</a>,
+					<a onclick="downloadFile('sprinkle-order-004.jsonc')" title="sprinkle-order-004.jsonc">004</a>,
+					<a onclick="downloadFile('sprinkle-order-005.jsonc')" title="sprinkle-order-005.jsonc">005</a>,
+					<a onclick="downloadFile('sprinkle-order-006.jsonc')" title="sprinkle-order-006.jsonc">006</a>,
+					<a onclick="downloadFile('sprinkle-order-007.jsonc')" title="sprinkle-order-007.jsonc">007</a>,
+					<a onclick="downloadFile('sprinkle-order-008.jsonc')" title="sprinkle-order-008.jsonc">008</a>,
+					<a onclick="downloadFile('sprinkle-order-009.jsonc')" title="sprinkle-order-009.jsonc">009</a>,
+					<a onclick="downloadFile('sprinkle-order-010.jsonc')" title="sprinkle-order-010.jsonc">010</a>,
+					<a onclick="downloadFile('sprinkle-order-011.jsonc')" title="sprinkle-order-011.jsonc">011</a>,
+					<a onclick="downloadFile('sprinkle-order-012.jsonc')" title="sprinkle-order-012.jsonc">012</a>,
+					<a onclick="downloadFile('sprinkle-order-013.jsonc')" title="sprinkle-order-013.jsonc">013</a>,
+					<a onclick="downloadFile('sprinkle-order-014.jsonc')" title="sprinkle-order-014.jsonc">014</a>,
+					<a onclick="downloadFile('sprinkle-order-template.jsonc')" title="sprinkle-order-template.jsonc">template</a>
+				</h3>
+			</div>
 
 			<div id="audctrls"></div>
-            <audio id="music"></audio>
+			<audio id="music"></audio>
+		</main>
 
-			<footer id="footerContent" class="flex bottomLinks"></footer>
-		</center>
-	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script type="text/javascript" src="../scripts/download.js"></script>
-	<script type="module" src="../scripts/modules/background.mjs"></script>
-    <script type="module" src="../scripts/modules/music.mjs"></script>
-	<script type="text/javascript" src="../scripts/footer.js"></script>
-	<script>
-        if ('serviceWorker' in navigator) {
-			// Register a service worker after the load event
-			addEventListener('load', () => {
-				navigator.serviceWorker.register('../sw.js').then(console.log('Service worker successfully installed.'));
+		<footer id="footerContent" class="flex bottomLinks"></footer>
+	</center>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="../scripts/back.js"></script>
+<script type="text/javascript" src="../scripts/download.js"></script>
+<script type="module" src="../scripts/modules/background.mjs"></script>
+<script type="module" src="../scripts/modules/music.mjs"></script>
+<script type="text/javascript" src="../scripts/audio-controls.js"></script>
+<script type="text/javascript" src="../scripts/footer.js"></script>
+<script>
+	if ('serviceWorker' in navigator) {
+		// Register a service worker after the load event
+		addEventListener('load', () => {
+			navigator.serviceWorker.register('../sw.js').then(console.log('Service worker successfully installed.'));
 
-				if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
-					console.log('Executing app install reminder.'),
+			if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
+				console.log('Executing app install reminder.'),
 					// reminds the user they can install the app
 					alert('Install the app!\nDesktop Browser - click install button in top-right of address bar\nMobile Browser - click Add To Homescreen after clicking share button');
-				};
-			});
-		};
+			};
+		});
+	};
 
-		onappinstalled = event => {
-			console.log('Thank you for installing the app!');
-		};
-    </script>
+	onappinstalled = event => {
+		console.log('Thank you for installing the app!');
+	};
+</script>
+
 </html>

@@ -94,6 +94,17 @@ a:focus-visible .nookPhone_app {
     animation: bounceButton 0.25s ease-in-out forwards;
 }
 
+.lightblueBox {
+    position: flex;
+    top: 5vmin;
+    text-align: center;
+    background-color: lightskyblue;
+    border-radius: 1vmin;
+    color: white;
+    font-size: 3.5vmin;
+    width: 70vmin;
+}
+
 .bottomLinks {
     bottom: 2vmin;
     text-align: center;

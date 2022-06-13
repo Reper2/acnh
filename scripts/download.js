@@ -1,6 +1,6 @@
 function downloadFile(filename) {
-    var r = confirm(`Are you sure you want to download:\n${filename}`);
-    if (r) {
+    var t = confirm(`Are you sure you want to download:\n${filename}`);
+    if (t) {
         fetch(`./${filename}`)
             .then(resp => resp.blob())
             .then(blob => {

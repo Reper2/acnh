@@ -39,6 +39,16 @@ a {
     text-decoration: none;
 }
 
+#back {
+    top: 0;
+	position: absolute;
+	font-size: 8vmin;
+}
+
+#back img {
+    width: 10%;
+}
+
 .nookPhone {
     position: flex;
     text-align: center;

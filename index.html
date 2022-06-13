@@ -1,85 +1,116 @@
 <html lang="en">
-    <head>
-        <title>Home - Reper2's ACNH Website</title>
-        <meta charset="UTF-8" /> 
-        <link href="assets/main.css" rel="stylesheet" type="text/css" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL97YTBZQV"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
 
-            gtag('config', 'G-FL97YTBZQV');
-        </script>
-        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
-        <link rel="manifest" href="site.webmanifest" />
-        <meta id="meta-title" property="og:title" content="Reper2's ACNH Website" />
-		<meta id="meta-desc" property="og:description" content="Reper2's ACNH Website is a NookPhone which includes Album, DodoCodes.com profile link, Sprinkle order files, Nookazon profile link, Custom Designs, Island Preview, Happy Home Network gallery, ACNH Apps. The same hourly and evently music from ACNH plays here too! Read github.com/Reper2/acnh#readme for more information about features." />
-		<meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/meta.png" />
-		<meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io" />
-		<meta name="theme-color" content="#14d8ee" />
-		<meta property="twitter:card" content="summary_large_image" />
-    </head>
-
-    <body id="bg">
-        <center>
-            <main id="mainContent" class="flex">
-                <br>
-                <div class="nookPhone">
-                    <p>
-                        <br><br><br><br>
-                        <a onclick="downloadAlbum()" title="Album"><img src="assets/nookPhone-app_native/camera.png" class="nookPhone_app" /></a>
-                        <a target="_blank" href="https://dodocodes.com/user/Reper2_acnh" title="DodoCodes.com Profile"><img src="assets/nookPhone-app_other/dodocodes.png" class="nookPhone_app nookPhone_app_other" /></a>
-                        <a href="sprinkle/" title="Sprinkle Order Files"><img src="assets/nookPhone-app_other/sprinkle.png" class="nookPhone_app nookPhone_app_other" /></a>
-                        <br>
-                        <a target="_blank" href="/acnh-apps/" title="ACNH Apps"><img src="assets/nookPhone-app_other/acnh-apps.png" class="nookPhone_app nookPhone_app_other" /></a>
-                        <a target="_blank" href="https://nookazon.com/profile/2566680955" title="Nookazon Profile"><img src="assets/nookPhone-app_other/nookazon.png" class="nookPhone_app nookPhone_app_other" /></a>
-                        <a target="_blank" href="https://github.com/Reper2/acnh" title="GitHub Repository"><img src="assets/nookPhone-app_native/isdesigner.png" class="nookPhone_app" /></a>
-                        <br>
-                        <a href="designs/" title="Custom Designs, Design Sets"><img src="assets/nookPhone-app_native/designs.png" class="nookPhone_app" /></a>
-                        <a href="island/" title="Island Preview"><img src="assets/nookPhone-app_native/map.png" class="nookPhone_app" /></a>
-                        <a href="hhn/" title="Happy Home Network Gallery"><img src="assets/nookPhone-app_native/hhn.png" class="nookPhone_app" /></a>
-                    </p>
-                </div>
-
-                <br>
-
-                <div id="acnhmsgbox"></div>
-                <div id="audctrls"></div>
-                <audio id="music"></audio>
-            </main>
-
-            <footer id="footerContent" class="flex bottomLinks"></footer>
-        </center>
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/submodules/acnhMsgBox/acnhMessageBox.js"></script>
-    <script type="text/javascript" src="scripts/acnhmsgbox_home.js"></script>
-    <script type="text/javascript" src="scripts/audio-controls.js"></script>
-    <script type="text/javascript" src="scripts/footer.js"></script>
-    <script type="module" src="scripts/modules/background.mjs"></script>
-    <script type="module" src="scripts/modules/music.mjs"></script>
-    <script type="module" src="scripts/modules/clock.mjs"></script>
-    <script type="text/javascript" src="scripts/album.js"></script>
+<head>
+    <title>Home - Reper2's ACNH Website</title>
+    <meta charset="UTF-8" />
+    <link href="assets/main.css" rel="stylesheet" type="text/css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL97YTBZQV"></script>
     <script>
-        if ('serviceWorker' in navigator) {
-            // Register a service worker after the load event
-            addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js').then(console.log('Service worker successfully installed.'));
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-                if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
-                    console.log('Executing app install reminder.'),
+        gtag('config', 'G-FL97YTBZQV');
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta id="meta-title" property="og:title" content="Reper2's ACNH Website" />
+    <meta id="meta-desc" property="og:description" content="Reper2's Animal Crossing: New Horizons website. Includes: complete album of Reper2's acnh photos & videos, hhn showroom, all of Reper2's custom designs (as well as design sets), preview of Reper2's island, Sprinkle order files, and other links to profiles & etc. For more info on features, visit https://github.com/Reper2/acnh#features" />
+    <meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/meta.png" />
+    <meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io" />
+    <meta name="theme-color" content="#14d8ee" />
+    <meta property="twitter:card" content="summary_large_image" />
+</head>
+
+<body id="bg">
+    <center>
+        <main id="mainContent" class="flex">
+            <br>
+            <div class="nookPhone">
+                <p>Reper2's ACNH Website</p>
+                <span id="clock"></span>
+                <br><br><br>
+
+                <a onclick="downloadAlbum()" title="Album">
+                    <img src="assets/nookPhone-app_native/camera.png" class="nookPhone_app">
+                </a>
+
+                <a target="_blank" href="https://dodocodes.com/user/Reper2_acnh" title="DodoCodes Profile">
+                    <img src="assets/nookPhone-app_other/dodocodes.png" class="nookPhone_app nookPhone_app_other">
+                </a>
+
+                <a href="sprinkle/" title="Sprinkle Order Files">
+                    <img src="assets/nookPhone-app_other/sprinkle.png" class="nookPhone_app nookPhone_app_other">
+                </a>
+
+                <br>
+
+                <a target="_blank" href="/acnh-apps/" title="ACNH Apps">
+                    <img src="assets/nookPhone-app_other/acnh-apps.png" class="nookPhone_app nookPhone_app_other">
+                </a>
+
+                <a target="_blank" href="https://nookazon.com/profile/2566680955" title="Nookazon Profile">
+                    <img src="assets/nookPhone-app_other/nookazon.png" class="nookPhone_app nookPhone_app_other">
+                </a>
+
+                <a target="_blank" href="https://github.com/Reper2/acnh" title="GitHub Repository">
+                    <img src="assets/nookPhone-app_native/isdesigner.png" class="nookPhone_app">
+                </a>
+
+                <br>
+
+                <a href="designs/" title="Custom Designs, Design Sets">
+                    <img src="assets/nookPhone-app_native/designs.png" class="nookPhone_app">
+                </a>
+
+                <a href="island/" title="Island Preview">
+                    <img src="assets/nookPhone-app_native/map.png" class="nookPhone_app">
+                </a>
+
+                <a href="hhn/" title="Happy Home Network Gallery">
+                    <img src="assets/nookPhone-app_native/hhn.png" class="nookPhone_app">
+                </a>
+            </div>
+
+            <br>
+
+            <div id="acnhmsgbox"></div>
+            <div id="audctrls"></div>
+            <audio id="music"></audio>
+        </main>
+
+        <footer id="footerContent" class="flex bottomLinks"></footer>
+    </center>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/clock.js"></script>
+<script type="text/javascript" src="scripts/album.js"></script>
+<script type="text/javascript" src="scripts/submodules/acnhMsgBox/acnhMessageBox.js"></script>
+<script type="text/javascript" src="scripts/acnhmsgbox_home.js"></script>
+<script type="text/javascript" src="scripts/audio-controls.js"></script>
+<script type="text/javascript" src="scripts/footer.js"></script>
+<script type="module" src="scripts/modules/background.mjs"></script>
+<script type="module" src="scripts/modules/music.mjs"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+        // Register a service worker after the load event
+        addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js').then(console.log('Service worker successfully installed.'));
+
+            if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
+                console.log('Executing app install reminder.'),
                     // reminds the user they can install the app
                     alert('Install the app!\nDesktop Browser - click install button in top-right of address bar\nMobile Browser - click Add To Homescreen after clicking share button');
-                };
-            });
-        };
+            };
+        });
+    };
 
-        onappinstalled = event => {
-            console.log('Thank you for installing the app!');
-        };
-    </script>
+    onappinstalled = event => {
+        console.log('Thank you for installing the app!');
+    };
+</script>
+
 </html>

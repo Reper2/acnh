@@ -1,6 +1,6 @@
 # Reper2's ACNH Website
 > ![favicon](./favicon.ico)  
-> Reper2's ACNH Website is a NookPhone which includes a download link to Reper2's acnh album, DodoCodes.com profile link, Sprinkle order files, Nookazon profile link, Custom Designs, Island Preview, Happy Home Network gallery, ACNH Apps. The same hourly and evently music from ACNH plays here too!
+> Reper2's Animal Crossing: New Horizons website. Includes: complete album of Reper2's acnh photos & videos, hhn showroom, all of Reper2's custom designs (as well as design sets), preview of Reper2's island, Sprinkle order files, and other links to profiles & etc.
 > ![large_image](./meta.png)
 
 # Features:
@@ -40,9 +40,8 @@ These are the npm libraries and github repositories that make up part of the web
 # Modules
 | Module | Description | Imported Modules | Exported Variables, Constants, Functions, etc. | Used By
 | :---: | :---: | :---: | :---: | :---:
-| [music.mjs][mus] | Hourly and evently music just like in acnh. | [`time`][time], [`con`][con], [`events`][events], [`hours`][hours] | | [index.html (root)][root], [index.html (sprinkle)][sprinkle], [index.html (designs)][designs], [index.html (designs/sets)][sets], [index.html (island)][island], [index.html (hhn)][hhn]
-| [background.mjs][bg] | Randomised backgrounds including evently backgrounds for some acnh events. | [`time`][time], [`con`][con], [`events`][events] [`hours`][hours], [`excluded`][excluded] | | [index.html (root)][root], [index.html (sprinkle)][sprinkle], [index.html (designs)][designs], [index.html (designs/sets)][sets], [index.html (island)][island], [index.html (hhn)][hhn]
-| [clock.mjs][clock] | Sends the current time to console in the format, "It is currently `time.Y_M_d_t_s_ms__t`" | [`time`][time], [`con`][con] | | [index.html (root)][root], [index.html (sprinkle)][sprinkle], [index.html (designs)][designs], [index.html (designs/sets)][sets], [index.html (island)][island], [index.html (hhn)][hhn]
+| [music.mjs][mus] | Hourly and evently music just like in acnh. | [`time`][time], [`con`][con], [`events`][events], [`hours`][hours] | | [home][root], [sprinkle][sprinkle], [designs][designs], [sets][sets], [island][island], [hhn][hhn]
+| [background.mjs][bg] | Randomised backgrounds including evently backgrounds for some acnh events. | [`time`][time], [`con`][con], [`events`][events] [`hours`][hours], [`excluded`][excluded] | | [home][root], [sprinkle][sprinkle], [designs][designs], [sets][sets], [island][island]
 | [`time`][time] | Common time variables. | | { `tdy`, `Y`, `M`, `d`, `D`, `h`, `m`, `s`, `ms`, `t`, `Y_M_d_t_s_ms__t`, `D_h`, `D_t` } | [music.mjs][mus], [background.mjs][bg], [clock.mjs][clock], [`events`][events], [`hours`][hours], [`excluded`][excluded]
 | [`con`][con] | Common console messages. | | { `cur`, `tdy`, `bg` } | [music.mjs][mus], [background.mjs][bg], [clock.mjs][clock]
 | [`events`][events] | ACNH event dates. | [`time`][time] | { `intlmusday`, `maydaytour`, `wedseas`, `bday`, `h`, `toy`, `nye`, `nye_1h`, `nye_30m`, `nye_10m`, `nye_5m`, `nye_hny`, `nye_midn` } | [music.mjs][mus], [background.mjs][bg]
@@ -55,11 +54,9 @@ graph TD;
     time-->hours;
     time-->music.mjs;
     time-->background.mjs;
-    time-->clock.mjs;
 
-    con-->music;
+    con-->music.mjs;
     con-->background.mjs;
-    con-->clock.mjs;
 
     events-->music.mjs;
     events-->background.mjs;
@@ -67,20 +64,61 @@ graph TD;
 
     excluded-->background.mjs;
 
-    music.mjs-->website
-    background.mjs-->website
-    clock.mjs-->website
+    music.mjs-->home
+    music.mjs-->sprinkle
+    music.mjs-->designs
+    music.mjs-->sets
+    music.mjs-->island
+    music.mjs-->hhn
+
+    background.mjs-->home
+    background.mjs-->sprinkle
+    background.mjs-->designs
+    background.mjs-->sets
+    background.mjs-->island
 ```
 
 # Normal Scripts
 These are the regular scripts that make up the website without the imports or exports of modules.
 | Script | Description | Used By |
 | :---: | :---: | :---: |
-| [acnhmsgbox_home.js][msgbox_home] | Creates the message box like in acnh on the home page using [acnhmsgbox][acnhmsgbox]. | [index.html (root)][root]
+| [clock.js][clock] | Displays the current time on the NookPhone. | [home][root]
+| [album.js][album] | Download confirmation for downloading my complete album of acnh screenshots and videos. | [home][root]
+| [download.js][download] | Download confirmation for whatever file is in the context. | [sprinkle][sprinkle], [designs][designs], [sets][sets]
+| [showroom.js][showroom] | Lightbox script for the [Showroom][hhn]. | [hhn][hhn]
+| [acnhmsgbox_home.js][msgbox_home] | Creates the message box like in acnh on the home page using [acnhmsgbox][acnhmsgbox]. | [home][root]
 | [acnhmsgbox_comingsoon.js][msgbox_comingsoon] | Creates a message box like in acnh on the Coming Soon page using [acnhmsgbox][acnhmsgbox]. | [comingsoon.html][comingsoon]
-| [album.js][album] | The `downloadAlbum()` function. When triggered, asks you to confirm you want to download the ginormous zip file that has my entire album of acnh screenshots and videos. | [index.html (root)][root]
-| [download.js][download] | The `downloadFile(filename)` function. When triggered, asks you to confirm you want to download the file in context. | [index.html (sprinkle)][sprinkle], [index.html (designs)][designs], [index.html (designs/sets)][sets], [index.html (hhn)][hhn]
-| [footer.js][footer] | Appends the footer to the page. | [index.html (root)][root], [index.html (sprinkle)][sprinkle], [index.html (designs)][designs], [index.html (designs/sets)][sets], [index.html (island)][island], [index.html (hhn)][hhn]
+| [audio-controls.js][audctrls] | Creates shows/hide button that allows you to show or hide audio controls for accessability when autoplay doesn't work. | [home][root], [sprinkle][sprinkle], [designs][designs], [sets][sets], [island][island], [hhn][hhn]
+| [footer.js][footer] | Adds the footer to the page. | [home][root], [sprinkle][sprinkle], [designs][designs], [sets][sets], [island][island], [hhn][hhn]
+
+```mermaid
+graph LR;
+    clock.js-->home
+
+    album.js-->home
+
+    download.js-->sprinkle
+    download.js-->designs
+    download.js-->sets
+
+    showroom.js-->hhn
+
+    acnhmsgbox_home.js-->home
+
+    acnhmsgbox_comingsoon.js-->comingsoon.html
+
+    audio-controls.js-->home
+    audio-controls.js-->sprinkle
+    audio-controls.js-->designs
+    audio-controls.js-->sets
+    audio-controls.js-->hhn
+
+    footer.js-->home
+    footer.js-->sprinkle
+    footer.js-->designs
+    footer.js-->sets
+    footer.js-->hhn
+```
 
 [root]: [./index.html]
 [designs]: [./designs/index.html]
@@ -96,14 +134,16 @@ These are the regular scripts that make up the website without the imports or ex
 [hours]: [./scripts/modules/hours.mjs]
 [con]: [./scripts/modules/console.mjs]
 [time]: [./scripts/modules/time.mjs]
-[clock]: [./scripts/modules/clock.mjs]
 [excluded]: [./scripts/modules/excluded.mjs]
 
-[download]: [./scripts/download.js]
-[footer]: [./scripts/footer.js]
+[clock]: [./scripts/clock.js]
 [album]: [./scripts/album.js]
+[download]: [./scripts/download.js]
 [msgbox_home]: [./scripts/acnhmsgbox_home.js]
 [msgbox_comingsoon]: [./scripts/acnhmsgbox_comingsoon.js]
+[showroom]: [./scripts/showroom.js]
+[audctrls]: [./scripts/audio-controls.js]
+[footer]: [./scripts/footer.js]
 
 [acnhmsgbox]: [https://npmjs.com/package/acnhmsgbox]
 [http-server]: [https://npmjs.com/package/http-server]

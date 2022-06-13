@@ -1,61 +1,216 @@
 <html lang="en">
-    <head>
-        <title>HHN Showroom - Reper2's ACNH Website</title>
-        <meta charset="UTF-8" />
-        <link href="../assets/main.css" rel="stylesheet" type="text/css" />
-        <meta http-equiv="Refresh" content="3; url='../comingsoon.html'" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL97YTBZQV"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
 
-            gtag('config', 'G-FL97YTBZQV');
-        </script>
-        <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
-        <link rel="manifest" href="../site.webmanifest"/>
-        <meta id="meta-title" property="og:title" content="HHN Showroom - Reper2's ACNH Website" />
-		<meta id="meta-desc" property="og:description" content="In this section of Reper2's ACNH Website, you can browse Reper2's Happy Home Network showroom." />
-		<meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/assets/nookPhone-app_native/hhn.png" />
-		<meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io" />
-		<meta name="theme-color" content="#14d8ee" />
-		<meta property="twitter:card" content="summary" />
-    </head>
-
-    <body>
-        <center>
-            <main id="mainContent" class="flex">
-                <h1>Reper2's Showroom</h1>
-            </main>
-
-            <footer id="footerContent" class="flex bottomLinks"></footer>
-        <center>
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script type="module" src="../scripts/modules/background.mjs"></script>
-    <script type="module" src="../scripts/modules/music.mjs"></script>
-	<script type="module" src="../scripts/modules/clock.mjs"></script>
-	<script type="text/javascript" src="../scripts/footer.js"></script>
-    <script type="text/javascript" src="../scripts/download.js"></script>
+<head>
+    <title>HHN Showroom - Reper2's ACNH Website</title>
+    <meta charset="UTF-8" />
+    <link href="../assets/main.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/showroom.css" rel="stylesheet" type="text/css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL97YTBZQV"></script>
     <script>
-        if ('serviceWorker' in navigator) {
-            // Register a service worker after the load event
-            addEventListener('load', () => {
-                navigator.serviceWorker.register('../sw.js').then(console.log('Service worker successfully installed.'));
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-                if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
-                    console.log('Executing app install reminder.'),
+        gtag('config', 'G-FL97YTBZQV');
+    </script>
+    <link rel="apple-touch-icon" sizes="190x190" href="../icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <meta id="meta-title" property="og:title" content="HHN Showroom - Reper2's ACNH Website" />
+    <meta id="meta-desc" property="og:description" content="In this section of Reper2's ACNH Website, you can browse Reper2's Happy Home Network showroom." />
+    <meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/assets/nookPhone-app_native/hhn.png" />
+    <meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io" />
+    <meta name="theme-color" content="#14d8ee" />
+    <meta property="twitter:card" content="summary" />
+</head>
+
+<body>
+    <center>
+        <main id="mainContent" class="flex">
+            <h1>Reper2's Showroom</h1>
+
+            <!-- https://www.w3schools.com/howto/howto_js_lightbox.asp -->
+            <!-- Images used to open the lightbox -->
+            <div class="row">
+                <div class="column">
+                    <img src="Hero Secret Base.jpg" onclick="openModal(); currentSlide(1)" class="hover-shadow" width="100%">
+                </div>
+
+                <div class="column">
+                    <img src="Ruby's Starry Retreat.jpg" onclick="openModal(); currentSlide(2)" class="hover-shadow" width="100%">
+                </div>
+
+                <div class="column">
+                    <img src="Flower-Art Atelier.jpg" onclick="openModal(); currentSlide(3)" class="hover-shadow" width="100%">
+                </div>
+
+                <div class="column">
+                    <img src="Garden of Regeneration.jpg" onclick="openModal(); currentSlide(4)" class="hover-shadow" width="100%">
+                </div>
+
+                <div class="column">
+                    <img src="Paradise Cafe.jpg" onclick="openModal(); currentSlide(5)" class="hover-shadow" width="100%">
+                </div>
+
+                <div class="column">
+                    <img src="Phyllis's Mail Office.jpg" onclick="openModal(); currentSlide(6)" class="hover-shadow" width="100%">
+                </div>
+
+                <div class="column">
+                    <img src="Paradise Resturant.jpg" onclick="openModal(); currentSlide(7)" class="hover-shadow" width="100%">
+                </div>
+
+                <div class="column">
+                    <img src="Soothing Spa Vacation.jpg" onclick="openModal(); currentSlide(8)" class="hover-shadow" width="100%">
+                </div>
+
+                <div class="column">
+                    <img src="Paradise Hospital.jpg" onclick="openModal(); currentSlide(9)" class="hover-shadow" width="100%">
+                </div>
+
+                <div class="column">
+                    <img src="Paradise School.jpg" onclick="openModal(); currentSlide(10)" class="hover-shadow" width="100%">
+                </div>
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 10</div>
+                        <img src="Hero Secret Base.jpg" style="width: 100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 10</div>
+                        <img src="Ruby's Starry Retreat.jpg" style="width: 100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 10</div>
+                        <img src="Flower-Art Atelier.jpg" style="width: 100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 10</div>
+                        <img src="Garden of Regeneration.jpg" style="width: 100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 10</div>
+                        <img src="Paradise Cafe.jpg" style="width: 100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 10</div>
+                        <img src="Phyllis's Mail Office.jpg" style="width: 100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 10</div>
+                        <img src="Paradise Resturant.jpg" style="width: 100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 10</div>
+                        <img src="Soothing Spa Vacation.jpg" style="width: 100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">9 / 10</div>
+                        <img src="Paradise Hospital.jpg" style="width: 100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">10 / 10</div>
+                        <img src="Paradise School.jpg" style="width: 100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <h2 id="caption"></h2>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="Hero Secret Base.jpg" onclick="currentSlide(1)" alt="Hero Secret Base - RA-7852-3149-7307" width="50%">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="Ruby's Starry Retreat.jpg" onclick="currentSlide(2)" alt="Ruby's Starry Retreat - RA-7852-3149-7307" width="50%">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="Flower-Art Atelier.jpg" onclick="currentSlide(3)" alt="Flower-Art Atelier - RA-7852-3149-7307" width="50%">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="Garden of Regeneration.jpg" onclick="currentSlide(4)" alt="Garden of Regeneration - RA-7852-3149-7307" width="50%">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="Paradise Cafe.jpg" onclick="currentSlide(5)" alt="Paradise Cafe - RA-7852-3149-7307" width="50%">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="Phyllis's Mail Office.jpg" onclick="currentSlide(6)" alt="Phyllis's Mail Office - RA-7852-3149-7307" width="50%">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="Paradise Resturant.jpg" onclick="currentSlide(7)" alt="Paradise Resturant - RA-7852-3149-7307" width="50%">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="Soothing Spa Vacation.jpg" onclick="currentSlide(8)" alt="Soothing Spa Vacation - RA-7852-3149-7307" width="50%">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="Paradise Hospital.jpg" onclick="currentSlide(9)" alt="Paradise Hospital - RA-7852-3149-7307" width="50%">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="Paradise School.jpg" onclick="currentSlide(10)" alt="Paradise School - RA-7852-3149-7307" width="50%">
+                    </div>
+                </div>
+            </div>
+
+            <div id="audctrls"></div>
+            <audio id="music"></audio>
+        </main>
+
+        <footer id="footerContent" class="flex bottomLinks"></footer>
+        <center>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="module" src="../scripts/modules/music.mjs"></script>
+<script type="text/javascript" src="../scripts/showroom.js"></script>
+<script type="text/javascript" src="../scripts/audio-controls.js"></script>
+<script type="text/javascript" src="../scripts/footer.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+        // Register a service worker after the load event
+        addEventListener('load', () => {
+            navigator.serviceWorker.register('../sw.js').then(console.log('Service worker successfully installed.'));
+
+            if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
+                console.log('Executing app install reminder.'),
                     // reminds the user they can install the app
                     alert('Consider installing the app!\nDesktop Browser - click install button in top-right of address bar\nMobile Browser - click Add To Homescreen after clicking share button');
-                };
-            });
-        };
+            };
+        });
+    };
 
-        onappinstalled = event => {
-            console.log('Thank you for installing the app!');
-        };
-    </script>
+    onappinstalled = event => {
+        console.log('Thank you for installing the app!');
+    };
+</script>
+
 </html>

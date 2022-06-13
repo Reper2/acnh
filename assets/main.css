@@ -22,11 +22,12 @@ h5,
 h6,
 p,
 a,
+span,
 summary,
 details {
     font-family: 'FOT-RodinBokutoh Pro B', sans-serif;
     color: white;
-    -webkit-text-stroke-width: 0.25vmin;
+    -webkit-text-stroke-width: 0.2vmin;
     -webkit-text-stroke-color: black;
 }
 
@@ -67,6 +68,14 @@ a {
 
 .nookPhone_app_other {
     border-radius: 35%;
+}
+
+img.nookPhone_app, img.nookPhone_app_other {
+    transition: 0.3s;
+}
+
+.nookPhone_app:hover, .nookPhone_app_other:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .nookPhone_app:active,

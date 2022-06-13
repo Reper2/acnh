@@ -8,8 +8,8 @@ const
 	musicSrc = document.createElement('source'),
 
 	// dev
-	//path = '/assets/music/',
-	path = '/acnh/assets/music/',
+	path = '/assets/music/',
+	//path = '/acnh/assets/music/',
 	eventsPath = `${path}event/`,
 	nyePath = `${eventsPath}new-years-event/`,
 	hoursPath = `${path}hour/`
@@ -312,7 +312,7 @@ future.setSeconds(0);
 var timeout = (future.getTime() - current.getTime());
 setTimeout(
 	function () {
-		window.location.reload(true);
+		setInterval(myTimer, 0);
 		console.log("Page has been refreshed as it's a new hour! Changing music to the current hour's music.");
 	},
 	timeout

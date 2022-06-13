@@ -33,13 +33,16 @@
                 <h2>preview is not ready at this time</h2>
             </main>
 
+            <div id="audctrls"></div>
+            <audio id="music"></audio>
+
             <footer id="footerContent" class="flex bottomLinks"></footer>
         </center>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="module" src="../scripts/modules/background.mjs"></script>
     <script type="module" src="../scripts/modules/music.mjs"></script>
-	<script type="module" src="../scripts/modules/clock.mjs"></script>
+    <script type="text/javascript" src="../scripts/audio-controls.js"></script>
 	<script type="text/javascript" src="../scripts/footer.js"></script>
     <script>
         if ('serviceWorker' in navigator) {

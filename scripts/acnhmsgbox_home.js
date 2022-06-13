@@ -3,7 +3,7 @@ var msgBox = new ACMsgBox({
 	idDiv: "acnhmsgbox",
 	textWriteInProcess: true,
 	lines: {
-		1: ["Welcome to my ACNH website!"],
+		1: ["Welcome to my acnh website!"],
 		2: ["Above are some apps for you to use."],
 		3: ["Enjoy :)"]
 	}

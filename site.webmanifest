@@ -1,6 +1,6 @@
 {
-    "name": "Reper2's ACNH Website",
-    "short_name": "Reper2's ACNH Site",
+    "name": "Reper2's ACNH WebApp",
+    "short_name": "Reper2 ACNH App",
     "icons": [
         {
             "src": "./icons/android-chrome-192x192.png",

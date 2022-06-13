@@ -8,8 +8,8 @@ const
 	musicSrc = document.createElement('source'),
 
 	// dev
-	path = '/assets/music/',
-	//path = '/acnh/assets/music/',
+	//path = '/assets/music/',
+	path = '/acnh/assets/music/',
 	eventsPath = `${path}event/`,
 	nyePath = `${eventsPath}new-years-event/`,
 	hoursPath = `${path}hour/`

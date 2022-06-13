@@ -7,8 +7,8 @@ const
     body = document.getElementById('bg'),
 
     // dev
-    path = '/assets/backgrounds/',
-    //path = '/acnh/assets/backgrounds/',
+    //path = '/assets/backgrounds/',
+    path = '/acnh/assets/backgrounds/',
     nyePath = `${path}new-years-event/`
 ;
 

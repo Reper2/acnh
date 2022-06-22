@@ -30,106 +30,126 @@
     <div id="back"></div>
 
     <center>
-        <main id="mainContent" class="flex">
+        <main id="main" class="flex">
             <h1>Reper2's Showroom</h1>
 
             <!-- https://www.w3schools.com/howto/howto_js_lightbox.asp -->
             <!-- Images used to open the lightbox -->
             <div class="row">
                 <div class="column">
-                    <img src="Hero Secret Base.jpg" onclick="openModal(); currentSlide(1)" class="hover-shadow" width="100%">
+                    <a href="#hero-secret-base"><img src="Hero Secret Base.jpg" onclick="openModal(); currentSlide(1)" class="hover-shadow" width="100%"></a>
                 </div>
 
                 <div class="column">
-                    <img src="Ruby's Starry Retreat.jpg" onclick="openModal(); currentSlide(2)" class="hover-shadow" width="100%">
+                    <a href="#rubys-starry-retreat"><img src="Ruby's Starry Retreat.jpg" onclick="openModal(); currentSlide(2)" class="hover-shadow" width="100%"></a>
                 </div>
 
                 <div class="column">
-                    <img src="Flower-Art Atelier.jpg" onclick="openModal(); currentSlide(3)" class="hover-shadow" width="100%">
+                    <a href="#flower-art-atelier"><img src="Flower-Art Atelier.jpg" onclick="openModal(); currentSlide(3)" class="hover-shadow" width="100%"></a>
                 </div>
 
                 <div class="column">
-                    <img src="Garden of Regeneration.jpg" onclick="openModal(); currentSlide(4)" class="hover-shadow" width="100%">
+                    <a href="#garden-of-regeneration"><img src="Garden of Regeneration.jpg" onclick="openModal(); currentSlide(4)" class="hover-shadow" width="100%"></a>
                 </div>
 
                 <div class="column">
-                    <img src="Paradise Cafe.jpg" onclick="openModal(); currentSlide(5)" class="hover-shadow" width="100%">
+                    <a href="#paradise-cafe"><img src="Paradise Cafe.jpg" onclick="openModal(); currentSlide(5)" class="hover-shadow" width="100%"></a>
                 </div>
 
                 <div class="column">
-                    <img src="Phyllis's Mail Office.jpg" onclick="openModal(); currentSlide(6)" class="hover-shadow" width="100%">
+                    <a href="#phylliss-mail-office"><img src="Phyllis's Mail Office.jpg" onclick="openModal(); currentSlide(6)" class="hover-shadow" width="100%"></a>
                 </div>
 
                 <div class="column">
-                    <img src="Paradise Resturant.jpg" onclick="openModal(); currentSlide(7)" class="hover-shadow" width="100%">
+                    <a href="#paradise-resturant"><img src="Paradise Resturant.jpg" onclick="openModal(); currentSlide(7)" class="hover-shadow" width="100%"></a>
                 </div>
 
                 <div class="column">
-                    <img src="Soothing Spa Vacation.jpg" onclick="openModal(); currentSlide(8)" class="hover-shadow" width="100%">
+                    <a href="#soothing-spa-vacation"><img src="Soothing Spa Vacation.jpg" onclick="openModal(); currentSlide(8)" class="hover-shadow" width="100%"></a>
                 </div>
 
                 <div class="column">
-                    <img src="Paradise Hospital.jpg" onclick="openModal(); currentSlide(9)" class="hover-shadow" width="100%">
+                    <a href="#paradise-hospital"><img src="Paradise Hospital.jpg" onclick="openModal(); currentSlide(9)" class="hover-shadow" width="100%"></a>
                 </div>
 
                 <div class="column">
-                    <img src="Paradise School.jpg" onclick="openModal(); currentSlide(10)" class="hover-shadow" width="100%">
+                    <a href="#paradise-school"><img src="Paradise School.jpg" onclick="openModal(); currentSlide(10)" class="hover-shadow" width="100%"></a>
                 </div>
             </div>
 
             <!-- The Modal/Lightbox -->
             <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <a href="#"><span class="close cursor" onclick="closeModal()">&times;</span></a>
 
                 <div class="modal-content">
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 10</div>
-                        <img src="Hero Secret Base.jpg" style="width: 100%">
+                    <div id="hero-secret-base" class="mySlides">
+                        <a href="#hero-secret-base">
+                            <div class="numbertext">1 / 10</div>
+                            <img src="Hero Secret Base.jpg" style="width: 100%">
+                        </a>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 10</div>
-                        <img src="Ruby's Starry Retreat.jpg" style="width: 100%">
+                    <div id="rubys-starry-retreat" class="mySlides">
+                        <a href="#rubys-starry-retreat">
+                            <div class="numbertext">2 / 10</div>
+                            <img src="Ruby's Starry Retreat.jpg" style="width: 100%">
+                        </a>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 10</div>
-                        <img src="Flower-Art Atelier.jpg" style="width: 100%">
+                    <div id="flower-art-atelier" class="mySlides">
+                        <a href="#flower-art-atelier">
+                            <div class="numbertext">3 / 10</div>
+                            <img src="Flower-Art Atelier.jpg" style="width: 100%">
+                        </a>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 10</div>
-                        <img src="Garden of Regeneration.jpg" style="width: 100%">
+                    <div id="garden-of-generation" class="mySlides">
+                        <a href="#garden-of-generation">
+                            <div class="numbertext">4 / 10</div>
+                            <img src="Garden of Regeneration.jpg" style="width: 100%">
+                        </a>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext">5 / 10</div>
-                        <img src="Paradise Cafe.jpg" style="width: 100%">
+                    <div id="paradise-cafe" class="mySlides">
+                        <a href="#paradise-cafe">
+                            <div class="numbertext">5 / 10</div>
+                            <img src="Paradise Cafe.jpg" style="width: 100%">
+                        </a>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext">6 / 10</div>
-                        <img src="Phyllis's Mail Office.jpg" style="width: 100%">
+                    <div id="phylliss-mail-office" class="mySlides">
+                        <a href="#phylliss-mail-office">
+                            <div class="numbertext">6 / 10</div>
+                            <img src="Phyllis's Mail Office.jpg" style="width: 100%">
+                        </a>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext">7 / 10</div>
-                        <img src="Paradise Resturant.jpg" style="width: 100%">
+                    <div id="paradise-resturant" class="mySlides">
+                        <a href="#paradise-resturant">
+                            <div class="numbertext">7 / 10</div>
+                            <img src="Paradise Resturant.jpg" style="width: 100%">
+                        </a>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext">8 / 10</div>
-                        <img src="Soothing Spa Vacation.jpg" style="width: 100%">
+                    <div id="soothing-spa-vacation" class="mySlides">
+                        <a href="#soothing-spa-vacation">
+                            <div class="numbertext">8 / 10</div>
+                            <img src="Soothing Spa Vacation.jpg" style="width: 100%">
+                        </a>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext">9 / 10</div>
-                        <img src="Paradise Hospital.jpg" style="width: 100%">
+                    <div id="paradise-hospital" class="mySlides">
+                        <a href="#paradise-hospital">
+                            <div class="numbertext">9 / 10</div>
+                            <img src="Paradise Hospital.jpg" style="width: 100%">
+                        </a>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext">10 / 10</div>
-                        <img src="Paradise School.jpg" style="width: 100%">
+                    <div id="paradise-school" class="mySlides">
+                        <a href="#paradise-school">
+                            <div class="numbertext">10 / 10</div>
+                            <img src="Paradise School.jpg" style="width: 100%">
+                        </a>
                     </div>
 
                     <!-- Next/previous controls -->
@@ -143,43 +163,43 @@
 
                     <!-- Thumbnail image controls -->
                     <div class="column">
-                        <img class="demo" src="Hero Secret Base.jpg" onclick="currentSlide(1)" alt="Hero Secret Base - RA-7852-3149-7307" width="50%">
+                        <a href="#hero-secret-base"><img class="demo" src="Hero Secret Base.jpg" onclick="currentSlide(1)" alt="Hero Secret Base - RA-7852-3149-7307" width="50%"></a>
                     </div>
 
                     <div class="column">
-                        <img class="demo" src="Ruby's Starry Retreat.jpg" onclick="currentSlide(2)" alt="Ruby's Starry Retreat - RA-7852-3149-7307" width="50%">
+                        <a href="#rubys-starry-retreat"><img class="demo" src="Ruby's Starry Retreat.jpg" onclick="currentSlide(2)" alt="Ruby's Starry Retreat - RA-7852-3149-7307" width="50%"></a>
                     </div>
 
                     <div class="column">
-                        <img class="demo" src="Flower-Art Atelier.jpg" onclick="currentSlide(3)" alt="Flower-Art Atelier - RA-7852-3149-7307" width="50%">
+                        <a href="#flower-art-atelier"><img class="demo" src="Flower-Art Atelier.jpg" onclick="currentSlide(3)" alt="Flower-Art Atelier - RA-7852-3149-7307" width="50%"></a>
                     </div>
 
                     <div class="column">
-                        <img class="demo" src="Garden of Regeneration.jpg" onclick="currentSlide(4)" alt="Garden of Regeneration - RA-7852-3149-7307" width="50%">
+                        <a href="#garden-of-regeneration"><img class="demo" src="Garden of Regeneration.jpg" onclick="currentSlide(4)" alt="Garden of Regeneration - RA-7852-3149-7307" width="50%"></a>
                     </div>
 
                     <div class="column">
-                        <img class="demo" src="Paradise Cafe.jpg" onclick="currentSlide(5)" alt="Paradise Cafe - RA-7852-3149-7307" width="50%">
+                        <a href="#paradise-cafe"><img class="demo" src="Paradise Cafe.jpg" onclick="currentSlide(5)" alt="Paradise Cafe - RA-7852-3149-7307" width="50%"></a>
                     </div>
 
                     <div class="column">
-                        <img class="demo" src="Phyllis's Mail Office.jpg" onclick="currentSlide(6)" alt="Phyllis's Mail Office - RA-7852-3149-7307" width="50%">
+                        <a href="#phylliss-mail-office"><img class="demo" src="Phyllis's Mail Office.jpg" onclick="currentSlide(6)" alt="Phyllis's Mail Office - RA-7852-3149-7307" width="50%"></a>
                     </div>
 
                     <div class="column">
-                        <img class="demo" src="Paradise Resturant.jpg" onclick="currentSlide(7)" alt="Paradise Resturant - RA-7852-3149-7307" width="50%">
+                        <a href="#paradise-resturant"><img class="demo" src="Paradise Resturant.jpg" onclick="currentSlide(7)" alt="Paradise Resturant - RA-7852-3149-7307" width="50%"></a>
                     </div>
 
                     <div class="column">
-                        <img class="demo" src="Soothing Spa Vacation.jpg" onclick="currentSlide(8)" alt="Soothing Spa Vacation - RA-7852-3149-7307" width="50%">
+                        <a href="#soothing-spa-vacation"><img class="demo" src="Soothing Spa Vacation.jpg" onclick="currentSlide(8)" alt="Soothing Spa Vacation - RA-7852-3149-7307" width="50%"></a>
                     </div>
 
                     <div class="column">
-                        <img class="demo" src="Paradise Hospital.jpg" onclick="currentSlide(9)" alt="Paradise Hospital - RA-7852-3149-7307" width="50%">
+                        <a href="#paradise-hospital"><img class="demo" src="Paradise Hospital.jpg" onclick="currentSlide(9)" alt="Paradise Hospital - RA-7852-3149-7307" width="50%"></a>
                     </div>
 
                     <div class="column">
-                        <img class="demo" src="Paradise School.jpg" onclick="currentSlide(10)" alt="Paradise School - RA-7852-3149-7307" width="50%">
+                        <a href="#paradise-school"><img class="demo" src="Paradise School.jpg" onclick="currentSlide(10)" alt="Paradise School - RA-7852-3149-7307" width="50%"></a>
                     </div>
                 </div>
             </div>
@@ -188,7 +208,7 @@
             <audio id="music"></audio>
         </main>
 
-        <footer id="footerContent" class="flex bottomLinks"></footer>
+        <footer id="footer" class="flex bottomLinks"></footer>
     </center>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

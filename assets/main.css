@@ -22,9 +22,7 @@ h5,
 h6,
 p,
 a,
-span,
-summary,
-details {
+span {
     font-family: 'FOT-RodinBokutoh Pro B', sans-serif;
     color: white;
     -webkit-text-stroke-width: 0.2vmin;

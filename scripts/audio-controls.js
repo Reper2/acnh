@@ -1,8 +1,7 @@
 const
     audctrls = document.getElementById('audctrls'),
     showBtn = document.createElement('button'),
-    hideBtn = document.createElement('button')
-;
+    hideBtn = document.createElement('button');
 
 audctrls.class = 'flex';
 

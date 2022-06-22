@@ -12,8 +12,7 @@ var msgBox = new ACMsgBox({
 const
 	acnhmsgbox = document.getElementById('acnhmsgbox'),
 	a = document.createElement('a'),
-	img = document.createElement('img')
-;
+	img = document.createElement('img');
 
 acnhmsgbox.class = 'flex';
 

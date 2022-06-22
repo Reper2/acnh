@@ -24,9 +24,7 @@ const
     pm_08 = time.h == '20',
     pm_09 = time.h == '21',
     pm_10 = time.h == '22',
-    pm_11 = time.h == '23'
-;
-
+    pm_11 = time.h == '23';
 export {
     am_12, am_01, am_02, am_03, am_04, am_05, am_06, am_07, am_08, am_09, am_10, am_11,
     pm_12, pm_01, pm_02, pm_03, pm_04, pm_05, pm_06, pm_07, pm_08, pm_09, pm_10, pm_11

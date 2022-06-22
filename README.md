@@ -41,11 +41,10 @@ These are the npm libraries and github repositories that make up part of the web
 | Module | Description | Imported Modules | Exported Variables, Constants, Functions, etc. | Used By
 | :---: | :---: | :---: | :---: | :---:
 | [music.mjs][mus] | Hourly and evently music just like in acnh. | [`time`][time], [`con`][con], [`events`][events], [`hours`][hours] | | [home][root], [sprinkle][sprinkle], [designs][designs], [sets][sets], [island][island], [hhn][hhn]
-| [background.mjs][bg] | Randomised backgrounds including evently backgrounds for some acnh events. | [`time`][time], [`con`][con], [`events`][events] [`hours`][hours], [`excluded`][excluded] | | [home][root], [sprinkle][sprinkle], [designs][designs], [sets][sets], [island][island]
-| [`time`][time] | Common time variables. | | { `tdy`, `Y`, `M`, `d`, `D`, `h`, `m`, `s`, `ms`, `t`, `Y_M_d_t_s_ms__t`, `D_h`, `D_t` } | [music.mjs][mus], [background.mjs][bg], [clock.mjs][clock], [`events`][events], [`hours`][hours], [`excluded`][excluded]
-| [`con`][con] | Common console messages. | | { `cur`, `tdy`, `bg` } | [music.mjs][mus], [background.mjs][bg], [clock.mjs][clock]
-| [`events`][events] | ACNH event dates. | [`time`][time] | { `intlmusday`, `maydaytour`, `wedseas`, `bday`, `h`, `toy`, `nye`, `nye_1h`, `nye_30m`, `nye_10m`, `nye_5m`, `nye_hny`, `nye_midn` } | [music.mjs][mus], [background.mjs][bg]
-| [`excluded`][excluded] | Makes sure regular backgrounds don't intervene with event backgrounds. | [`events`][events] | `not` | [background.mjs][bg]
+| [background.mjs][bg] | Randomised backgrounds including evently backgrounds for some acnh events. | [`time`][time], [`con`][con], [`events`][events], [`hours`][hours] | | [home][root], [sprinkle][sprinkle], [designs][designs], [sets][sets], [island][island]
+| [`time`][time] | Common time variables. | | { `tdy`, `Y`, `M`, `d`, `D`, `h`, `m`, `s`, `ms`, `t`, `Y_M_d_t_s_ms__t`, `D_h`, `D_t` } | [music.mjs][mus], [background.mjs][bg], [`events`][events], [`hours`][hours]
+| [`con`][con] | Common console messages. | | { `cur`, `tdy`, `bg` } | [music.mjs][mus], [background.mjs][bg]
+| [`events`][events] | ACNH event dates. | [`time`][time] | { `intlmusday`, `maydaytour`, `wedseas`, `winter`, `bday`, `halloween`, `toyday`, `nye`, `nye_1h`, `nye_30m`, `nye_10m`, `nye_5m`, `nye_hny`, `nye_midn` } | [music.mjs][mus], [background.mjs][bg]
 | [`hours`][hours] | Hours of the day. | [`time`][time] | { `am_12`, `am_01`, `am_02`, `am_03`, `am_04`, `am_05`, `am_06`, `am_07`, `am_08`, `am_09`, `am_10`, `am_11`, `pm_12`, `pm_01`, `pm_02`, `pm_03`, `pm_04`, `pm_05`, `pm_06`, `pm_07`, `pm_08`, `pm_09`, `pm_10`, `pm_11` } | [music.mjs][mus], [background.mjs][bg]
 
 ```mermaid
@@ -60,9 +59,6 @@ graph TD;
 
     events-->music.mjs;
     events-->background.mjs;
-    events-->excluded;
-
-    excluded-->background.mjs;
 
     music.mjs-->home
     music.mjs-->sprinkle
@@ -83,9 +79,8 @@ These are the regular scripts that make up the website without the imports or ex
 | Script | Description | Used By |
 | :---: | :---: | :---: |
 | [clock.js][clock] | Displays the current time on the NookPhone. | [home][root]
-| [album.js][album] | Download confirmation for downloading my complete album of acnh screenshots and videos. | [home][root]
 | [download.js][download] | Download confirmation for whatever file is in the context. | [sprinkle][sprinkle], [designs][designs], [sets][sets]
-| [showroom.js][showroom] | Lightbox script for the [Showroom][hhn]. | [hhn][hhn]
+| [showroom.js][showroom] | All the javascript for the [Showroom][hhn]. | [hhn][hhn]
 | [acnhmsgbox_home.js][msgbox_home] | Creates the message box like in acnh on the home page using [acnhmsgbox][acnhmsgbox]. | [home][root]
 | [acnhmsgbox_comingsoon.js][msgbox_comingsoon] | Creates a message box like in acnh on the Coming Soon page using [acnhmsgbox][acnhmsgbox]. | [comingsoon.html][comingsoon]
 | [audio-controls.js][audctrls] | Creates shows/hide button that allows you to show or hide audio controls for accessability when autoplay doesn't work. | [home][root], [sprinkle][sprinkle], [designs][designs], [sets][sets], [island][island], [hhn][hhn]
@@ -94,8 +89,6 @@ These are the regular scripts that make up the website without the imports or ex
 ```mermaid
 graph LR;
     clock.js-->home
-
-    album.js-->home
 
     download.js-->sprinkle
     download.js-->designs
@@ -134,14 +127,12 @@ graph LR;
 [hours]: [./scripts/modules/hours.mjs]
 [con]: [./scripts/modules/console.mjs]
 [time]: [./scripts/modules/time.mjs]
-[excluded]: [./scripts/modules/excluded.mjs]
 
 [clock]: [./scripts/clock.js]
-[album]: [./scripts/album.js]
 [download]: [./scripts/download.js]
+[showroom]: [./scripts/showroom.js]
 [msgbox_home]: [./scripts/acnhmsgbox_home.js]
 [msgbox_comingsoon]: [./scripts/acnhmsgbox_comingsoon.js]
-[showroom]: [./scripts/showroom.js]
 [audctrls]: [./scripts/audio-controls.js]
 [footer]: [./scripts/footer.js]
 

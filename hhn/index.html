@@ -78,75 +78,75 @@
             </div>
 
             <!-- The Modal/Lightbox -->
-            <div id="myModal" class="modal">
+            <div id="modal" class="modal">
                 <a href="#"><span class="close cursor" onclick="closeModal()">&times;</span></a>
 
                 <div class="modal-content">
-                    <div id="hero-secret-base" class="mySlides">
-                        <a href="#hero-secret-base">
+                    <div id="hero-secret-base" class="slides">
+                        <a href="#hero-secret-base" onclick="copyLink()">
                             <div class="numbertext">1 / 10</div>
                             <img src="Hero Secret Base.jpg" style="width: 100%">
                         </a>
                     </div>
 
-                    <div id="rubys-starry-retreat" class="mySlides">
-                        <a href="#rubys-starry-retreat">
+                    <div id="rubys-starry-retreat" class="slides">
+                        <a href="#rubys-starry-retreat" onclick="copyLink()">
                             <div class="numbertext">2 / 10</div>
                             <img src="Ruby's Starry Retreat.jpg" style="width: 100%">
                         </a>
                     </div>
 
-                    <div id="flower-art-atelier" class="mySlides">
-                        <a href="#flower-art-atelier">
+                    <div id="flower-art-atelier" class="slides">
+                        <a href="#flower-art-atelier" onclick="copyLink()">
                             <div class="numbertext">3 / 10</div>
                             <img src="Flower-Art Atelier.jpg" style="width: 100%">
                         </a>
                     </div>
 
-                    <div id="garden-of-generation" class="mySlides">
-                        <a href="#garden-of-generation">
+                    <div id="garden-of-generation" class="slides">
+                        <a href="#garden-of-generation" onclick="copyLink()">
                             <div class="numbertext">4 / 10</div>
                             <img src="Garden of Regeneration.jpg" style="width: 100%">
                         </a>
                     </div>
 
-                    <div id="paradise-cafe" class="mySlides">
-                        <a href="#paradise-cafe">
+                    <div id="paradise-cafe" class="slides">
+                        <a href="#paradise-cafe" onclick="copyLink()">
                             <div class="numbertext">5 / 10</div>
                             <img src="Paradise Cafe.jpg" style="width: 100%">
                         </a>
                     </div>
 
-                    <div id="phylliss-mail-office" class="mySlides">
-                        <a href="#phylliss-mail-office">
+                    <div id="phylliss-mail-office" class="slides">
+                        <a href="#phylliss-mail-office" onclick="copyLink()">
                             <div class="numbertext">6 / 10</div>
                             <img src="Phyllis's Mail Office.jpg" style="width: 100%">
                         </a>
                     </div>
 
-                    <div id="paradise-resturant" class="mySlides">
-                        <a href="#paradise-resturant">
+                    <div id="paradise-resturant" class="slides">
+                        <a href="#paradise-resturant" onclick="copyLink()">
                             <div class="numbertext">7 / 10</div>
                             <img src="Paradise Resturant.jpg" style="width: 100%">
                         </a>
                     </div>
 
-                    <div id="soothing-spa-vacation" class="mySlides">
-                        <a href="#soothing-spa-vacation">
+                    <div id="soothing-spa-vacation" class="slides">
+                        <a href="#soothing-spa-vacation" onclick="copyLink()">
                             <div class="numbertext">8 / 10</div>
                             <img src="Soothing Spa Vacation.jpg" style="width: 100%">
                         </a>
                     </div>
 
-                    <div id="paradise-hospital" class="mySlides">
-                        <a href="#paradise-hospital">
+                    <div id="paradise-hospital" class="slides">
+                        <a href="#paradise-hospital" onclick="copyLink()">
                             <div class="numbertext">9 / 10</div>
                             <img src="Paradise Hospital.jpg" style="width: 100%">
                         </a>
                     </div>
 
-                    <div id="paradise-school" class="mySlides">
-                        <a href="#paradise-school">
+                    <div id="paradise-school" class="slides">
+                        <a href="#paradise-school" onclick="copyLink()">
                             <div class="numbertext">10 / 10</div>
                             <img src="Paradise School.jpg" style="width: 100%">
                         </a>
@@ -163,49 +163,78 @@
 
                     <!-- Thumbnail image controls -->
                     <div class="column">
-                        <a href="#hero-secret-base"><img class="demo" src="Hero Secret Base.jpg" onclick="currentSlide(1)" alt="Hero Secret Base - RA-7852-3149-7307" width="50%"></a>
+                        <a href="#hero-secret-base">
+                            <img class="demo" src="Hero Secret Base.jpg" onclick="currentSlide(1)" alt="Hero Secret Base - RA-7852-3149-7307" width="50%">
+                        </a>
                     </div>
 
                     <div class="column">
-                        <a href="#rubys-starry-retreat"><img class="demo" src="Ruby's Starry Retreat.jpg" onclick="currentSlide(2)" alt="Ruby's Starry Retreat - RA-7852-3149-7307" width="50%"></a>
+                        <a href="#rubys-starry-retreat">
+                            <img class="demo" src="Ruby's Starry Retreat.jpg" onclick="currentSlide(2)" alt="Ruby's Starry Retreat - RA-7852-3149-7307" width="50%">
+                        </a>
                     </div>
 
                     <div class="column">
-                        <a href="#flower-art-atelier"><img class="demo" src="Flower-Art Atelier.jpg" onclick="currentSlide(3)" alt="Flower-Art Atelier - RA-7852-3149-7307" width="50%"></a>
+                        <a href="#flower-art-atelier">
+                            <img class="demo" src="Flower-Art Atelier.jpg" onclick="currentSlide(3)" alt="Flower-Art Atelier - RA-7852-3149-7307" width="50%">
+                        </a>
                     </div>
 
                     <div class="column">
-                        <a href="#garden-of-regeneration"><img class="demo" src="Garden of Regeneration.jpg" onclick="currentSlide(4)" alt="Garden of Regeneration - RA-7852-3149-7307" width="50%"></a>
+                        <a href="#garden-of-regeneration">
+                            <img class="demo" src="Garden of Regeneration.jpg" onclick="currentSlide(4)" alt="Garden of Regeneration - RA-7852-3149-7307" width="50%">
+                        </a>
                     </div>
 
                     <div class="column">
-                        <a href="#paradise-cafe"><img class="demo" src="Paradise Cafe.jpg" onclick="currentSlide(5)" alt="Paradise Cafe - RA-7852-3149-7307" width="50%"></a>
+                        <a href="#paradise-cafe">
+                            <img class="demo" src="Paradise Cafe.jpg" onclick="currentSlide(5)" alt="Paradise Cafe - RA-7852-3149-7307" width="50%">
+                        </a>
                     </div>
 
                     <div class="column">
-                        <a href="#phylliss-mail-office"><img class="demo" src="Phyllis's Mail Office.jpg" onclick="currentSlide(6)" alt="Phyllis's Mail Office - RA-7852-3149-7307" width="50%"></a>
+                        <a href="#phylliss-mail-office">
+                            <img class="demo" src="Phyllis's Mail Office.jpg" onclick="currentSlide(6)" alt="Phyllis's Mail Office - RA-7852-3149-7307" width="50%">
+                        </a>
                     </div>
 
                     <div class="column">
-                        <a href="#paradise-resturant"><img class="demo" src="Paradise Resturant.jpg" onclick="currentSlide(7)" alt="Paradise Resturant - RA-7852-3149-7307" width="50%"></a>
+                        <a href="#paradise-resturant">
+                            <img class="demo" src="Paradise Resturant.jpg" onclick="currentSlide(7)" alt="Paradise Resturant - RA-7852-3149-7307" width="50%">
+                        </a>
                     </div>
 
                     <div class="column">
-                        <a href="#soothing-spa-vacation"><img class="demo" src="Soothing Spa Vacation.jpg" onclick="currentSlide(8)" alt="Soothing Spa Vacation - RA-7852-3149-7307" width="50%"></a>
+                        <a href="#soothing-spa-vacation">
+                            <img class="demo" src="Soothing Spa Vacation.jpg" onclick="currentSlide(8)" alt="Soothing Spa Vacation - RA-7852-3149-7307" width="50%">
+                        </a>
                     </div>
 
                     <div class="column">
-                        <a href="#paradise-hospital"><img class="demo" src="Paradise Hospital.jpg" onclick="currentSlide(9)" alt="Paradise Hospital - RA-7852-3149-7307" width="50%"></a>
+                        <a href="#paradise-hospital">
+                            <img class="demo" src="Paradise Hospital.jpg" onclick="currentSlide(9)" alt="Paradise Hospital - RA-7852-3149-7307" width="50%">
+                        </a>
                     </div>
 
                     <div class="column">
-                        <a href="#paradise-school"><img class="demo" src="Paradise School.jpg" onclick="currentSlide(10)" alt="Paradise School - RA-7852-3149-7307" width="50%"></a>
+                        <a href="#paradise-school">
+                            <img class="demo" src="Paradise School.jpg" onclick="currentSlide(10)" alt="Paradise School - RA-7852-3149-7307" width="50%">
+                        </a>
                     </div>
                 </div>
             </div>
 
+            <br>
             <div id="audctrls"></div>
             <audio id="music"></audio>
+            <br>
+
+            <div class="tooltip">
+                <button id="copy" onclick="copyLink()">
+                    <span class="tooltiptext" id="copy-tooltip">Copy link to clipboard</span>
+                    Copy Link
+                </button>
+            </div>
         </main>
 
         <footer id="footer" class="flex bottomLinks"></footer>
@@ -216,6 +245,7 @@
 <script type="module" src="../scripts/modules/music.mjs"></script>
 <script type="text/javascript" src="../scripts/showroom.js"></script>
 <script type="text/javascript" src="../scripts/audio-controls.js"></script>
+<script type="text/javascript" src="../scripts/clipboard.js"></script>
 <script type="text/javascript" src="../scripts/footer.js"></script>
 <script>
     if ('serviceWorker' in navigator) {

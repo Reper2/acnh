@@ -27,23 +27,36 @@
 </head>
 
 <body id="bg">
+    <div id="back"></div>
+
     <center>
         <main id="main" class="flex">
             <h1>Island Preview</h1>
             <br>
             <h2>preview is not ready at this time</h2>
-        </main>
+        
+            <br>
+            <div id="audctrls"></div>
+            <audio id="music"></audio>
+            <br>
 
-        <div id="audctrls"></div>
-        <audio id="music"></audio>
+            <div class="tooltip">
+                <button id="copy" onclick="copyLink()">
+                    <span class="tooltiptext" id="copy-tooltip">Copy link to clipboard</span>
+                    Copy Link
+                </button>
+            </div>
+        </main>
 
         <footer id="footer" class="flex bottomLinks"></footer>
     </center>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="../../scripts/back.js"></script>
 <script type="module" src="../scripts/modules/background.mjs"></script>
 <script type="module" src="../scripts/modules/music.mjs"></script>
 <script type="text/javascript" src="../scripts/audio-controls.js"></script>
+<script type="text/javascript" src="../../scripts/clipboard.js"></script>
 <script type="text/javascript" src="../scripts/footer.js"></script>
 <script>
     if ('serviceWorker' in navigator) {

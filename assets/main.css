@@ -25,7 +25,7 @@ a,
 span {
     font-family: 'FOT-RodinBokutoh Pro B', sans-serif;
     color: white;
-    -webkit-text-stroke-width: 0.2vmin;
+    -webkit-text-stroke-width: 0.15vmin;
     -webkit-text-stroke-color: black;
 }
 
@@ -39,8 +39,8 @@ a {
 
 #back {
     top: 0;
-	position: absolute;
-	font-size: 8vmin;
+    position: absolute;
+    font-size: 8vmin;
 }
 
 #back img {
@@ -78,11 +78,13 @@ a {
     border-radius: 35%;
 }
 
-img.nookPhone_app, img.nookPhone_app_other {
+img.nookPhone_app,
+img.nookPhone_app_other {
     transition: 0.3s;
 }
 
-.nookPhone_app:hover, .nookPhone_app_other:hover {
+.nookPhone_app:hover,
+.nookPhone_app_other:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -132,4 +134,41 @@ button {
 
 button:hover {
     transform: translateY(-1vh);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 30vmin;
+    font-size: 4vmin;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6vmin;
+    padding: 5vmin;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -20vmin;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    top: 100%;
+    left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }

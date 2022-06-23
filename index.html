@@ -80,6 +80,15 @@
             <div id="acnhmsgbox"></div>
             <div id="audctrls"></div>
             <audio id="music"></audio>
+
+            <br>
+
+            <div class="tooltip">
+                <button id="copy" onclick="copyLink()">
+                    <span class="tooltiptext" id="copy-tooltip">Copy link to clipboard</span>
+                    Copy Link
+                </button>
+            </div>
         </main>
 
         <footer id="footer" class="flex bottomLinks"></footer>
@@ -90,6 +99,7 @@
 <script type="text/javascript" src="scripts/submodules/acnhMsgBox/acnhMessageBox.js"></script>
 <script type="text/javascript" src="scripts/acnhmsgbox_home.js"></script>
 <script type="text/javascript" src="scripts/audio-controls.js"></script>
+<script type="text/javascript" src="scripts/clipboard.js"></script>
 <script type="text/javascript" src="scripts/footer.js"></script>
 <script type="module" src="scripts/modules/background.mjs"></script>
 <script type="module" src="scripts/modules/music.mjs"></script>

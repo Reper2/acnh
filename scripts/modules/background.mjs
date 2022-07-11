@@ -1,19 +1,14 @@
 import * as events from './events.mjs';
 import * as con from './console.mjs';
 import * as time from './time.mjs';
+import * as path from './path.mjs';
 
-const
-    body = document.getElementById('bg'),
-    // dev
-    //path = '/assets/backgrounds/',
-    path = '/acnh/assets/backgrounds/',
-    nyePath = `${path}new-years-event/`;
+const body = document.getElementById('bg');
 body.style.backgroundPositionX = 'center';
 body.style.backgroundPositionY = 'center';
 body.style.backgroundRepeat = 'no-repeat';
 body.style.backgroundSize = 'cover';
 body.style.backgroundAttachment = 'fixed';
-body.class = 'flex';
 
 // International Museum Day backgrounds
 if (events.intlmusday) {
@@ -21,10 +16,10 @@ if (events.intlmusday) {
         const num_images = 39;
         var
             num = Math.floor(Math.random() * num_images),
-            link = `${path}intl-mus-day/${String(num).padStart(3, '0')}.jpg`,
+            link = `${path.bg}intl-mus-day/${String(num).padStart(3, '0')}.jpg`,
             bgImg = `url(${link})`;
         body.style.backgroundImage = bgImg;
-        console.log(`🏛️ ${con.cur} the International Museum Day period! This calls for some museum backgrounds! ${con.bg+num}`);
+        console.log(`🏛️${con.cur} the International Museum Day period! This calls for some museum backgrounds! ${con.bg+num}`);
     });
 }
 
@@ -34,7 +29,7 @@ if (events.maydaytour) {
         const num_images = 13;
         var
             num = Math.floor(Math.random() * num_images),
-            link = `${path}may-day-tour/${String(num).padStart(3, '0')}.jpg`,
+            link = `${path.bg}may-day-tour/${String(num).padStart(3, '0')}.jpg`,
             bgImg = `url(${link})`;
         body.style.backgroundImage = bgImg;
         console.log(`🏝️${con.cur} the May Day Tour period! This calls for some May Day Tour backgrounds! ${con.bg+num}`);
@@ -47,7 +42,7 @@ if (events.wedseas) {
         const num_images = 3;
         var
             num = Math.floor(Math.random() * num_images),
-            link = `${path}wed-seas/${String(num).padStart(3, '0')}.jpg`,
+            link = `${path.bg}wed-seas/${String(num).padStart(3, '0')}.jpg`,
             bgImg = `url(${link})`;
         body.style.backgroundImage = bgImg;
         console.log(`💍${con.cur} Wedding Season period! This calls for some Wedding Season backgrounds! ${con.bg+num}`);
@@ -60,7 +55,7 @@ if (events.bday) {
         const num_images = 12;
         var
             num = Math.floor(Math.random() * num_images),
-            link = `${path}bday/${String(num).padStart(3, '0')}.jpg`,
+            link = `${path.bg}bday/${String(num).padStart(3, '0')}.jpg`,
             bgImg = `url(${link})`;
         body.style.backgroundImage = bgImg;
         console.log(`🥳${con.tdy} Reper2's birthday! This calls for some birthday backgrounds! ${con.bg+num}`);
@@ -73,7 +68,7 @@ if (events.halloween) {
         const num_images = 1;
         var 
             num = Math.floor(Math.random() * num_images),
-            link = `${path}halloween/${String(num).padStart(3, '0')}.jpg`,
+            link = `${path.bg}halloween/${String(num).padStart(3, '0')}.jpg`,
             bgImg = `url(${link})`;
         body.style.backgroundImage = bgImg;
         console.log(`🎃${con.tdy} Halloween! This calls for some Halloween backgrounds! ${con.bg+num}`);
@@ -86,7 +81,7 @@ if (events.toyday) {
         const num_images = 2;
         var 
             num = Math.floor(Math.random() * num_images),
-            link = `${path}toy-day/${String(num).padStart(3, '0')}.jpg`,
+            link = `${path.bg}toy-day/${String(num).padStart(3, '0')}.jpg`,
             bgImg = `url(${link})`;
         body.style.backgroundImage = bgImg;
         console.log(`🎅${con.tdy} Toy Day! This calls for some Toy Day backgrounds! ${con.bg+num}`);
@@ -99,7 +94,7 @@ if (events.nye) {
         const num_images = 2;
         var 
             num = Math.floor(Math.random() * num_images),
-            link = `${nyePath}nye/${String(num).padStart(3, '0')}.jpg`,
+            link = `${path.bg_n}nye/${String(num).padStart(3, '0')}.jpg`,
             bgImg = `url(${link})`;
         body.style.backgroundImage = bgImg;
         console.log(`🎆${con.tdy} New Years Eve! This calls for some New Years Eve backgrounds! ${con.bg+num}`);
@@ -109,7 +104,7 @@ if (events.nye) {
 // New Years Event - Happy New Year! background
 if (events.nye_hny) {
     $(document).ready(function () {
-        body.style.backgroundImage = `url("${nyePath}happy-new-year.gif")`;
+        body.style.backgroundImage = `url("${path.bg_n}happy-new-year.gif")`;
         console.log(`🎆HAPPY NEW YEAR ${time.Y}!`);
     });
 }
@@ -120,7 +115,7 @@ if (events.nye_midn) {
         const num_images = 1;
         var
             num = Math.floor(Math.random() * num_images),
-            link = `${nyePath}nye-midn/${String(num).padStart(3, '0')}.jpg`,
+            link = `${path.bg_n}nye-midn/${String(num).padStart(3, '0')}.jpg`,
             bgImg = `url(${link})`;
         body.style.backgroundImage = bgImg;
         console.log(`🎆Happy New Year! This calls for some firework backgrounds! ${con.bg+num}`);
@@ -130,10 +125,10 @@ if (events.nye_midn) {
 // regular backgrounds
 else if (events.reg) {
     $(document).ready(function () {
-        const num_images = 393;
+        const num_images = 497;
         var
             num = Math.floor(Math.random() * num_images),
-            link = `${path}reg/${String(num).padStart(3, '0')}.jpg`,
+            link = `${path.bg}reg/${String(num).padStart(3, '0')}.jpg`,
             bgImg = `url(${link})`;
         body.style.backgroundImage = bgImg;
         console.log(`🔀Page background has been randomised from refresh. ${con.bg+num}`);

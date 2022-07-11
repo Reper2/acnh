@@ -2,8 +2,8 @@
 
 <head>
     <title>Home - Reper2's ACNH Website</title>
-    <meta charset="UTF-8" />
-    <link href="assets/main.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <link href="assets/main.css" rel="stylesheet" type="text/css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL97YTBZQV"></script>
     <script>
@@ -13,21 +13,21 @@
 
         gtag('config', 'G-FL97YTBZQV');
     </script>
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <meta id="meta-title" property="og:title" content="Reper2's ACNH Website" />
-    <meta id="meta-desc" property="og:description" content="Reper2's Animal Crossing: New Horizons website. Includes: complete album of Reper2's acnh photos & videos, hhn showroom, all of Reper2's custom designs (as well as design sets), preview of Reper2's island, Sprinkle order files, and other links to profiles & etc. For more info on features, visit https://github.com/Reper2/acnh#features" />
-    <meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/meta.png" />
-    <meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io" />
-    <meta name="theme-color" content="#14d8ee" />
-    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta id="meta-title" property="og:title" content="Reper2's ACNH Website">
+    <meta id="meta-desc" property="og:description" content="Reper2's Animal Crossing: New Horizons website. Includes: complete album of Reper2's acnh photos & videos, hhn showroom, all of Reper2's custom designs (as well as design sets), preview of Reper2's island, Sprinkle order files, and other links to profiles & etc. For more info on features, visit https://github.com/Reper2/acnh#features">
+    <meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/meta.png">
+    <meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io">
+    <meta name="theme-color" content="#14d8ee">
+    <meta property="twitter:card" content="summary_large_image">
 </head>
 
 <body id="bg">
     <center>
-        <main id="main" class="flex">
+        <main id="main">
             <br>
             <div class="nookPhone">
                 <p>Reper2's ACNH Website</p>
@@ -78,20 +78,17 @@
             <br>
 
             <div id="acnhmsgbox"></div>
-            <div id="audctrls"></div>
-            <audio id="music"></audio>
 
-            <br>
-
-            <div class="tooltip">
-                <button id="copy" onclick="copyLink()">
-                    <span class="tooltiptext" id="copy-tooltip">Copy link to clipboard</span>
-                    Copy Link
-                </button>
+            <div id="buttons" class="flex">
+                <div id="audctrls"></div>
+                <div id="copyDiv"></div>
             </div>
+
+            <br><audio id="music"></audio>
         </main>
 
-        <footer id="footer" class="flex bottomLinks"></footer>
+        <footer id="footer" class="bottomLinks"></footer>
+        <footer id="copyright" class="bottomLinks"></footer>
     </center>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -99,8 +96,9 @@
 <script type="text/javascript" src="scripts/submodules/acnhMsgBox/acnhMessageBox.js"></script>
 <script type="text/javascript" src="scripts/acnhmsgbox_home.js"></script>
 <script type="text/javascript" src="scripts/audio-controls.js"></script>
-<script type="text/javascript" src="scripts/clipboard.js"></script>
+<script type="text/javascript" src="scripts/copyBtn.js"></script>
 <script type="text/javascript" src="scripts/footer.js"></script>
+<script type="text/javascript" src="scripts/copyright.js"></script>
 <script type="module" src="scripts/modules/background.mjs"></script>
 <script type="module" src="scripts/modules/music.mjs"></script>
 <script>
@@ -110,15 +108,17 @@
             navigator.serviceWorker.register('./sw.js').then(console.log('Service worker successfully installed.'));
 
             if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
-                console.log('Executing app install reminder.'),
+                console.log('🔔Executing app install reminder.'),
                     // reminds the user they can install the app
-                    alert('Install the app!\nDesktop Browser - click install button in top-right of address bar\nMobile Browser - click Add To Homescreen after clicking share button');
+                    alert('Install the app!\nDesktop - click install button in top-right of address bar\nMobile - click Add To Homescreen after clicking share button');
             };
         });
     };
 
     onappinstalled = event => {
-        console.log('Thank you for installing the app!');
+        var msg = 'Thank you for installing the app!';
+        alert(msg);
+        console.log(`🙏🏼${msg}`);
     };
 </script>
 

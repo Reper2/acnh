@@ -1,0 +1,84 @@
+Autumn Recipes Order
+
+Item List:
+Tree’s Bounty Arch DIY
+Tree's Bounty Big Tree DIY
+Mush Lamp DIY
+Mush Log DIY
+Mush Low Stool DIY
+Mush Parasol DIY
+Mush Partition DIY
+Mush Table DIY
+Mush Umbrella DIY
+Mush Wall DIY
+Mushroom Wand DIY
+Autumn Wall DIY
+Colored-Leaves Flooring DIY
+Leaf Stool DIY
+Maple-Leaf Pochette DIY
+Maple-Leaf Pond Stone DIY
+Maple-Leaf Rug DIY
+Maple-Leaf Umbrella DIY
+Red-Leaf Pile DIY
+Acorn
+Pine Cone
+Maple-Leaf
+Elegant Mushroom
+
+Item List 2:
+Skinny Mushroom
+Flat Mushroom
+Round Mushroom
+Rare Mushroom
+
+Item Codes:
+17C1 tree's bounty arch: Recipe order code: 1A7000016A2
+17C0 tree's bounty big tree: Recipe order code: 1A1000016A2
+0325 mush lamp: Recipe order code: 033000016A2
+0EE0 mush log: Recipe order code: 088000016A2
+1264 mush low stool: Recipe order code: 0DC000016A2
+0EDD mush parasol: Recipe order code: 08B000016A2
+0EDE mush partition: Recipe order code: 08A000016A2
+0328 mush table: Recipe order code: 020000016A2
+1C06 mush umbrella: Recipe order code: 288000016A2
+142C mush wall: Recipe order code: 134000016A2
+1DA4 mushroom wand: Recipe order code: 218000016A2
+1329 autumn wall: Recipe order code: 122000016A2
+137E colored-leaves flooring: Recipe order code: 1DC000016A2
+1CDE leaf stool: Recipe order code: 207000016A2
+1D43 maple-leaf pochette (No Variations): Recipe order code: 277000016A2
+1CF0 maple-leaf pond stone: Recipe order code: 200000016A2
+3066 maple-leaf rug: Recipe order code: 3D3000016A2
+1C01 maple-leaf umbrella: Recipe order code: 21D000016A2
+10AF red-leaf pile: Recipe order code: 24D000016A2
+165F acorn
+1660 pine cone
+1CCE maple-leaf
+0CCC elegant mushroom
+0CCD round mushroom
+0CCE skinny mushroom
+0CCF flat mushroom
+0CD0 rare mushroom
+
+Command:
+$order 1A7000016A2 1A1000016A2 033000016A2 088000016A2 0DC000016A2 08B000016A2 08A000016A2 020000016A2 288000016A2 134000016A2 218000016A2 122000016A2 1DC000016A2 207000016A2 277000016A2 200000016A2 3D3000016A2 21D000016A2 24D000016A2 165F 1CCE 0CCC
+
+Responses:
+I've added you to the queue! I'll message you here when your order is ready
+@Reper2 - Added you to the order queue. Your position is: 1. Your order will start after the current order is complete!
+Your order is starting, please ensure your inventory is empty, then go talk to Orville and stay on the Dodo code entry screen. I will send you the Dodo code shortly.
+I'm waiting for you Reper2! You have 162 seconds to arrive. My island name is Frappe. Your Dodo code is 8V8CB
+Visitor arriving: Reper2. Your items will be in front of you once you land.
+You have 60 seconds remaining before I start the next order. Please ensure you can collect your items and leave within that time.
+Your order is complete, Thanks for your order! Stay awesome!
+
+Command:
+$order 0CCE 0CCF 0CCD 0CD0
+
+Responses:
+I've added you to the queue! I'll message you here when your order is ready
+@Reper2 - Added you to the order queue. Your position is: 1. Your order will start after the current order is complete!
+Your order is starting, please ensure your inventory is empty, then go talk to Orville and stay on the Dodo code entry screen. I will send you the Dodo code shortly.
+I'm waiting for you Reper2! You have 162 seconds to arrive. My island name is Frappe. Your Dodo code is 3XPD9
+Visitor arriving: Reper2. Your items will be in front of you once you land.
+Your order is complete, Thanks for your order! Stay awesome!

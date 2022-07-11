@@ -1,0 +1,22 @@
+Refills Order
+
+Item List:
+Log Stool DIY
+Pine Cone
+Maple-Leaf
+
+Item Codes:
+0FC6 log stool: Recipe order code: 074000016A2
+1660 pine cone
+1CCE maple-leaf
+
+Command:
+$order 074000016A2 1660 1CCE
+
+Responses:
+I've added you to the queue! I'll message you here when your order is ready
+@Reper2 - Added you to the order queue. Your position is: 1. Your order will start after the current order is complete!
+Your order is starting, please ensure your inventory is empty, then go talk to Orville and stay on the Dodo code entry screen. I will send you the Dodo code shortly.
+I'm waiting for you Reper2! You have 162 seconds to arrive. My island name is Frappe. Your Dodo code is CH2QK
+Visitor arriving: Reper2. Your items will be in front of you once you land.
+Your order is complete, Thanks for your order! Stay awesome!

@@ -1,0 +1,18 @@
+Item List:
+Gold-Rose Plant
+Customisation Kit
+
+Item Codes:
+0F26 gold-rose plant
+09D1 customization kit
+
+Command:
+$order 0F26 09D1
+
+Responses:
+I've added you to the queue! I'll message you here when your order is ready
+@Reper2 - Added you to the order queue. Your position is: 6. Your predicted ETA is 46m:35s
+Your order is starting, please ensure your inventory is empty, then go talk to Orville and stay on the Dodo code entry screen. I will send you the Dodo code shortly.
+I'm waiting for you Reper2! You have 162 seconds to arrive. My island name is Frappe. Your Dodo code is 89QWY
+Visitor arriving: Reper2. Your items will be in front of you once you land.
+Your order is complete, Thanks for your order! Stay awesome!

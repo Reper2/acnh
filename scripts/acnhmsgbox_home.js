@@ -11,22 +11,19 @@ var msgBox = new ACMsgBox({
 
 const
 	acnhmsgbox = document.getElementById('acnhmsgbox'),
-	a = document.createElement('a'),
-	img = document.createElement('img');
+	reper2_site = document.createElement('a'),
+	reper2_logo = document.createElement('img');
 
-acnhmsgbox.class = 'flex';
+reper2_site.target = '_blank';
+reper2_site.href = '/';
+reper2_site.class = 'flex';
 
-a.target = '_blank';
-a.href = '/';
-a.class = 'flex';
+reper2_logo.src = '/logo.png';
+reper2_logo.style.position = 'absolute';
+reper2_logo.style.width = '10%';
+reper2_logo.style.borderRadius = '26%';
 
-img.src = 'logo.png';
-img.class = 'flex';
-img.style.position = 'absolute';
-img.style.width = '10%';
-img.style.borderRadius = '26%';
-
-a.appendChild(img);
-acnhmsgbox.appendChild(a);
+reper2_site.appendChild(reper2_logo);
+acnhmsgbox.appendChild(reper2_site);
 msgBox.draw();
-console.log('Message box has completed drawing.');
+console.log('💬Added message box to page.');

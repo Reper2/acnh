@@ -13,6 +13,6 @@ function downloadFile(filename) {
                 a.click();
                 window.URL.revokeObjectURL(url);
 			}),
-        console.log(`${filename} is downloading.`);
+        console.log(`💾${filename} is downloading.`);
 	};
 };

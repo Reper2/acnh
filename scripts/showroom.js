@@ -45,49 +45,59 @@ function showSlides(n) {
 if (window.location.href.endsWith('#hero-secret-base')) {
     openModal();
     currentSlide(1);
+    console.log('🧑🏼‍🚀Opened Hero Secret Base in the modal.');
 };
 
 if (window.location.href.endsWith('#rubys-starry-retreat')) {
     openModal();
     currentSlide(2);
+    console.log("⭐Opened Ruby's Starry Retreat in the modal.");
 };
 
 if (window.location.href.endsWith('#flower-art-atelier')) {
     openModal();
     currentSlide(3);
+    console.log('🌺Opened Flower-Art Atelier in the modal.');
 };
 
 if (window.location.href.endsWith('#garden-of-regeneration')) {
     openModal();
     currentSlide(4);
+    console.log('🏡Opened Garden of Regeneration in the modal.');
 };
 
 if (window.location.href.endsWith('#paradise-cafe')) {
     openModal();
     currentSlide(5);
+    console.log('🧋Opened Paradise Cafe in the modal.');
 };
 
 if (window.location.href.endsWith('#phylliss-mail-office')) {
     openModal();
     currentSlide(6);
+    console.log("🏤Opened Phyllis's Mail Office in the modal.");
 };
 
 if (window.location.href.endsWith('#paradise-resturant')) {
     openModal();
     currentSlide(7);
+    console.log('🍽️Opened Paradise Resturant in the modal.');
 };
 
 if (window.location.href.endsWith('#soothing-spa-vacation')) {
     openModal();
     currentSlide(8);
+    console.log('🏖️Opened Soothing Spa Vacation in the modal.');
 };
 
 if (window.location.href.endsWith('#paradise-hospital')) {
     openModal();
     currentSlide(9);
+    console.log('🏥Opened Paradise Hospital in the modal.');
 };
 
 if (window.location.href.endsWith('#paradise-school')) {
     openModal();
     currentSlide(10);
+    console.log('🏫Opened Paradise School in the modal.');
 };

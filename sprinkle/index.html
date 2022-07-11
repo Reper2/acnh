@@ -31,70 +31,70 @@
 	<center>
 		<div id="back"></div>
 
-		<main id="main" class="flex">
+		<main id="main">
 			<h1>Reper2's Sprinkle Order Files</h1>
 
-			<div id="sprinkle" class="lightblueBox">
+			<div id="fileSelect" class="lightblueBox">
 				<h3>
-					<a onclick="downloadFile('sprinkle-order-001.jsonc')" title="sprinkle-order-001.jsonc">001</a>,
-					<a onclick="downloadFile('sprinkle-order-002.jsonc')" title="sprinkle-order-002.jsonc">002</a>,
-					<a onclick="downloadFile('sprinkle-order-003.jsonc')" title="sprinkle-order-003.jsonc">003</a>,
-					<a onclick="downloadFile('sprinkle-order-004.jsonc')" title="sprinkle-order-004.jsonc">004</a>,
-					<a onclick="downloadFile('sprinkle-order-005.jsonc')" title="sprinkle-order-005.jsonc">005</a>,
-					<a onclick="downloadFile('sprinkle-order-006.jsonc')" title="sprinkle-order-006.jsonc">006</a>,
-					<a onclick="downloadFile('sprinkle-order-007.jsonc')" title="sprinkle-order-007.jsonc">007</a>,
-					<a onclick="downloadFile('sprinkle-order-008.jsonc')" title="sprinkle-order-008.jsonc">008</a>,
-					<a onclick="downloadFile('sprinkle-order-009.jsonc')" title="sprinkle-order-009.jsonc">009</a>,
-					<a onclick="downloadFile('sprinkle-order-010.jsonc')" title="sprinkle-order-010.jsonc">010</a>,
-					<a onclick="downloadFile('sprinkle-order-011.jsonc')" title="sprinkle-order-011.jsonc">011</a>,
-					<a onclick="downloadFile('sprinkle-order-012.jsonc')" title="sprinkle-order-012.jsonc">012</a>,
-					<a onclick="downloadFile('sprinkle-order-013.jsonc')" title="sprinkle-order-013.jsonc">013</a>,
-					<a onclick="downloadFile('sprinkle-order-014.jsonc')" title="sprinkle-order-014.jsonc">014</a>,
-					<a onclick="downloadFile('sprinkle-order-template.jsonc')" title="sprinkle-order-template.jsonc">template</a>
+					<a onclick="downloadFile('sprinkle-order-001.txt')" title="sprinkle-order-001.txt">001</a>,
+					<a onclick="downloadFile('sprinkle-order-002.txt')" title="sprinkle-order-002.txt">002</a>,
+					<a onclick="downloadFile('sprinkle-order-003.txt')" title="sprinkle-order-003.txt">003</a>,
+					<a onclick="downloadFile('sprinkle-order-004.txt')" title="sprinkle-order-004.txt">004</a>,
+					<a onclick="downloadFile('sprinkle-order-005.txt')" title="sprinkle-order-005.txt">005</a>,
+					<a onclick="downloadFile('sprinkle-order-006.txt')" title="sprinkle-order-006.txt">006</a>,
+					<a onclick="downloadFile('sprinkle-order-007.txt')" title="sprinkle-order-007.txt">007</a>,
+					<a onclick="downloadFile('sprinkle-order-008.txt')" title="sprinkle-order-008.txt">008</a>,
+					<a onclick="downloadFile('sprinkle-order-009.txt')" title="sprinkle-order-009.txt">009</a>,
+					<a onclick="downloadFile('sprinkle-order-010.txt')" title="sprinkle-order-010.txt">010</a>,
+					<a onclick="downloadFile('sprinkle-order-011.txt')" title="sprinkle-order-011.txt">011</a>,
+					<a onclick="downloadFile('sprinkle-order-012.txt')" title="sprinkle-order-012.txt">012</a>,
+					<a onclick="downloadFile('sprinkle-order-013.txt')" title="sprinkle-order-013.txt">013</a>,
+					<a onclick="downloadFile('sprinkle-order-014.txt')" title="sprinkle-order-014.txt">014</a>
 				</h3>
 			</div>
 
 			<br>
-			<div id="audctrls"></div>
-			<audio id="music"></audio>
-			<br>
 
-			<div class="tooltip">
-				<button id="copy" onclick="copyLink()">
-					<span class="tooltiptext" id="copy-tooltip">Copy link to clipboard</span>
-					Copy Link
-				</button>
+			<div id="buttons" class="flex">
+				<div id="audctrls"></div>
+				<div id="copyDiv"></div>
 			</div>
+
+			<br><audio id="music"></audio>
 		</main>
 
-		<footer id="footer" class="flex bottomLinks"></footer>
+		<footer id="footer" class="bottomLinks"></footer>
+		<footer id="copyright" class="bottomLinks"></footer>
 	</center>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" src="../scripts/back.js"></script>
 <script type="text/javascript" src="../scripts/download.js"></script>
+<script type="text/javascript" src="../scripts/audio-controls.js"></script>
+<script type="text/javascript" src="../../scripts/copyBtn.js"></script>
+<script type="text/javascript" src="../scripts/footer.js"></script>
+<script type="text/javascript" src="../scripts/copyright.js"></script>
 <script type="module" src="../scripts/modules/background.mjs"></script>
 <script type="module" src="../scripts/modules/music.mjs"></script>
-<script type="text/javascript" src="../scripts/audio-controls.js"></script>
-<script type="text/javascript" src="../../scripts/clipboard.js"></script>
-<script type="text/javascript" src="../scripts/footer.js"></script>
+<script type="module" src="../scripts/modules/back.mjs"></script>
 <script>
-	if ('serviceWorker' in navigator) {
-		// Register a service worker after the load event
-		addEventListener('load', () => {
-			navigator.serviceWorker.register('../sw.js').then(console.log('Service worker successfully installed.'));
+    if ('serviceWorker' in navigator) {
+        // Register a service worker after the load event
+        addEventListener('load', () => {
+            navigator.serviceWorker.register('../sw.js').then(console.log('Service worker successfully installed.'));
 
-			if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
-				console.log('Executing app install reminder.'),
-					// reminds the user they can install the app
-					alert('Install the app!\nDesktop Browser - click install button in top-right of address bar\nMobile Browser - click Add To Homescreen after clicking share button');
-			};
-		});
-	};
+            if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
+                console.log('🔔Executing app install reminder.'),
+                    // reminds the user they can install the app
+                    alert('Install the app!\nDesktop - click install button in top-right of address bar\nMobile - click Add To Homescreen after clicking share button');
+            };
+        });
+    };
 
-	onappinstalled = event => {
-		console.log('Thank you for installing the app!');
-	};
+    onappinstalled = event => {
+        var msg = 'Thank you for installing the app!';
+        alert(msg);
+        console.log(`🙏🏼${msg}`);
+    };
 </script>
 
 </html>

@@ -2,18 +2,9 @@ import * as time from './time.mjs';
 import * as events from './events.mjs';
 import * as hours from './hours.mjs';
 import * as con from './console.mjs';
+import * as path from './path.mjs';
 
-const
-	music = document.getElementById('music'),
-	musicSrc = document.createElement('source'),
-
-	// dev
-	//path = '/assets/music/',
-	path = '/acnh/assets/music/',
-	eventsPath = `${path}event/`,
-	nyePath = `${eventsPath}new-years-event/`,
-	hoursPath = `${path}hour/`,
-	snowPath = `${hoursPath}snow/`;
+const music = document.getElementById('music'), musicSrc = document.createElement('source');
 music.controls = 'true';
 music.autoplay = 'true';
 music.loop = 'true';
@@ -30,7 +21,7 @@ console.info("If audio does not play, click on the 'show audio controls' button 
 // My Birthday
 if (events.bday) {
 	$(document).ready(function () {
-		musicSrc.src = `${eventsPath}bday.mp3`;
+		musicSrc.src = `${path.mus_e}bday.mp3`;
 		music.appendChild(musicSrc);
 		console.log(`🥳${con.tdy} Reper2\'s birthday! To celebrate K.K. Birthday will be playing all day.`);
 	});
@@ -39,7 +30,7 @@ if (events.bday) {
 // Halloween
 if (events.halloween) {
 	$(document).ready(function () {
-		musicSrc.src = `${eventsPath}halloween.mp3`;
+		musicSrc.src = `${path.mus_e}halloween.mp3`;
 		music.appendChild(musicSrc);
 		console.log(`🎃${con.tdy} Halloween!`);
 	});
@@ -48,7 +39,7 @@ if (events.halloween) {
 // Toy Day
 if (events.toyday) {
 	$(document).ready(function () {
-		musicSrc.src = `${eventsPath}toy-day.mp3`;
+		musicSrc.src = `${path.mus_e}toy-day.mp3`;
 		music.appendChild(musicSrc);
 		console.log(`🎅${con.tdy} Toy Day!`);
 	});
@@ -111,7 +102,7 @@ if (events.nye_midn) {
 // 12 AM
 else if (!events.winter && hours.am_12) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}12am.mp3`;
+		musicSrc.src = `${path.mus_h}12am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -119,7 +110,7 @@ else if (!events.winter && hours.am_12) {
 // 1 AM
 else if (!events.winter && hours.am_01) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}1am.mp3`;
+		musicSrc.src = `${path.mus_h}1am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -127,7 +118,7 @@ else if (!events.winter && hours.am_01) {
 // 2 AM
 else if (!events.winter && hours.am_02) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}2am.mp3`;
+		musicSrc.src = `${path.mus_h}2am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -135,7 +126,7 @@ else if (!events.winter && hours.am_02) {
 // 3 AM
 else if (!events.winter && hours.am_03) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}3am.mp3`;
+		musicSrc.src = `${path.mus_h}3am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -143,7 +134,7 @@ else if (!events.winter && hours.am_03) {
 // 4 AM
 else if (!events.winter && hours.am_04) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}4am.mp3`;
+		musicSrc.src = `${path.mus_h}4am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -151,7 +142,7 @@ else if (!events.winter && hours.am_04) {
 // 5 AM
 else if (!events.winter && hours.am_05) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}5am.mp3`;
+		musicSrc.src = `${path.mus_h}5am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -159,7 +150,7 @@ else if (!events.winter && hours.am_05) {
 // 6 AM
 else if (!events.winter && hours.am_06) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}6am.mp3`;
+		musicSrc.src = `${path.mus_h}6am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -167,7 +158,7 @@ else if (!events.winter && hours.am_06) {
 // 7 AM
 else if (!events.winter && hours.am_07) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}7am.mp3`;
+		musicSrc.src = `${path.mus_h}7am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -175,7 +166,7 @@ else if (!events.winter && hours.am_07) {
 // 8 AM
 else if (!events.winter && hours.am_08) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}8am.mp3`;
+		musicSrc.src = `${path.mus_h}8am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -183,7 +174,7 @@ else if (!events.winter && hours.am_08) {
 // 9 AM
 else if (!events.winter && hours.am_09) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}9am.mp3`;
+		musicSrc.src = `${path.mus_h}9am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -191,7 +182,7 @@ else if (!events.winter && hours.am_09) {
 // 10 AM
 else if (!events.winter && hours.am_10) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}10am.mp3`;
+		musicSrc.src = `${path.mus_h}10am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -199,7 +190,7 @@ else if (!events.winter && hours.am_10) {
 // 11 AM
 else if (!events.winter && hours.am_11) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}11am.mp3`;
+		musicSrc.src = `${path.mus_h}11am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -207,7 +198,7 @@ else if (!events.winter && hours.am_11) {
 // 12 PM
 else if (!events.winter && hours.pm_12) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}12pm.mp3`;
+		musicSrc.src = `${path.mus_h}12pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -215,7 +206,7 @@ else if (!events.winter && hours.pm_12) {
 // 1 PM
 else if (!events.winter && hours.pm_01) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}1pm.mp3`;
+		musicSrc.src = `${path.mus_h}1pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -223,7 +214,7 @@ else if (!events.winter && hours.pm_01) {
 // 2 PM
 else if (!events.winter && hours.pm_02) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}2pm.mp3`;
+		musicSrc.src = `${path.mus_h}2pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -231,7 +222,7 @@ else if (!events.winter && hours.pm_02) {
 // 3 PM
 else if (!events.winter && hours.pm_03) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}3pm.mp3`;
+		musicSrc.src = `${path.mus_h}3pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -239,7 +230,7 @@ else if (!events.winter && hours.pm_03) {
 // 4 PM
 else if (!events.winter && hours.pm_04) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}4pm.mp3`;
+		musicSrc.src = `${path.mus_h}4pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -247,7 +238,7 @@ else if (!events.winter && hours.pm_04) {
 // 5 PM
 else if (!events.winter && hours.pm_05) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}5pm.mp3`;
+		musicSrc.src = `${path.mus_h}5pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -255,7 +246,7 @@ else if (!events.winter && hours.pm_05) {
 // 6 PM
 else if (!events.winter && hours.pm_06) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}6pm.mp3`;
+		musicSrc.src = `${path.mus_h}6pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -263,7 +254,7 @@ else if (!events.winter && hours.pm_06) {
 // 7 PM
 else if (!events.winter && hours.pm_07) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}7pm.mp3`;
+		musicSrc.src = `${path.mus_h}7pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -271,7 +262,7 @@ else if (!events.winter && hours.pm_07) {
 // 8 PM
 else if (!events.winter && hours.pm_08) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}8pm.mp3`;
+		musicSrc.src = `${path.mus_h}8pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -279,7 +270,7 @@ else if (!events.winter && hours.pm_08) {
 // 9 PM
 else if (!events.winter && hours.pm_09) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}9pm.mp3`;
+		musicSrc.src = `${path.mus_h}9pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -287,7 +278,7 @@ else if (!events.winter && hours.pm_09) {
 // 10 PM
 else if (!events.winter && hours.pm_10) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}10pm.mp3`;
+		musicSrc.src = `${path.mus_h}10pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -295,7 +286,7 @@ else if (!events.winter && hours.pm_10) {
 // 11 PM
 else if (!events.winter && hours.pm_11) {
 	$(document).ready(function () {
-		musicSrc.src = `${hoursPath}11pm.mp3`;
+		musicSrc.src = `${path.mus_h}11pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -303,7 +294,7 @@ else if (!events.winter && hours.pm_11) {
 // 12 AM (Winter)
 else if (events.winter && hours.am_12) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}12am.mp3`;
+		musicSrc.src = `${path.mus_s}12am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -311,7 +302,7 @@ else if (events.winter && hours.am_12) {
 // 1 AM (Winter)
 else if (events.winter && hours.am_01) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}1am.mp3`;
+		musicSrc.src = `${path.mus_s}1am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -319,7 +310,7 @@ else if (events.winter && hours.am_01) {
 // 2 AM (Winter)
 else if (events.winter && hours.am_02) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}2am.mp3`;
+		musicSrc.src = `${path.mus_s}2am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -327,7 +318,7 @@ else if (events.winter && hours.am_02) {
 // 3 AM (Winter)
 else if (events.winter && hours.am_03) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}3am.mp3`;
+		musicSrc.src = `${path.mus_s}3am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -335,7 +326,7 @@ else if (events.winter && hours.am_03) {
 // 4 AM (Winter)
 else if (events.winter && hours.am_04) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}4am.mp3`;
+		musicSrc.src = `${path.mus_s}4am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -343,7 +334,7 @@ else if (events.winter && hours.am_04) {
 // 5 AM (Winter)
 else if (events.winter && hours.am_05) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}5am.mp3`;
+		musicSrc.src = `${path.mus_s}5am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -351,7 +342,7 @@ else if (events.winter && hours.am_05) {
 // 6 AM (Winter)
 else if (events.winter && hours.am_06) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}6am.mp3`;
+		musicSrc.src = `${path.mus_s}6am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -359,7 +350,7 @@ else if (events.winter && hours.am_06) {
 // 7 AM (Winter)
 else if (events.winter && hours.am_07) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}7am.mp3`;
+		musicSrc.src = `${path.mus_s}7am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -367,7 +358,7 @@ else if (events.winter && hours.am_07) {
 // 8 AM (Winter)
 else if (events.winter && hours.am_08) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}8am.mp3`;
+		musicSrc.src = `${path.mus_s}8am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -375,7 +366,7 @@ else if (events.winter && hours.am_08) {
 // 9 AM (Winter)
 else if (events.winter && hours.am_09) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}9am.mp3`;
+		musicSrc.src = `${path.mus_s}9am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -383,7 +374,7 @@ else if (events.winter && hours.am_09) {
 // 10 AM (Winter)
 else if (events.winter && hours.am_10) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}10am.mp3`;
+		musicSrc.src = `${path.mus_s}10am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -391,7 +382,7 @@ else if (events.winter && hours.am_10) {
 // 11 AM (Winter)
 else if (events.winter && hours.am_11) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}11am.mp3`;
+		musicSrc.src = `${path.mus_s}11am.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -399,7 +390,7 @@ else if (events.winter && hours.am_11) {
 // 12 PM (Winter)
 else if (events.winter && hours.pm_12) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}12pm.mp3`;
+		musicSrc.src = `${path.mus_s}12pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -407,7 +398,7 @@ else if (events.winter && hours.pm_12) {
 // 1 PM (Winter)
 else if (events.winter && hours.pm_01) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}1pm.mp3`;
+		musicSrc.src = `${path.mus_s}1pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -415,7 +406,7 @@ else if (events.winter && hours.pm_01) {
 // 2 PM (Winter)
 else if (events.winter && hours.pm_02) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}2pm.mp3`;
+		musicSrc.src = `${path.mus_s}2pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -423,7 +414,7 @@ else if (events.winter && hours.pm_02) {
 // 3 PM (Winter)
 else if (events.winter && hours.pm_03) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}3pm.mp3`;
+		musicSrc.src = `${path.mus_s}3pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -431,7 +422,7 @@ else if (events.winter && hours.pm_03) {
 // 4 PM (Winter)
 else if (events.winter && hours.pm_04) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}4pm.mp3`;
+		musicSrc.src = `${path.mus_s}4pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -439,7 +430,7 @@ else if (events.winter && hours.pm_04) {
 // 5 PM (Winter)
 else if (events.winter && hours.pm_05) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}5pm.mp3`;
+		musicSrc.src = `${path.mus_s}5pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -447,7 +438,7 @@ else if (events.winter && hours.pm_05) {
 // 6 PM (Winter)
 else if (events.winter && hours.pm_06) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}6pm.mp3`;
+		musicSrc.src = `${path.mus_s}6pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -455,7 +446,7 @@ else if (events.winter && hours.pm_06) {
 // 7 PM (Winter)
 else if (events.winter && hours.pm_07) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}7pm.mp3`;
+		musicSrc.src = `${path.mus_s}7pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -463,7 +454,7 @@ else if (events.winter && hours.pm_07) {
 // 8 PM (Winter)
 else if (events.winter && hours.pm_08) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}8pm.mp3`;
+		musicSrc.src = `${path.mus_s}8pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -471,7 +462,7 @@ else if (events.winter && hours.pm_08) {
 // 9 PM (Winter)
 else if (events.winter && hours.pm_09) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}9pm.mp3`;
+		musicSrc.src = `${path.mus_s}9pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -479,7 +470,7 @@ else if (events.winter && hours.pm_09) {
 // 10 PM (Winter)
 else if (events.winter && hours.pm_10) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}10pm.mp3`;
+		musicSrc.src = `${path.mus_s}10pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }
@@ -487,7 +478,7 @@ else if (events.winter && hours.pm_10) {
 // 11 PM (Winter)
 else if (events.winter && hours.pm_11) {
 	$(document).ready(function () {
-		musicSrc.src = `${snowPath}11pm.mp3`;
+		musicSrc.src = `${path.mus_s}11pm.mp3`;
 		music.appendChild(musicSrc);
 	});
 }

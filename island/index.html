@@ -3,8 +3,8 @@
 <head>
     <title>Island Preview - Reper2's ACNH Website</title>
     <meta charset="UTF-8">
-    <link href="../assets/main.css" rel="stylesheet" type="text/css" />
-    <meta http-equiv="Refresh" content="3; url='../comingsoon.html'" />
+    <link href="../assets/main.css" rel="stylesheet" type="text/css">
+    <link href="../assets/isprev.css" rel="stylesheet" type="text/css"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL97YTBZQV"></script>
     <script>
@@ -14,66 +14,752 @@
 
         gtag('config', 'G-FL97YTBZQV');
     </script>
-    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
-    <link rel="manifest" href="../site.webmanifest" />
-    <meta id="meta-title" property="og:title" content="Island Preview - Reper2's ACNH Website" />
-    <meta id="meta-desc" property="og:description" content="In this section of Reper2's ACNH Website, you can take a look at a preview of Reper2's island!" />
-    <meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/assets/nookPhone-app_native/map.png" />
-    <meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io" />
-    <meta name="theme-color" content="#14d8ee" />
-    <meta property="twitter:card" content="summary" />
+    <link rel="apple-touch-icon" sizes="190x190" href="../icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <meta id="meta-title" property="og:title" content="Island Preview - Reper2's ACNH Website">
+    <meta id="meta-desc" property="og:description" content="In this section of Reper2's ACNH Website, you can take a look at a preview of Reper2's island!">
+    <meta id="meta-image" name="og:image" itemprop="image">
+    <meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io">
+    <meta name="theme-color" content="#14d8ee">
+    <meta property="twitter:card" content="summary_large_image">
 </head>
 
 <body id="bg">
     <div id="back"></div>
 
     <center>
-        <main id="main" class="flex">
-            <h1>Island Preview</h1>
-            <br>
-            <h2>preview is not ready at this time</h2>
-        
-            <br>
-            <div id="audctrls"></div>
-            <audio id="music"></audio>
-            <br>
+        <main id="main">
+            <h1>Previews of Reper2's Island</h1>
 
-            <div class="tooltip">
-                <button id="copy" onclick="copyLink()">
-                    <span class="tooltiptext" id="copy-tooltip">Copy link to clipboard</span>
-                    Copy Link
-                </button>
+            <!-- spent hours trying to make a For loop to make this more efficient but no luck, you can find my attempt in index.bak.html and isprev.bak.js -->
+            <div class="row">
+                <div class="column">
+                    <a href="#prev-01">
+                        <img src="prev-01.jpg" onclick="openModal(); currentSlide(1)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-02">
+                        <img src="prev-02.jpg" onclick="openModal(); currentSlide(2)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-03">
+                        <img src="prev-03.jpg" onclick="openModal(); currentSlide(3)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-04">
+                        <img src="prev-04.jpg" onclick="openModal(); currentSlide(4)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-05">
+                        <img src="prev-05.jpg" onclick="openModal(); currentSlide(5)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-06">
+                        <img src="prev-06.jpg" onclick="openModal(); currentSlide(6)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-07">
+                        <img src="prev-07.jpg" onclick="openModal(); currentSlide(7)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-08">
+                        <img src="prev-08.jpg" onclick="openModal(); currentSlide(8)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-09">
+                        <img src="prev-09.jpg" onclick="openModal(); currentSlide(9)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-10">
+                        <img src="prev-10.jpg" onclick="openModal(); currentSlide(10)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-11">
+                        <img src="prev-11.jpg" onclick="openModal(); currentSlide(11)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-12">
+                        <img src="prev-12.jpg" onclick="openModal(); currentSlide(12)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-13">
+                        <img src="prev-13.jpg" onclick="openModal(); currentSlide(13)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-14">
+                        <img src="prev-14.jpg" onclick="openModal(); currentSlide(14)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-15">
+                        <img src="prev-15.jpg" onclick="openModal(); currentSlide(15)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-16">
+                        <img src="prev-16.jpg" onclick="openModal(); currentSlide(16)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-17">
+                        <img src="prev-17.jpg" onclick="openModal(); currentSlide(17)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-18">
+                        <img src="prev-18.jpg" onclick="openModal(); currentSlide(18)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-19">
+                        <img src="prev-19.jpg" onclick="openModal(); currentSlide(19)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-20">
+                        <img src="prev-20.jpg" onclick="openModal(); currentSlide(20)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-21">
+                        <img src="prev-21.jpg" onclick="openModal(); currentSlide(21)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-22">
+                        <img src="prev-22.jpg" onclick="openModal(); currentSlide(22)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-23">
+                        <img src="prev-23.jpg" onclick="openModal(); currentSlide(23)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-24">
+                        <img src="prev-24.jpg" onclick="openModal(); currentSlide(24)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-25">
+                        <img src="prev-25.jpg" onclick="openModal(); currentSlide(25)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-26">
+                        <img src="prev-26.jpg" onclick="openModal(); currentSlide(26)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-27">
+                        <img src="prev-27.jpg" onclick="openModal(); currentSlide(27)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-28">
+                        <img src="prev-28.jpg" onclick="openModal(); currentSlide(28)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-29">
+                        <img src="prev-29.jpg" onclick="openModal(); currentSlide(29)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-30">
+                        <img src="prev-30.jpg" onclick="openModal(); currentSlide(30)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-31">
+                        <img src="prev-31.jpg" onclick="openModal(); currentSlide(31)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-32">
+                        <img src="prev-32.jpg" onclick="openModal(); currentSlide(32)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-33">
+                        <img src="prev-33.jpg" onclick="openModal(); currentSlide(33)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-34">
+                        <img src="prev-34.jpg" onclick="openModal(); currentSlide(34)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-35">
+                        <img src="prev-35.jpg" onclick="openModal(); currentSlide(35)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-36">
+                        <img src="prev-36.jpg" onclick="openModal(); currentSlide(36)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-37">
+                        <img src="prev-37.jpg" onclick="openModal(); currentSlide(37)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-38">
+                        <img src="prev-38.jpg" onclick="openModal(); currentSlide(38)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-39">
+                        <img src="prev-39.jpg" onclick="openModal(); currentSlide(39)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-40">
+                        <img src="prev-40.jpg" onclick="openModal(); currentSlide(40)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-41">
+                        <img src="prev-41.jpg" onclick="openModal(); currentSlide(41)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-42">
+                        <img src="prev-42.jpg" onclick="openModal(); currentSlide(42)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-43">
+                        <img src="prev-43.jpg" onclick="openModal(); currentSlide(43)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-44">
+                        <img src="prev-44.jpg" onclick="openModal(); currentSlide(44)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-45">
+                        <img src="prev-45.jpg" onclick="openModal(); currentSlide(45)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-46">
+                        <img src="prev-46.jpg" onclick="openModal(); currentSlide(46)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-47">
+                        <img src="prev-47.jpg" onclick="openModal(); currentSlide(47)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-48">
+                        <img src="prev-48.jpg" onclick="openModal(); currentSlide(48)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-49">
+                        <img src="prev-49.jpg" onclick="openModal(); currentSlide(49)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-50">
+                        <img src="prev-50.jpg" onclick="openModal(); currentSlide(50)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="#prev-51">
+                        <img src="prev-51.jpg" onclick="openModal(); currentSlide(51)" class="hover-shadow" width="100%">
+                    </a>
+                </div>
             </div>
+            
+            <!-- The Modal/Lightbox -->
+            <div id="modal" class="modal">
+                <a href="#"><span class="close cursor" onclick="closeModal()">&times;</span></a>
+
+                <div class="modal-content">
+                    <div id="prev-01" class="slides">
+                        <a href="#prev-01" onclick="copyLink()">
+                            <div class="numbertext">1 / 51</div>
+                            <img src="prev-01.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-02" class="slides">
+                        <a href="#prev-02" onclick="copyLink()">
+                            <div class="numbertext">2 / 51</div>
+                            <img src="prev-02.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-03" class="slides">
+                        <a href="#prev-03" onclick="copyLink()">
+                            <div class="numbertext">3 / 51</div>
+                            <img src="prev-03.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-04" class="slides">
+                        <a href="#prev-04" onclick="copyLink()">
+                            <div class="numbertext">4 / 51</div>
+                            <img src="prev-04.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-05" class="slides">
+                        <a href="#prev-05" onclick="copyLink()">
+                            <div class="numbertext">5 / 51</div>
+                            <img src="prev-05.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-06" class="slides">
+                        <a href="#prev-06" onclick="copyLink()">
+                            <div class="numbertext">6 / 51</div>
+                            <img src="prev-06.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-07" class="slides">
+                        <a href="#prev-07" onclick="copyLink()">
+                            <div class="numbertext">7 / 51</div>
+                            <img src="prev-07.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-08" class="slides">
+                        <a href="#prev-08" onclick="copyLink()">
+                            <div class="numbertext">8 / 51</div>
+                            <img src="prev-08.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-09" class="slides">
+                        <a href="#prev-09" onclick="copyLink()">
+                            <div class="numbertext">9 / 51</div>
+                            <img src="prev-09.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-10" class="slides">
+                        <a href="#prev-10" onclick="copyLink()">
+                            <div class="numbertext">10 / 51</div>
+                            <img src="prev-10.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-11" class="slides">
+                        <a href="#prev-11" onclick="copyLink()">
+                            <div class="numbertext">11 / 51</div>
+                            <img src="prev-11.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-12" class="slides">
+                        <a href="#prev-12" onclick="copyLink()">
+                            <div class="numbertext">12 / 51</div>
+                            <img src="prev-12.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-13" class="slides">
+                        <a href="#prev-13" onclick="copyLink()">
+                            <div class="numbertext">13 / 51</div>
+                            <img src="prev-13.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-14" class="slides">
+                        <a href="#prev-14" onclick="copyLink()">
+                            <div class="numbertext">14 / 51</div>
+                            <img src="prev-14.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-15" class="slides">
+                        <a href="#prev-15" onclick="copyLink()">
+                            <div class="numbertext">15 / 51</div>
+                            <img src="prev-15.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-16" class="slides">
+                        <a href="#prev-16" onclick="copyLink()">
+                            <div class="numbertext">16 / 51</div>
+                            <img src="prev-16.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-17" class="slides">
+                        <a href="#prev-17" onclick="copyLink()">
+                            <div class="numbertext">17 / 51</div>
+                            <img src="prev-17.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-18" class="slides">
+                        <a href="#prev-18" onclick="copyLink()">
+                            <div class="numbertext">18 / 51</div>
+                            <img src="prev-18.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-19" class="slides">
+                        <a href="#prev-19" onclick="copyLink()">
+                            <div class="numbertext">19 / 51</div>
+                            <img src="prev-19.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-20" class="slides">
+                        <a href="#prev-20" onclick="copyLink()">
+                            <div class="numbertext">20 / 51</div>
+                            <img src="prev-20.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-21" class="slides">
+                        <a href="#prev-21" onclick="copyLink()">
+                            <div class="numbertext">21 / 51</div>
+                            <img src="prev-21.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-22" class="slides">
+                        <a href="#prev-22" onclick="copyLink()">
+                            <div class="numbertext">22 / 51</div>
+                            <img src="prev-22.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-23" class="slides">
+                        <a href="#prev-23" onclick="copyLink()">
+                            <div class="numbertext">23 / 51</div>
+                            <img src="prev-23.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-24" class="slides">
+                        <a href="#prev-24" onclick="copyLink()">
+                            <div class="numbertext">24 / 51</div>
+                            <img src="prev-24.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-25" class="slides">
+                        <a href="#prev-25" onclick="copyLink()">
+                            <div class="numbertext">25 / 51</div>
+                            <img src="prev-25.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-26" class="slides">
+                        <a href="#prev-26" onclick="copyLink()">
+                            <div class="numbertext">26 / 51</div>
+                            <img src="prev-26.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-27" class="slides">
+                        <a href="#prev-27" onclick="copyLink()">
+                            <div class="numbertext">27 / 51</div>
+                            <img src="prev-27.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-28" class="slides">
+                        <a href="#prev-28" onclick="copyLink()">
+                            <div class="numbertext">28 / 51</div>
+                            <img src="prev-28.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-29" class="slides">
+                        <a href="#prev-29" onclick="copyLink()">
+                            <div class="numbertext">29 / 51</div>
+                            <img src="prev-29.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-30" class="slides">
+                        <a href="#prev-30" onclick="copyLink()">
+                            <div class="numbertext">30 / 51</div>
+                            <img src="prev-30.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-31" class="slides">
+                        <a href="#prev-31" onclick="copyLink()">
+                            <div class="numbertext">31 / 51</div>
+                            <img src="prev-31.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-32" class="slides">
+                        <a href="#prev-32" onclick="copyLink()">
+                            <div class="numbertext">32 / 51</div>
+                            <img src="prev-32.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-33" class="slides">
+                        <a href="#prev-33" onclick="copyLink()">
+                            <div class="numbertext">33 / 51</div>
+                            <img src="prev-33.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-34" class="slides">
+                        <a href="#prev-34" onclick="copyLink()">
+                            <div class="numbertext">34 / 51</div>
+                            <img src="prev-34.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-35" class="slides">
+                        <a href="#prev-35" onclick="copyLink()">
+                            <div class="numbertext">35 / 51</div>
+                            <img src="prev-35.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-36" class="slides">
+                        <a href="#prev-36" onclick="copyLink()">
+                            <div class="numbertext">36 / 51</div>
+                            <img src="prev-36.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-37" class="slides">
+                        <a href="#prev-37" onclick="copyLink()">
+                            <div class="numbertext">37 / 51</div>
+                            <img src="prev-37.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-38" class="slides">
+                        <a href="#prev-38" onclick="copyLink()">
+                            <div class="numbertext">38 / 51</div>
+                            <img src="prev-38.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-39" class="slides">
+                        <a href="#prev-39" onclick="copyLink()">
+                            <div class="numbertext">39 / 51</div>
+                            <img src="prev-39.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-40" class="slides">
+                        <a href="#prev-40" onclick="copyLink()">
+                            <div class="numbertext">40 / 51</div>
+                            <img src="prev-40.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-41" class="slides">
+                        <a href="#prev-41" onclick="copyLink()">
+                            <div class="numbertext">41 / 51</div>
+                            <img src="prev-41.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-42" class="slides">
+                        <a href="#prev-42" onclick="copyLink()">
+                            <div class="numbertext">42 / 51</div>
+                            <img src="prev-42.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-43" class="slides">
+                        <a href="#prev-43" onclick="copyLink()">
+                            <div class="numbertext">43 / 51</div>
+                            <img src="prev-43.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-44" class="slides">
+                        <a href="#prev-44" onclick="copyLink()">
+                            <div class="numbertext">44 / 51</div>
+                            <img src="prev-44.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-45" class="slides">
+                        <a href="#prev-45" onclick="copyLink()">
+                            <div class="numbertext">45 / 51</div>
+                            <img src="prev-45.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-46" class="slides">
+                        <a href="#prev-46" onclick="copyLink()">
+                            <div class="numbertext">46 / 51</div>
+                            <img src="prev-46.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-47" class="slides">
+                        <a href="#prev-47" onclick="copyLink()">
+                            <div class="numbertext">47 / 51</div>
+                            <img src="prev-47.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-48" class="slides">
+                        <a href="#prev-48" onclick="copyLink()">
+                            <div class="numbertext">48 / 51</div>
+                            <img src="prev-48.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-49" class="slides">
+                        <a href="#prev-40" onclick="copyLink()">
+                            <div class="numbertext">49 / 51</div>
+                            <img src="prev-40.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-50" class="slides">
+                        <a href="#prev-50" onclick="copyLink()">
+                            <div class="numbertext">50 / 51</div>
+                            <img src="prev-50.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <div id="prev-51" class="slides">
+                        <a href="#prev-51" onclick="copyLink()">
+                            <div class="numbertext">51 / 51</div>
+                            <img src="prev-51.jpg" style="width: 100%">
+                        </a>
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <h2 id="caption"></h2>
+                    </div>
+
+                    <br><br><br><br><br>
+                </div>
+            </div>
+
+            <div id="buttons" class="flex">
+                <div id="audctrls"></div>
+                <div id="copyDiv"></div>
+            </div>
+
+            <br><audio id="music"></audio>
         </main>
 
-        <footer id="footer" class="flex bottomLinks"></footer>
+        <footer id="footer" class="bottomLinks"></footer>
+        <footer id="copyright" class="bottomLinks"></footer>
     </center>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" src="../../scripts/back.js"></script>
-<script type="module" src="../scripts/modules/background.mjs"></script>
-<script type="module" src="../scripts/modules/music.mjs"></script>
+<script type="text/javascript" src="../scripts/isprev.js"></script>
+<script type="text/javascript" src="../scripts/clipboard.js"></script>
 <script type="text/javascript" src="../scripts/audio-controls.js"></script>
-<script type="text/javascript" src="../../scripts/clipboard.js"></script>
+<script type="text/javascript" src="../scripts/copyBtn.js"></script>
 <script type="text/javascript" src="../scripts/footer.js"></script>
+<script type="text/javascript" src="../scripts/copyright.js"></script>
+<script type="module" src="../scripts/modules/music.mjs"></script>
+<script type="module" src="../scripts/modules/background.mjs"></script>
+<script type="module" src="../scripts/modules/back.mjs"></script>
 <script>
+    let num = Math.floor(Math.random() * 51), meta = document.getElementById('meta-image');
+    meta.content = `https://reper2.github.io/acnh/island/prev-${num}.jpg`;
+
     if ('serviceWorker' in navigator) {
         // Register a service worker after the load event
         addEventListener('load', () => {
             navigator.serviceWorker.register('../sw.js').then(console.log('Service worker successfully installed.'));
 
             if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
-                console.log('Executing app install reminder.'),
+                console.log('🔔Executing app install reminder.'),
                     // reminds the user they can install the app
-                    alert('Install the app!\nDesktop Browser - click install button in top-right of address bar\nMobile Browser - click Add To Homescreen after clicking share button');
+                    alert('Install the app!\nDesktop - click install button in top-right of address bar\nMobile - click Add To Homescreen after clicking share button');
             };
         });
     };
 
     onappinstalled = event => {
-        console.log('Thank you for installing the app!');
+        var msg = 'Thank you for installing the app!';
+        alert(msg);
+        console.log(`🙏🏼${msg}`);
     };
 </script>
 

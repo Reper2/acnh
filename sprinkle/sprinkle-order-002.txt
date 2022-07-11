@@ -1,0 +1,62 @@
+Wishlist Order
+
+Item List:
+Pink-Lily Plant
+Moon
+Crescent-Moon Chair
+Green-Mum Plant
+Spooky Fence DIY
+Orange-Pansy Plant
+Purple-Pansy Plant
+Black-Rose Plant
+Gold-Rose Plant
+Orange-Lily Plant
+Wedding Fence DIY
+Frozen Fence DIY
+Corrugated Iron Fence DIY
+Amazing Machine
+Unknown Machine
+Coffee Plant
+
+Item Codes:
+0F34 pink-lily plant
+041E moon
+1AAD crescent-moon chair
+0F5E green-mum plant
+33DB spooky fence: Recipe order code: 2E1000016A2
+0F10 orange-pansy plant
+0F12 purple-pansy plant
+0F22 black-rose plant
+0F26 gold-rose plant
+0F36 orange-lily plant
+325E wedding fence: Recipe order code: 2CA000016A2
+39A4 frozen fence: Recipe order code: 3F0000016A2
+39A6 corrugated iron fence: Recipe order code: 3F2000016A2
+34CC amazing machine
+34CD unknown machine"
+38ED coffee plant
+
+Command:
+$order 0F34 041E 1AAD 0F5E 2E1000016A2 0F10 0F12 0F22 0F26 0F36 2CA000016A2 3F0000016A2 3F2000016A2 34CC 34CD 38ED
+
+Responses:
+I've added you to the queue! I'll message you here when your order is ready
+@Reper2 - Added you to the order queue. Your position is: 27. Your predicted ETA is 03h:24m:05s
+
+Command:
+$order 0F34 041E 1AAD 0F5E 2E1000016A2 0F10 0F12 0F22 0F26 0F36 2CA000016A2 3F0000016A2 3F2000016A2 34CC 34CD 38ED
+
+Responses:
+I've added you to the queue! I'll message you here when your order is ready
+@Reper2 - Added you to the order queue. Your position is: 18. Your predicted ETA is 02h:16m:35s
+
+Command:
+$order 0F34 041E 1AAD 0F5E 2E1000016A2 0F10 0F12 0F22 0F26 0F36 2CA000016A2 3F0000016A2 3F2000016A2 34CC 34CD 38ED
+
+Responses:
+I've added you to the queue! I'll message you here when your order is ready
+@Reper2 - Added you to the order queue. Your position is: 15. Your predicted ETA is 01h:54m:05s
+Your order is starting, please ensure your inventory is empty, then go talk to Orville and stay on the Dodo code entry screen. I will send you the Dodo code shortly.
+I'm waiting for you Reper2! You have 162 seconds to arrive. My island name is Frappe. Your Dodo code is 1KQ3C
+Visitor arriving: Reper2. Your items will be in front of you once you land.
+Your order is complete, Thanks for your order! Stay awesome!

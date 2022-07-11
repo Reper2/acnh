@@ -5,7 +5,7 @@ body {
 /* https://www.w3schools.com/howto/howto_js_lightbox.asp */
 
 .row>.column {
-    padding: 0 8px;
+    padding: 10 12px;
 }
 
 .row:after {
@@ -17,7 +17,7 @@ body {
 /* Create four equal columns that floats next to each other */
 .column {
     float: left;
-    width: 32.05%;
+    width: 30%;
 }
 
 /* The Modal (background) */
@@ -63,7 +63,7 @@ body {
 }
 
 /* Hide the slides by default */
-.mySlides {
+.slides {
     display: none;
 }
 

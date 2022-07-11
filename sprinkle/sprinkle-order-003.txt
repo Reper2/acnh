@@ -1,0 +1,28 @@
+Flower & Star Fragment Order
+
+Item List:
+Star Fragment
+Pink-Lily Plant
+Blue-Rose Plant
+Orange-Pansy Plant
+Purple-Pansy Plant
+Green-Mum Plant
+
+Item Codes:
+175F star fragment
+0F34 pink-lily plant
+0F24 blue-rose plant
+0F10 orange-pansy plant
+0F12 purple-pansy plant
+0F5E green-mum plant
+
+Command:
+$order 175F 0F34 0F34 0F34 0F34 0F34 0F34 0F34 0F24 0F24 0F24 0F24 0F24 0F10 0F10 0F10 0F12 0F12 0F12 0F12 0F12 0F12 0F5E 0F5E 0F5E
+
+Responses:
+I've added you to the queue! I'll message you here when your order is ready
+@Reper2 - Added you to the order queue. Your position is: 1. Your order will start after the current order is complete!
+Your order is starting, please ensure your inventory is empty, then go talk to Orville and stay on the Dodo code entry screen. I will send you the Dodo code shortly.
+I'm waiting for you Reper2! You have 162 seconds to arrive. My island name is Frappe. Your Dodo code is 7G39W
+Visitor arriving: Reper2. Your items will be in front of you once you land.
+Your order is complete, Thanks for your order! Stay awesome!

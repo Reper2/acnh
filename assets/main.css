@@ -22,15 +22,12 @@ h5,
 h6,
 p,
 a,
-span {
+span,
+button {
     font-family: 'FOT-RodinBokutoh Pro B', sans-serif;
     color: white;
     -webkit-text-stroke-width: 0.15vmin;
     -webkit-text-stroke-color: black;
-}
-
-summary {
-    color: gold;
 }
 
 a {
@@ -112,8 +109,13 @@ a:focus-visible .nookPhone_app {
     font-size: 4vmin;
 }
 
-.flex {
-    position: flex;
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox {
+    display: flexbox;
 }
 
 #back {
@@ -133,7 +135,7 @@ button {
 }
 
 button:hover {
-    transform: translateY(-1vh);
+    transform: translateY(-1vmin);
 }
 
 .tooltip {

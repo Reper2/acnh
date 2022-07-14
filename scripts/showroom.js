@@ -8,6 +8,7 @@ function openModal() {
 // Close the Modal
 function closeModal() {
     document.getElementById('modal').style.display = 'none';
+    window.location.href = '#';
 }
 
 var slideIndex = 1;
@@ -38,9 +39,10 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace(' active', '');
     }
     slides[slideIndex - 1].style.display = 'block';
+    slides.title = 'Focus and copy link to this slide (Enter)';
     dots[slideIndex - 1].className += ' active';
     captionText.innerHTML = dots[slideIndex - 1].alt;
-}
+};
 
 if (window.location.href.endsWith('#hero-secret-base')) {
     openModal();

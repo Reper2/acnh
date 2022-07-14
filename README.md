@@ -1,26 +1,31 @@
 # Reper2's ACNH Website
+readme is unfinished, will be finished really soon.
+
 > ![favicon](./favicon.ico)  
 > Reper2's Animal Crossing: New Horizons website. Includes: complete album of Reper2's acnh photos & videos, hhn showroom, all of Reper2's custom designs (as well as design sets), preview of Reper2's island, Sprinkle order files, and other links to profiles & etc.
 > ![large_image](./meta.png)
 
 # Features:
-- 350+ backgrounds (that change to a different background every time you refresh the page)
-- evently backgrounds for many events that are held in acnh
-- hourly & evently music just like in the game
-- message box like in acnh (using acnhmsgbox npm library)
-- And much more...
+- [Nearly 500 backgrounds][bg] (that change to a different background every time you refresh the page)
+- [Evently backgrounds for many events that are held in acnh][bg]
+- [Hourly & evently music just like in the game][mus]
+- Message box like in acnh (using [acnhmsgbox npm library][acnhmsgbox])
+- [Keyboard shortcuts](https://reper2.github.io/acnh/kbd)
+- [Notifications about events][notif]
+- Installable
+- And much much more...
 
 # NookPhone Apps:
 Some of these may still be under construction.
-- **Album**: download the complete album of my acnh screenshots & videos
-- **DodoCodes Profile**: my DodoCodes.com profile
-- **Sprinkle Order Files**: download my Sprinkle order files
-- **ACNH Apps**: Animal Crossing New Horizons Apps is a website with useful apps for you to use
-- **Nookazon Profile**: my Nookazon profile
-- **GitHub Repository**: link to this GitHub repository
-- **Custom Designs, Design Sets**: my Custom Designs and Design Sets
-- **Island Preview**: preview of my island
-- **Happy Home Network Gallery**: my Happy Home Network gallery
+- [Album](https://reper2.github.io/acnh/#album): Download the complete album of my acnh screenshots & videos
+- [DodoCodes Profile](https://reper2.github.io/acnh/#dodocodes): My DodoCodes.com profile
+- [Sprinkle Order Files](https://reper2.github/acnh/sprinkle/): Download my Sprinkle order files
+- [ACNH Apps](https://reper2.github/acnh-apps/): Animal Crossing New Horizons Apps is a website with useful apps for you to use
+- [Nookazon Profile](https://reper2.github.io/acnh/#nookazon): My Nookazon profile
+- [GitHub Repository](): Link to this GitHub repository
+- [Designs](https://reper2.github.io/acnh/#designs) -> [Design Sets][https://reper2.github.io]: My Custom Designs and Design Sets
+- [Island Preview](https://reper2.github.io/acnh/#isprev): 51 previews of my island
+- [HHN Showroom](https://reper2.github.io/acnh/#showroom): My Happy Home Network Showroom
 
 # Dependencies & Submodules
 These are the npm libraries and github submodules that make up part of the website or are invloved in the development.
@@ -34,8 +39,15 @@ These are the npm libraries and github submodules that make up part of the websi
 ## Submodules
 - [acnhmsgbox][acnhmsgbox]
 
-[View Dependencies](./package.json)  
-[View Submodules](./.gitmodules)
+[View Dependencies][pkg]  
+[View Submodules][gitmod]
+
+# Service Workers
+- [Main Service Worker][sw]
+- [Notifications Service Worker][notif]
+
+# Libraries
+- [jQuery][jQuery] - [Source][g_jQuery]
 
 # Modules
 | Module | Description | Imports | Exports | Used By
@@ -73,6 +85,14 @@ graph TD;
     events-->music.mjs;
 
     hours-->music.mjs;
+
+    kbd.mjs-->home;
+    kbd.mjs-->sprinkle;
+    kbd.mjs-->designs;
+    kbd.mjs-->sets;
+    kbd.mjs-->island;
+    kbd.mjs-->hhn;
+    kbd.mjs-->kbd;
 
     music.mjs-->home;
     music.mjs-->sprinkle;
@@ -116,7 +136,7 @@ These are the regular scripts that make up the website without the imports or ex
 ```mermaid
 graph LR;
     acnhmsgbox_home.js-->home;
-    acnhmsgbox_comingsoon.js-->comingsoon.html;
+    acnhmsgbox_comingsoon.js-->comingsoon;
 
     audio-controls.js-->home;
     audio-controls.js-->sprinkle;
@@ -136,6 +156,7 @@ graph LR;
     copyBtn.js-->sets;
     copyBtn.js-->island;
     copyBtn.js-->hhn;
+    copyBtn.js-->kbd;
 
     copyright.js-->home;
     copyright.js-->sprinkle;
@@ -143,6 +164,7 @@ graph LR;
     copyright.js-->sets;
     copyright.js-->island;
     copyright.js-->hhn;
+    copyright.js-->kbd;
 
     download.js-->sprinkle;
     download.js-->designs;
@@ -154,6 +176,7 @@ graph LR;
     footer.js-->sets;
     footer.js-->island;
     footer.js-->hhn;
+    footer.js-->kbd;
 
     isprev.js-->island;
 
@@ -163,34 +186,46 @@ graph LR;
 
 ---
 
-[home]: [./index.html]
-[sprinkle]: [./sprinkle/index.html]
-[designs]: [./designs/index.html]
-[sets]: [./designs/sets/index.html]
-[island]: [./island/index.html]
-[hhn]: [./hhn/index.html]
-[comingsoon]: [./comingsoon.html]
+<!-- Sources -->
+[home]: [index.html]
+[sprinkle]: [sprinkle/index.html]
+[designs]: [designs/index.html]
+[sets]: [designs/sets/index.html]
+[island]: [island/index.html]
+[hhn]: [hhn/index.html]
+[comingsoon]: [comingsoon.html]
 
-[back]: [./scripts/modules/back.mjs]
-[bg]: [./scripts/modules/backgrounds.mjs]
-[con]: [./scripts/modules/console.mjs]
-[events]: [./scripts/modules/events.mjs]
-[hours]: [./scripts/modules/hours.mjs]
-[mus]: [./scripts/modules/music.mjs]
-[path]: [./scripts/modules/path.mjs]
-[time]: [./scripts/modules/time.mjs]
+<!-- Modules -->
+[back]: [scripts/modules/back.mjs]
+[bg]: [scripts/modules/backgrounds.mjs]
+[con]: [scripts/modules/console.mjs]
+[events]: [scripts/modules/events.mjs]
+[hours]: [scripts/modules/hours.mjs]
+[kbd]: [scripts/modules/kbd.mjs]
+[mus]: [scripts/modules/music.mjs]
+[path]: [scripts/modules/path.mjs]
+[swi]: [scripts/modules/sw-installer.mjs]
+[time]: [scripts/modules/time.mjs]
 
-[msgbox_home]: [./scripts/acnhmsgbox_home.js]
-[msgbox_comingsoon]: [./scripts/acnhmsgbox_comingsoon.js]
-[audctrls]: [./scripts/audio-controls.js]
-[clipboard]: [./scripts/clipboard.js]
-[clock]: [./scripts/clock.js]
-[copyBtn]: [./scripts/copyBtn.js]
-[copyright]: [./scripts/copyright.js]
-[download]: [./scripts/download.js]
-[footer]: [./scripts/footer.js]
-[isprev]: [./scripts/isprev.js]
-[showroom]: [./scripts/showroom.js]
+<!-- Scripts -->
+[msgbox_home]: [scripts/acnhmsgbox_home.js]
+[msgbox_comingsoon]: [scripts/acnhmsgbox_comingsoon.js]
+[audctrls]: [scripts/audio-controls.js]
+[clipboard]: [scripts/clipboard.js]
+[clock]: [scripts/clock.js]
+[copyBtn]: [scripts/copyBtn.js]
+[copyright]: [scripts/copyright.js]
+[download]: [scripts/download.js]
+[footer]: [scripts/footer.js]
+[isprev]: [scripts/isprev.js]
+[showroom]: [scripts/showroom.js]
 
+<!-- Other -->
 [acnhmsgbox]: [https://npmjs.com/package/acnhmsgbox]
 [http-server]: [https://npmjs.com/package/http-server]
+[jQuery]: [scripts/jquery.min.js]
+[g_jQuery]: [https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js]
+[sw]: [sw.js]
+[notif]: [scripts/notifications.js]
+[pkg]: [package.json]
+[gitmod]: [.gitmodules]

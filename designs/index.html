@@ -30,54 +30,33 @@
     <div id="back"></div>
 
     <center>
-        <main id="main" class="flex">
+        <main id="main">
             <h1>Reper2's Custom Designs</h1>
         </main>
 
-        <br>
-        <div id="audctrls"></div>
-        <audio id="music"></audio>
-        <br>
-
-        <div class="tooltip">
-            <button id="copy" onclick="copyLink()">
-                <span class="tooltiptext" id="copy-tooltip">Copy link to clipboard</span>
-                Copy Link
-            </button>
+        <div id="buttons" class="flex">
+            <div id="audctrls"></div>
+            <div id="copyDiv"></div>
+            <div id="install"></div>
         </div>
 
-        <footer id="footer" class="flex bottomLinks"></footer>
+        <br><audio id="music"></audio>
+
+        <footer id="footer" class="bottomLinks"></footer>
+        <footer id="copyright" class="bottomLinks"></footer>
     </center>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.min.js"></script>
+<script type="module" src="../scripts/modules/sw-installer.mjs"></script>
+<script type="module" src="../scripts/modules/kbd.mjs"></script>
+<script type="module" src="../scripts/modules/background.mjs"></script>
+<script type="module" src="../scripts/modules/music.mjs"></script>
+<script type="module" src="../scripts/modules/back.mjs"></script>
 <script type="text/javascript" src="../scripts/download.js"></script>
 <script type="text/javascript" src="../scripts/audio-controls.js"></script>
 <script type="text/javascript" src="../scripts/copyBtn.js"></script>
 <script type="text/javascript" src="../scripts/clipboard.js"></script>
 <script type="text/javascript" src="../scripts/footer.js"></script>
 <script type="text/javascript" src="../scripts/copyright.js"></script>
-<script type="module" src="../scripts/modules/background.mjs"></script>
-<script type="module" src="../scripts/modules/music.mjs"></script>
-<script type="module" src="../scripts/modules/back.mjs"></script>
-<script>
-    if ('serviceWorker' in navigator) {
-        // Register a service worker after the load event
-        addEventListener('load', () => {
-            navigator.serviceWorker.register('../sw.js').then(console.log('Service worker successfully installed.'));
-
-            if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
-                console.log('🔔Executing app install reminder.'),
-                    // reminds the user they can install the app
-                    alert('Install the app!\nDesktop - click install button in top-right of address bar\nMobile - click Add To Homescreen after clicking share button');
-            };
-        });
-    };
-
-    onappinstalled = event => {
-        var msg = 'Thank you for installing the app!';
-        alert(msg);
-        console.log(`🙏🏼${msg}`);
-    };
-</script>
 
 </html>

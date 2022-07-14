@@ -3,7 +3,8 @@ const
     showBtn = document.createElement('button'),
     hideBtn = document.createElement('button'),
     showBtn_tooltip = document.createElement('span'),
-    hideBtn_tooltip = document.createElement('span');
+    hideBtn_tooltip = document.createElement('span')
+    music = document.getElementById('music');
 
 audctrls.className = 'tooltip';
 
@@ -13,7 +14,7 @@ showBtn.innerHTML = 'Show Audio Controls';
 
 showBtn_tooltip.className = 'tooltiptext';
 showBtn_tooltip.id = 'show-tooltip';
-showBtn_tooltip.innerHTML = 'Show audio controls';
+showBtn_tooltip.innerHTML = 'Show audio controls (Alt+S)';
 showBtn.appendChild(showBtn_tooltip);
 
 hideBtn.id = 'audctrlBtn_hide';
@@ -22,24 +23,24 @@ hideBtn.innerHTML = 'Hide Audio Controls';
 
 hideBtn_tooltip.className = 'tooltiptext';
 hideBtn_tooltip.id = 'hide-tooltip';
-hideBtn_tooltip.innerHTML = 'Hide audio controls';
+hideBtn_tooltip.innerHTML = 'Hide audio controls (Alt+H)';
 hideBtn.appendChild(hideBtn_tooltip);
 
 audctrls.appendChild(showBtn);
 audctrls.appendChild(hideBtn);
 
-console.log('🎛️Added audio control buttons to page.');
-
-showBtn.onclick = function() {
-    document.getElementById('music').style.display = 'block';
-    document.getElementById('audctrlBtn_show').style.display = 'none';
-    document.getElementById('audctrlBtn_hide').style.display = 'block';
+showBtn.addEventListener('click', () => {
+    music.style.display = 'block';
+    showBtn.style.display = 'none';
+    hideBtn.style.display = 'block';
     console.log('🧙🏼Audio controls are now visible.');
-};
+});
 
-hideBtn.onclick = function() {
-    document.getElementById('music').style.display = 'none';
-    document.getElementById('audctrlBtn_show').style.display = 'block';
-    document.getElementById('audctrlBtn_hide').style.display = 'none';
-    console.log('💨Audio controls are now hidden.');
-};
+hideBtn.addEventListener('click', () => {
+    music.style.display = 'none';
+    showBtn.style.display = 'block';
+    hideBtn.style.display = 'none';
+    console.log('👻Audio controls are now hidden.');
+});
+
+console.log('🎛️Added audio control buttons to page.');

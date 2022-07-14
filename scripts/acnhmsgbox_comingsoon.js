@@ -14,8 +14,6 @@ const
 	a = document.createElement('a'),
 	img = document.createElement('img');
 
-acnhmsgbox.class = 'flex';
-
 a.target = '_blank';
 a.href = '/';
 

@@ -17,6 +17,18 @@ const
     * https://github.com/Reper2/acnh-apps/tree/master/Scripts
     **/
 
+    // May Day Tour
+    maydaytour =
+    time.D == '4-29' ||
+        time.D == '4-30' ||
+            time.D == '5-1' ||
+                time.D == '5-2' ||
+                    time.D == '5-3' ||
+                        time.D == '5-4' ||
+                            time.D == '5-5' ||
+                                time.D == '5-6' ||
+                                    time.D == '5-7',
+
     // International Museum Day
     intlmusday =
     time.D == '5-18' ||
@@ -33,18 +45,6 @@ const
                                                 time.D == '5-29' ||
                                                     time.D == '5-30' ||
                                                         time.D == '5-31',
-
-    // May Day Tour
-    maydaytour =
-    time.D == '4-29' ||
-        time.D == '4-30' ||
-            time.D == '5-1' ||
-                time.D == '5-2' ||
-                    time.D == '5-3' ||
-                        time.D == '5-4' ||
-                            time.D == '5-5' ||
-                                time.D == '5-6' ||
-                                    time.D == '5-7',
 
     // Wedding Season
     wedseas = time.M == '6',
@@ -82,7 +82,7 @@ const
 
     // New Years Event
     nye = time.D == '12-31',
-    nye_1h = time.dh == '12-31 23',
+    nye_1h = time.D_h == '12-31 23',
     nye_30m = time.D_t == '12-31 23:30',
     nye_10m = time.D_t == '12-31 23:50',
     nye_5m = time.D_t == '12-31 23:55',
@@ -101,7 +101,7 @@ const
                                     !nye_midn;
 
 export {
-    intlmusday, maydaytour, wedseas, winter, bday, halloween, toyday,
+    maydaytour, intlmusday, wedseas, winter, bday, halloween, toyday,
     nye, nye_1h, nye_30m, nye_10m, nye_5m, nye_hny, nye_midn,
     reg
 };

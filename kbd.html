@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <title>Keyboard Shortcuts - Reper2's ACNH Website</title>
+    <meta charset="UTF-8">
+    <link href="assets/main.css" rel="stylesheet" type="text/css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL97YTBZQV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FL97YTBZQV');
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta id="meta-title" property="og:title" content="Keyboard Shortcuts - Reper2's ACNH Website">
+    <meta id="meta-desc" property="og:description" content="List of all the available keyboard shortcuts that you can use on Reper2's ACNH Website.">
+    <meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io">
+    <meta name="theme-color" content="#14d8ee">
+</head>
+
+<body id="bg">
+    <div id="back"></div>
+
+    <center>
+        <main id="main">
+            <div class="snow lightbluebox">
+                <h1>Keyboard Shortcuts</h1>
+                <p class="kbd-list">
+                    <span class="kbd-hint">General</span><br>
+                    <kbd>Ctrl</kbd><kbd>/</kbd> Show Keyboard Shortcut List<br>
+                    <kbd>Alt</kbd><kbd>S</kbd> Show Audio Controls<br>
+                    <kbd>Alt</kbd><kbd>H</kbd> Hide Audio Controls<br>
+                    <kbd>Ctrl</kbd><kbd>C</kbd> Copy Link<br>
+                    <kbd>Alt</kbd><kbd>C</kbd> Jump to Copyright<br>
+                    <kbd>Alt</kbd><kbd>R</kbd> View License<br>
+                    <kbd>F</kbd> Jump to Footer<br>
+                    <kbd>Ctrl</kbd><kbd>I</kbd> Install App<br>
+                    <kbd>Backspace</kbd> Back<br>
+                    <kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>D</kbd> Open Kbd Script<br>
+                    <br>
+                    <span class="kbd-hint">Island & HHN</span><br>
+                    <kbd>LeftArrow</kbd> Previous Slide<br>
+                    <kbd>RightArrow</kbd> Next Slide<br>
+                    <kbd>Enter</kbd> Copy Slide Link<br>
+                    <kbd>Esc</kbd> Close Modal<br>
+                    <br>
+                    <span class="kbd-hint" title="Mainly for home but still works on all pages within the website.">Home</span><br>
+                    <kbd>P</kbd> Open ACNH Album<br>
+                    <kbd>C</kbd> Open Dodocodes Profile<br>
+                    <kbd>O</kbd> Open Sprinkle Order Files<br>
+                    <kbd>A</kbd> Open ACNH Apps<br>
+                    <kbd>N</kbd> Open Nookazon Profile<br>
+                    <kbd>G</kbd> Open GitHub Repository<br>
+                    <kbd>D</kbd> Open Designs<br>
+                    <kbd>I</kbd> Open Island Preview<br>
+                    <kbd>H</kbd> Open HHN Showroom
+                </p>
+            </div>
+
+            <br>
+
+            <div id="buttons" class="flex">
+                <div id="audctrls"></div>
+                <div id="copy"></div>
+                <div id="install"></div>
+            </div>
+
+            <br><audio id="music"></audio>
+        </main>
+
+        <footer id="footer" class="bottomLinks"></footer>
+        <footer id="copyright" class="bottomLinks"></footer>
+    </center>
+</body>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="module" src="scripts/modules/sw-installer.mjs"></script>
+<script type="module" src="scripts/modules/kbd.mjs"></script>
+<script type="module" src="scripts/modules/background.mjs"></script>
+<script type="module" src="scripts/modules/music.mjs"></script>
+<script type="module" src="scripts/modules/back.mjs"></script>
+<script type="text/javascript" src="scripts/audio-controls.js"></script>
+<script type="text/javascript" src="scripts/copyBtn.js"></script>
+<script type="text/javascript" src="scripts/footer.js"></script>
+<script type="text/javascript" src="scripts/copyright.js"></script>
+
+</html>

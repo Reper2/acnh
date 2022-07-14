@@ -3,12 +3,13 @@
 // Open the Modal
 function openModal() {
     document.getElementById('modal').style.display = 'block';
-}
+};
 
 // Close the Modal
 function closeModal() {
     document.getElementById('modal').style.display = 'none';
-}
+    window.location.href = '#';
+};
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -16,12 +17,12 @@ showSlides(slideIndex);
 // Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
-}
+};
 
 // Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
-}
+};
 
 function showSlides(n) {
     var
@@ -34,8 +35,9 @@ function showSlides(n) {
         slides[i].style.display = 'none';
     }
     slides[slideIndex - 1].style.display = 'block';
+    slides.title = 'Focus and copy link to this slide (Enter)';
     captionText.innerHTML = slides[slideIndex - 1].id.replace('-', 'iew ').replace('p', 'P');
-}
+};
 
 if (window.location.href.endsWith('#prev-01')) {
     openModal();

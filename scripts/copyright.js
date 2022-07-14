@@ -5,6 +5,7 @@ var
 
 license.target = '_blank';
 license.href = 'https://github.com/Reper2/acnh/blob/master/LICENSE';
+license.title = 'View License (Alt+R)';
 
 cr_content.innerHTML = '(c) 2022 Reper2';
 

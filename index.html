@@ -34,43 +34,43 @@
                 <span id="clock"></span>
                 <br><br><br>
 
-                <a target="_blank" href="/acnh-album/" title="Album">
+                <a id="album" rel="noopener noreferrer" target="_blank" href="/nintendo-album/#:~:text=Downloads-,ACNH%20Album,GB%2C%20thousands%20of%20files%5D,-Game" title="Nintendo Album // ACNH Album (P)">
                     <img src="assets/nookPhone-app_native/camera.png" class="nookPhone_app">
                 </a>
 
-                <a target="_blank" href="https://dodocodes.com/user/Reper2_acnh" title="DodoCodes Profile">
+                <a id="dodocodes" target="_blank" href="https://dodocodes.com/user/Reper2_acnh" title="DodoCodes Profile (C)">
                     <img src="assets/nookPhone-app_other/dodocodes.png" class="nookPhone_app nookPhone_app_other">
                 </a>
 
-                <a href="sprinkle/" title="Sprinkle Order Files">
+                <a id="sprinkle" href="sprinkle/" title="Sprinkle Order Files (O)">
                     <img src="assets/nookPhone-app_other/sprinkle.png" class="nookPhone_app nookPhone_app_other">
                 </a>
 
                 <br>
 
-                <a target="_blank" href="/acnh-apps/" title="ACNH Apps">
+                <a id="apps" target="_blank" href="/acnh-apps/" title="ACNH Apps (A)">
                     <img src="assets/nookPhone-app_other/acnh-apps.png" class="nookPhone_app nookPhone_app_other">
                 </a>
 
-                <a target="_blank" href="https://nookazon.com/profile/2566680955" title="Nookazon Profile">
+                <a id="nookazon" target="_blank" href="https://nookazon.com/profile/2566680955" title="Nookazon Profile (N)">
                     <img src="assets/nookPhone-app_other/nookazon.png" class="nookPhone_app nookPhone_app_other">
                 </a>
 
-                <a target="_blank" href="https://github.com/Reper2/acnh" title="GitHub Repository">
+                <a id="repo" target="_blank" href="https://github.com/Reper2/acnh" title="GitHub Repository (G)">
                     <img src="assets/nookPhone-app_native/isdesigner.png" class="nookPhone_app">
                 </a>
 
                 <br>
 
-                <a href="designs/" title="Custom Designs, Design Sets">
+                <a id="designs" href="designs/" title="Custom Designs, Design Sets (D)">
                     <img src="assets/nookPhone-app_native/designs.png" class="nookPhone_app">
                 </a>
 
-                <a href="island/" title="Island Preview">
+                <a id="isprev" href="island/" title="Island Preview (I)">
                     <img src="assets/nookPhone-app_native/map.png" class="nookPhone_app">
                 </a>
 
-                <a href="hhn/" title="Happy Home Network Gallery">
+                <a id="showroom" href="hhn/" title="Happy Home Network Gallery (H)">
                     <img src="assets/nookPhone-app_native/hhn.png" class="nookPhone_app">
                 </a>
             </div>
@@ -81,7 +81,8 @@
 
             <div id="buttons" class="flex">
                 <div id="audctrls"></div>
-                <div id="copyDiv"></div>
+                <div id="copy"></div>
+                <div id="install"></div>
             </div>
 
             <br><audio id="music"></audio>
@@ -91,7 +92,11 @@
         <footer id="copyright" class="bottomLinks"></footer>
     </center>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="module" src="scripts/modules/sw-installer.mjs"></script>
+<script type="module" src="scripts/modules/kbd.mjs"></script>
+<script type="module" src="scripts/modules/background.mjs"></script>
+<script type="module" src="scripts/modules/music.mjs"></script>
 <script type="text/javascript" src="scripts/clock.js"></script>
 <script type="text/javascript" src="scripts/submodules/acnhMsgBox/acnhMessageBox.js"></script>
 <script type="text/javascript" src="scripts/acnhmsgbox_home.js"></script>
@@ -99,27 +104,5 @@
 <script type="text/javascript" src="scripts/copyBtn.js"></script>
 <script type="text/javascript" src="scripts/footer.js"></script>
 <script type="text/javascript" src="scripts/copyright.js"></script>
-<script type="module" src="scripts/modules/background.mjs"></script>
-<script type="module" src="scripts/modules/music.mjs"></script>
-<script>
-    if ('serviceWorker' in navigator) {
-        // Register a service worker after the load event
-        addEventListener('load', () => {
-            navigator.serviceWorker.register('./sw.js').then(console.log('Service worker successfully installed.'));
-
-            if (!matchMedia('(display-mode: standalone)').matches) { // only execute if app is not already installed
-                console.log('🔔Executing app install reminder.'),
-                    // reminds the user they can install the app
-                    alert('Install the app!\nDesktop - click install button in top-right of address bar\nMobile - click Add To Homescreen after clicking share button');
-            };
-        });
-    };
-
-    onappinstalled = event => {
-        var msg = 'Thank you for installing the app!';
-        alert(msg);
-        console.log(`🙏🏼${msg}`);
-    };
-</script>
 
 </html>

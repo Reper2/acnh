@@ -9,7 +9,7 @@ readme is unfinished, will be finished really soon.
 - [Nearly 500 backgrounds][bg] (that change to a different background every time you refresh the page)
 - [Evently backgrounds for many events that are held in acnh][bg]
 - [Hourly & evently music just like in the game][mus]
-- Message box like in acnh (using [acnhmsgbox npm library][acnhmsgbox])
+- Message box like in acnh
 - [Keyboard shortcuts](https://reper2.github.io/acnh/kbd)
 - [Notifications about events][notif]
 - Installable
@@ -23,7 +23,7 @@ Some of these may still be under construction.
 - [ACNH Apps](https://reper2.github/acnh-apps/): Animal Crossing New Horizons Apps is a website with useful apps for you to use
 - [Nookazon Profile](https://reper2.github.io/acnh/#nookazon): My Nookazon profile
 - [GitHub Repository](): Link to this GitHub repository
-- [Designs](https://reper2.github.io/acnh/#designs) -> [Design Sets][https://reper2.github.io]: My Custom Designs and Design Sets
+- [Designs](https://reper2.github.io/acnh/#designs) -> [Design Sets](https://reper2.github.io/acnh/designs/sets/): My Custom Designs and Design Sets
 - [Island Preview](https://reper2.github.io/acnh/#isprev): 51 previews of my island
 - [HHN Showroom](https://reper2.github.io/acnh/#showroom): My Happy Home Network Showroom
 

@@ -200,6 +200,10 @@ kbd {
     color: inherit;
 }
 
-#fileSelect {
+#fileSelect h3 a {
     color: cyan;
+}
+
+#fileSelect h2 {
+    color: blue;
 }

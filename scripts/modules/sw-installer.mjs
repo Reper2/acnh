@@ -8,13 +8,13 @@ addEventListener('load', () => {
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register(`${path.sb}sw.js`).then(function (registration) {
             // Registration was successful
-            console.warn('Main ServiceWorker registration successful with scope: ', registration.scope);
+            console.log('Main ServiceWorker registration successful with scope: ', registration.scope);
             if (registration.installing) {
-                console.warn('Main Service worker installing');
+                console.log('Main Service worker installing');
             } else if (registration.waiting) {
-                console.warn('Main Service worker installed');
+                console.log('Main Service worker installed');
             } else if (registration.active) {
-                console.warn('Main Service worker active');
+                console.log('Main Service worker active');
             }
         }).catch(function (err) {
             // Registration failed
@@ -23,13 +23,13 @@ addEventListener('load', () => {
 
         navigator.serviceWorker.register(`${path.sb}scripts/notifications.js`).then(function (registration) {
             // Registration was successful
-            console.warn('Notification ServiceWorker registration successful with scope: ', registration.scope);
+            console.log('Notification ServiceWorker registration successful with scope: ', registration.scope);
             if (registration.installing) {
-                console.warn('Notification Service worker installing');
+                console.log('Notification Service worker installing');
             } else if (registration.waiting) {
-                console.warn('Notification Service worker installed');
+                console.log('Notification Service worker installed');
             } else if (registration.active) {
-                console.warn('Notification Service worker active');
+                console.log('Notification Service worker active');
             }
         }).catch(function (err) {
             // Registration failed
@@ -59,6 +59,7 @@ addEventListener('load', () => {
     };
 });
 
+Notification.requestPermission();
 const install = document.getElementById('install');
 let deferredPrompt;
 
@@ -74,7 +75,6 @@ install.addEventListener('click', async () => {
             deferredPrompt = null;
         };
     };
-    Notification.requestPermission();
 });
 
 onappinstalled = event => {

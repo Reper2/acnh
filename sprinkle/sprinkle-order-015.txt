@@ -1,0 +1,34 @@
+Reper2's Bedroom Order
+Order for: SDX#2509
+
+Item List:
+Lab Chair
+Heart Crystal
+Bunk Bed (pink) (space)
+Throwback Rocket
+Hanging Monitor (gray) (operations data) 
+Hanging Sign (warning)
+Lightbulb Sign
+Wall-Mounted LED Display
+Unknown Machine
+
+Item Codes:
+34CE lab chair
+3102 heart crystal
+206A bunk bed: Frame: 6=Pink (Pink), Bedding: 096=Space (LightBlue)
+1299 throwback rocket
+3665 hanging monitor: Color: 2=Silver (Gray), Display: 160=Operations data (Green)
+380A hanging sign: Variation: 096=WARNING (Yellow-Black)
+3571 light-bulb sign
+3548 wall-mounted led display
+34CD unknown machine
+
+Command:
+$order 34CE 3102 000000660000206A 1299 000000A200003665 000000600000380A 3571 3548 34CD
+
+Responses:
+I've added you to the queue! I'll message you here when your order is ready
+@Reper2 - Added you to the order queue. Your position is: 3. Your predicted ETA is 24m:05s
+I'm waiting for you Reper2! You have 162 seconds to arrive. My island name is Frappe. Your Dodo code is 6QN9C
+Visitor arriving: Reper2. Your items will be in front of you once you land.
+Your order is complete, Thanks for your order! Stay awesome!

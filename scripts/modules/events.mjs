@@ -53,7 +53,7 @@ const
     winter =
         time.M == '6' ||
             time.M == '7' ||
-                time.m == '8',
+                time.M == '8',
 
     /* HELP NEEDED!
     * The Sunday Night August Fireworks dates are quite complicated and never the same.

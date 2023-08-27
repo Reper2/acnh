@@ -1,11 +1,11 @@
 module.exports = {
-	globDirectory: './',
+	globDirectory: "./",
 	globPatterns: [
-		'**/*.{html,jpg,gif,mp3,ogg,otf,png,css,ico,JPG,zip,PNG,js,mjs,webmanifest,txt}'
+		"**/*.{html,css,js,json,webmanifest,map,txt,jpg,png,gif,ico,mp3,ogg,zip,ttf,otf}" // sorted by type: code, data, text, image, audio, archive, font
 	],
 
-	maximumFileSizeToCacheInBytes: 100000000, //100MB
-	swDest: './sw.js',
+	maximumFileSizeToCacheInBytes: 100000000, // 100MB
+	swDest: "./sw.js",
 	ignoreURLParametersMatching: [
 		/^utm_/,
 		/^fbclid$/

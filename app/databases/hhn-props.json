@@ -1,0 +1,40 @@
+{
+	"$schema": "../schemas/modal-construct.schema.json",
+	"name": [
+		"⭐Starry Retreat⭐",
+		"◇Fancy Apparel◇",
+		"Hero Secret Base",
+		"Sky-High City Apartment",
+		"◆Only the Fanciest◆",
+		"Paradise Café",
+		"Curly's Codespace",
+		"Flower-Art Atelier",
+		"A Toy Box Full of Colors",
+		"Soothing Spa Vacation"
+	],
+	"id": [
+		"starry-retreat",
+		"fancy-apparel",
+		"hero-secret-base",
+		"sky-high-city-apartment",
+		"only-the-fanciest",
+		"paradise-cafe",
+		"curlys-codespace",
+		"flower-art-atelier",
+		"toy-box-full-colors",
+		"soothing-spa-vacation"
+	],
+	"img": [
+		"2023/01/27/2023012716522700",
+		"2023/01/27/2023012719043700",
+		"2023/01/27/2023012718584200",
+		"2023/01/29/2023012918095700",
+		"2023/01/27/2023012716550400",
+		"2023/01/27/2023012718431400",
+		"2023/01/27/2023012718514600",
+		"2023/01/27/2023012718415600",
+		"2023/01/29/2023012918153700",
+		"2023/01/28/2023012802042400"
+	],
+	"nso_url": "https://dpl.sd.lp1.acbaa.srv.nintendo.net/znca/game/4953919198265344?type=resortPlanner&raid=RA-7852-3149-7307"
+}

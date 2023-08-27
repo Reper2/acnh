@@ -1,0 +1,24 @@
+{
+	"title": "Music Fetch Database",
+	"description": "fetching acnh songs from external sites",
+	"type": "object",
+	"properties": {
+		"_pre": {
+			"description": "Prefix for most if not all soundtrack urls that are fetched.",
+			"type": "string"
+		},
+		"ev": {
+			"description": "Soundtracks for acnh events.",
+			"type": "array"
+		},
+		"hr_sunny": {
+			"description": "Soundtracks for acnh hourly songs (sunny weather). On the website these are played during Summer (Southern Hemisphere).",
+			"type": "array"
+		},
+		"hr_snowy": {
+			"description": "Soundtracks for acnh hourly songs (snowy weather). On the website these are played during Winter (Southern Hemisphere).",
+			"type": "array"
+		}
+	},
+	"required": ["_pre", "ev", "hr_sunny", "hr_snowy"]
+}

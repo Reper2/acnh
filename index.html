@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <title>Home - Reper2's ACNH Website</title>
-    <meta charset="UTF-8">
-    <link href="assets/main.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/topdiv.css" rel="stylesheet" type="text/css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL97YTBZQV"></script>
     <script>
@@ -13,96 +15,87 @@
 
         gtag('config', 'G-FL97YTBZQV');
     </script>
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/app/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/app/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/app/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta id="meta-title" property="og:title" content="Reper2's ACNH Website">
     <meta id="meta-desc" property="og:description" content="Reper2's Animal Crossing: New Horizons website. Includes: complete album of Reper2's acnh photos & videos, hhn showroom, all of Reper2's custom designs (as well as design sets), preview of Reper2's island, Sprinkle order files, and other links to profiles & etc. For more info on features, visit https://github.com/Reper2/acnh#features">
-    <meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/meta.png">
+    <meta id="meta-image" name="og:image" itemprop="image" content="https://raw.githubusercontent.com/Reper2/switch-album/acnh/2023/01/29/2023012914083600-02CB906EA538A35643C1E1484C4B947D.jpg">
     <meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io">
-    <meta name="theme-color" content="#14d8ee">
+    <meta name="theme-color" content="#00d5ff">
     <meta property="twitter:card" content="summary_large_image">
 </head>
 
-<body id="bg">
-    <center>
-        <main id="main">
-            <br>
-            <div class="nookPhone">
-                <p>Reper2's ACNH Website</p>
-                <span id="clock"></span>
-                <br><br><br>
-
-                <a id="album" rel="noopener noreferrer" target="_blank" href="/nintendo-album/#:~:text=Downloads-,ACNH%20Album,GB%2C%20thousands%20of%20files%5D,-Game" title="Nintendo Album // ACNH Album (P)">
-                    <img src="assets/nookPhone-app_native/camera.png" class="nookPhone_app">
-                </a>
-
-                <a id="dodocodes" target="_blank" href="https://dodocodes.com/user/Reper2_acnh" title="DodoCodes Profile (C)">
-                    <img src="assets/nookPhone-app_other/dodocodes.png" class="nookPhone_app nookPhone_app_other">
-                </a>
-
-                <a id="sprinkle" href="sprinkle/" title="Sprinkle Order Files (O)">
-                    <img src="assets/nookPhone-app_other/sprinkle.png" class="nookPhone_app nookPhone_app_other">
-                </a>
-
-                <br>
-
-                <a id="apps" target="_blank" href="/acnh-apps/" title="ACNH Apps (A)">
-                    <img src="assets/nookPhone-app_other/acnh-apps.png" class="nookPhone_app nookPhone_app_other">
-                </a>
-
-                <a id="nookazon" target="_blank" href="https://nookazon.com/profile/2566680955" title="Nookazon Profile (N)">
-                    <img src="assets/nookPhone-app_other/nookazon.png" class="nookPhone_app nookPhone_app_other">
-                </a>
-
-                <a id="repo" target="_blank" href="https://github.com/Reper2/acnh" title="GitHub Repository (G)">
-                    <img src="assets/nookPhone-app_native/isdesigner.png" class="nookPhone_app">
-                </a>
-
-                <br>
-
-                <a id="designs" href="designs/" title="Custom Designs, Design Sets (D)">
-                    <img src="assets/nookPhone-app_native/designs.png" class="nookPhone_app">
-                </a>
-
-                <a id="isprev" href="island/" title="Island Preview (I)">
-                    <img src="assets/nookPhone-app_native/map.png" class="nookPhone_app">
-                </a>
-
-                <a id="showroom" href="hhn/" title="Happy Home Network Gallery (H)">
-                    <img src="assets/nookPhone-app_native/hhn.png" class="nookPhone_app">
-                </a>
-            </div>
-
-            <br>
-
-            <div id="acnhmsgbox"></div>
-
+<body id="_bg">
+    <main id="main">
+        <topdiv>
+            <p>Ctrl+/ for keybinds list</p>
             <div id="buttons" class="flex">
                 <div id="audctrls"></div>
                 <div id="copy"></div>
-                <div id="install"></div>
             </div>
+            <div><audio id="music"></audio></div>
+        </topdiv>
 
-            <br><audio id="music"></audio>
-        </main>
+        <div class="nookPhone">
+            <p>Reper2's ACNH Website</p>
+            <span id="clock"></span>
+            <br><br><br>
+            
+            <a rel="noopener noreferrer" target="_blank" href="/switch-album/" title="Switch Album - Download Reper2's acnh album">
+                <img src="assets/nookPhone-app_native/camera.png" class="nookPhone_app" alt="switch_album">
+            </a>
+            <a rel="noopener noreferrer" target="_blank" href="https://dodocodes.com/user/Reper2_acnh" title="DodoCodes Profile">
+                <img src="assets/nookPhone-app_other/dodocodes.png" class="nookPhone_app nookPhone_app_other" alt="dodocodes">
+            </a>
+            <a href="sprinkle/" title="Sprinkle Order Files">
+                <img src="assets/nookPhone-app_other/sprinkle.png" class="nookPhone_app nookPhone_app_other" alt="sprinkle">
+            </a>
+            
+            <br>
+            
+            <a target="_blank" href="/acnh-apps/" title="ACNH Apps">
+                <img src="assets/nookPhone-app_other/acnh-apps.png" class="nookPhone_app nookPhone_app_other" alt="acnh_apps">
+            </a>
+            <a id="nookazon" rel="noopener noreferrer" target="_blank" href="https://nookazon.com/profile/2566680955" title="Nookazon Profile">
+                <img src="assets/nookPhone-app_other/nookazon.png" class="nookPhone_app nookPhone_app_other" alt="nookazon">
+            </a>
+            <a id="repo" rel="noopener noreferrer" target="_blank" href="https://github.com/Reper2/acnh" title="GitHub Repository">
+                <img src="assets/nookPhone-app_native/isdesigner.png" class="nookPhone_app" alt="github">
+            </a>
+            
+            <br>
+            
+            <a id="designs" href="designs/" title="Custom Designs, Design Sets">
+                <img src="assets/nookPhone-app_native/designs.png" class="nookPhone_app" alt="custom_designs">
+            </a>
+            <a id="isprev" href="island" title="Island Preview">
+                <img src="assets/nookPhone-app_native/map.png" class="nookPhone_app" alt="island_previews">
+            </a>
+            <a id="showroom" href="hhn" title="Happy Home Network Gallery">
+                <img src="assets/nookPhone-app_native/hhn.png" class="nookPhone_app" alt="hhn_showroom">
+            </a>
+        </div>
+        
+        <div id="acnhmsgbox"></div>
 
-        <footer id="footer" class="bottomLinks"></footer>
-        <footer id="copyright" class="bottomLinks"></footer>
-    </center>
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLAAIA_nxitLcEdvzV_bsBsHLAGzq2FTAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div><a class="twitter-timeline" data-width="500" data-height="300" data-theme="light" href="https://twitter.com/Reper25?ref_src=twsrc%5Etfw">Tweets by Reper25</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+    </main>
+    
+    <footer id="footer"></footer>
+    <footer id="copyright"></footer>
 </body>
-<script type="text/javascript" src="scripts/jquery.min.js"></script>
-<script type="module" src="scripts/modules/sw-installer.mjs"></script>
-<script type="module" src="scripts/modules/kbd.mjs"></script>
-<script type="module" src="scripts/modules/background.mjs"></script>
-<script type="module" src="scripts/modules/music.mjs"></script>
-<script type="text/javascript" src="scripts/clock.js"></script>
-<script type="text/javascript" src="scripts/submodules/acnhMsgBox/acnhMessageBox.js"></script>
-<script type="text/javascript" src="scripts/acnhmsgbox_home.js"></script>
-<script type="text/javascript" src="scripts/audio-controls.js"></script>
-<script type="text/javascript" src="scripts/copyBtn.js"></script>
-<script type="text/javascript" src="scripts/footer.js"></script>
-<script type="text/javascript" src="scripts/copyright.js"></script>
+<script src="app/lib/jquery.min.js"></script>
+<script type="module" src="app/dist/acnhmsgbox.js"></script>
+<script type="module" src="app/dist/app.js"></script>
+<script type="module" src="app/dist/audctrls.js"></script>
+<script type="module" src="app/dist/clock.js"></script>
+<script type="module" src="app/dist/copyLinkBtn.js"></script>
+<script type="module" src="app/dist/footer.js"></script>
+<script type="module" src="app/dist/keybinds.js"></script>
+<script type="module" src="app/dist/sw-installer.js"></script>
 
 </html>

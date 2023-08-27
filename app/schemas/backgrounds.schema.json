@@ -1,0 +1,56 @@
+{
+	"title": "Background Database",
+	"description": "Database of backgrounds used on the website.",
+	"type": "object",
+	"properties": {
+		"reg": {
+			"description": "Regular backgrounds used on non-event dates.",
+			"type": "array"
+		},
+		"festivale": {
+			"description": "Backgrounds exclusively for the Festivale event.",
+			"type": "array"
+		},
+		"bunnyDay": {
+			"description": "Backgrounds exclusively for the Bunny Day event.",
+			"type": "array"
+		},
+		"mayDayTour": {
+			"description": "Backgrounds exclusively for the May Day Tour event.",
+			"type": "array"
+		},
+		"intlMuseumDay": {
+			"description": "Backgrounds exclusively for the International Museum Day event.",
+			"type": "array"
+		},
+		"weddingSeason": {
+			"description": "Backgrounds exclusively for the Wedding Season event.",
+			"type": "array"
+		},
+		"fwShow": {
+			"description": "Backgrounds exclusively for the Fireworks Show events.",
+			"type": "array"
+		},
+		"bday": {
+			"description": "Backgrounds exclusively for my birthday.",
+			"type": "array"
+		},
+		"halloween": {
+			"description": "Backgrounds exclusively for Halloween.",
+			"type": "array"
+		},
+		"turkeyDay": {
+			"description": "Backgrounds exclusively for the Turkey Day event.",
+			"type": "array"
+		},
+		"toyDay": {
+			"description": "Backgrounds exclusively for the Toy Day event.",
+			"type": "array"
+		},
+		"nye": {
+			"description": "Backgrounds exclusively for the New Years Event.",
+			"type": "array"
+		}
+	},
+	"required": ["reg", "festivale", "bunnyDay", "mayDayTour", "intlMuseumDay", "weddingSeason", "fwShow", "bday", "halloween", "turkeyDay", "toyDay", "nye"]
+}

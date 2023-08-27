@@ -1,0 +1,19 @@
+{
+	"title": "Core Data",
+	"description": "The core data used for all code that fetches from the nintendo-album database.",
+	"type": "object",
+	"properties": {
+		"_pre": {
+			"description": "Pre-url for fetching from the nintendo-album database.",
+			"type": "string"
+		},
+		"_gameid": {
+			"description": "The id of the game the screenshot was taken in. Which is always acnh.",
+			"type": "string"
+		},
+		"_ext": {
+			"description": "The file extension for all images. Switch uses jpg format.",
+			"type": "string"
+		}
+	}
+}

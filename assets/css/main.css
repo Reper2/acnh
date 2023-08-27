@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Rodin Bokutoh";
+    src: url("../fonts/RodinBokutoh-Pro-B.otf")
+}
+@font-face {
+    font-family: "Seurat";
+    src: url("../fonts/Seurat-Pro-B.otf")
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ebdaa8;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header, main, footer {
+    text-align: -webkit-center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+button {
+    font-family: 'Rodin Bokutoh', sans-serif;
+    color: white;
+    -webkit-text-stroke-width: thin;
+    -webkit-text-stroke-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+#back {
+    left: 2vh;
+    top: 2vh;
+    position: sticky;
+    font-size: 5vh;
+}
+
+#back img {
+    width: 5%;
+}
+
+.nookPhone {
+    text-align: center;
+    background-image: url("../nookphone-bg.png");
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    border-radius: 10vh;
+    color: white;
+    font-size: 3vh;
+    width: 64vh;
+}
+
+.nookPhone_app {
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    border-radius: 35%;
+    filter: drop-shadow(.5vh .5vh .15vh rgba(0, 0, 0, .6));
+    cursor: pointer;
+    z-index: 1;
+    pointer-events: all;
+    transition-duration: .07s;
+    transition-timing-function: ease-in-out;
+    width: 14vh;
+}
+
+.nookPhone_app_other {
+    border-radius: 35%;
+}
+
+img.nookPhone_app,
+img.nookPhone_app_other {
+    transition: .3s;
+}
+
+.nookPhone_app:hover,
+.nookPhone_app_other:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+}
+
+.nookPhone_app:active,
+.nookPhone_app:focus-visible,
+a:focus-visible .nookPhone_app {
+    animation: bounceButton .25s ease-in-out forwards;
+}
+
+.lightblueBox {
+    top: 20%;
+    text-align: center;
+    background-color: lightskyblue;
+    border-radius: 1%;
+    color: white;
+    font-size: 18px;
+    width: 40%;
+    padding: 8px;
+}
+
+.snow {
+	background-image: url("../snow.png");
+	background-position: center center;
+}
+
+footer {
+    text-align: center;
+    font-size: 30px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #38d1fc;
+    outline-color: initial;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    block-size: inherit;
+}
+
+button:hover {
+    transform: translateY(-1vh);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #555;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: medium;
+    -webkit-text-stroke-width: initial;
+    -webkit-text-stroke-color: initial;
+    border-radius: 7.5px;
+    padding: 7px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -20vh;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+kbd {
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: .85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+.kb-list {
+    text-align: left;
+    color: cyan;
+}
+
+.kb-hint {
+    font-size: 5vh;
+    color: inherit;
+}
+
+#fileSelect h3 a {
+    color: cyan;
+}
+
+#fileSelect h2 {
+    color: blue;
+}

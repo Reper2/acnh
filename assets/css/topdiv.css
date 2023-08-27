@@ -1,0 +1,8 @@
+topdiv {
+	border-radius: 15px;
+	width: -moz-fit-content;
+	width: fit-content;
+	padding: 7px;
+	display: block;
+	background-color: #ebdaa8;
+}

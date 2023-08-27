@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+	<meta charset="utf-8">
 	<title>Sprinkle Orders - Reper2's ACNH Website</title>
-	<meta charset="UTF-8" />
-	<link href="../assets/main.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/topdiv.css" rel="stylesheet" type="text/css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FL97YTBZQV"></script>
 	<script>
@@ -13,71 +15,47 @@
 
 		gtag('config', 'G-FL97YTBZQV');
 	</script>
-	<link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
-	<link rel="manifest" href="../site.webmanifest" />
-	<meta id="meta-title" property="og:title" content="Sprinkle Order Files - Reper2's ACNH Website" />
-	<meta id="meta-desc" property="og:description" content="In this section of Reper2's ACNH Website you can download Reper2's Sprinkle order files. Sprinkle is an Animal Crossing treasure island bot that you can use yourself in Sprinkletopia (discord.gg/itsprinkles)." />
-	<meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/assets/nookPhone-app_other/sprinkle.png" />
-	<meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io" />
-	<meta name="theme-color" content="#14d8ee" />
-	<meta property="twitter:card" content="summary" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../icons/app/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../icons/app/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../icons/app/favicon-16x16.png">
+	<link rel="manifest" href="../site.webmanifest">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta id="meta-title" property="og:title" content="Sprinkle Order Files - Reper2's ACNH Website">
+	<meta id="meta-desc" property="og:description" content="In this section of Reper2's ACNH Website you can download Reper2's Sprinkle order files. Sprinkle is an Animal Crossing treasure island bot that you can use yourself in Sprinkletopia (discord.gg/itsprinkles).">
+	<meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/assets/nookPhone-app_other/sprinkle.png">
+	<meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io">
+	<meta name="theme-color" content="#14d8ee">
+	<meta property="twitter:card" content="summary">
 </head>
 
-<body id="bg">
+<body id="_bg">
 	<div id="back"></div>
 
-	<center>
-		<main id="main">
-			<h1>Reper2's Sprinkle Order Files</h1>
+	<main id="main">
+		<h1>Reper2's Sprinkle Order Files</h1>
 
-			<div id="fileSelect" class="snow lightblueBox">
-				<h2>File Select:</h2>
-				<h3>
-					<a onclick="downloadFile('sprinkle-order-001.txt')" title="sprinkle-order-001.txt">1</a>,
-					<a onclick="downloadFile('sprinkle-order-002.txt')" title="sprinkle-order-002.txt">2</a>,
-					<a onclick="downloadFile('sprinkle-order-003.txt')" title="sprinkle-order-003.txt">3</a>,
-					<a onclick="downloadFile('sprinkle-order-004.txt')" title="sprinkle-order-004.txt">4</a>,
-					<a onclick="downloadFile('sprinkle-order-005.txt')" title="sprinkle-order-005.txt">5</a>,
-					<a onclick="downloadFile('sprinkle-order-006.txt')" title="sprinkle-order-006.txt">6</a>,
-					<a onclick="downloadFile('sprinkle-order-007.txt')" title="sprinkle-order-007.txt">7</a>,
-					<a onclick="downloadFile('sprinkle-order-008.txt')" title="sprinkle-order-008.txt">8</a>,
-					<a onclick="downloadFile('sprinkle-order-009.txt')" title="sprinkle-order-009.txt">9</a>,
-					<a onclick="downloadFile('sprinkle-order-010.txt')" title="sprinkle-order-010.txt">10</a>,
-					<a onclick="downloadFile('sprinkle-order-011.txt')" title="sprinkle-order-011.txt">11</a>,
-					<a onclick="downloadFile('sprinkle-order-012.txt')" title="sprinkle-order-012.txt">12</a>,
-					<a onclick="downloadFile('sprinkle-order-013.txt')" title="sprinkle-order-013.txt">13</a>,
-					<a onclick="downloadFile('sprinkle-order-014.txt')" title="sprinkle-order-014.txt">14</a>,
-					<a onclick="downloadFile('sprinkle-order-015.txt')" title="sprinkle-order-015.txt">15</a>
-				</h3>
-			</div>
-
-			<br>
-
+		<topdiv>
 			<div id="buttons" class="flex">
 				<div id="audctrls"></div>
 				<div id="copy"></div>
-				<div id="install"></div>
 			</div>
+			<div><audio id="music"></audio></div>
+		</topdiv>
 
-			<br><audio id="music"></audio>
-		</main>
+		<div id="fileSelect"></div>
+	</main>
 
-		<footer id="footer" class="bottomLinks"></footer>
-		<footer id="copyright" class="bottomLinks"></footer>
-	</center>
+	<footer id="footer"></footer>
+	<footer id="copyright"></footer>
 </body>
-<script type="text/javascript" src="../scripts/jquery.min.js"></script>
-<script type="module" src="../scripts/modules/sw-installer.mjs"></script>
-<script type="module" src="../scripts/modules/kbd.mjs"></script>
-<script type="module" src="../scripts/modules/background.mjs"></script>
-<script type="module" src="../scripts/modules/music.mjs"></script>
-<script type="module" src="../scripts/modules/back.mjs"></script>
-<script type="text/javascript" src="../scripts/download.js"></script>
-<script type="text/javascript" src="../scripts/audio-controls.js"></script>
-<script type="text/javascript" src="../scripts/copyBtn.js"></script>
-<script type="text/javascript" src="../scripts/footer.js"></script>
-<script type="text/javascript" src="../scripts/copyright.js"></script>
+<script src="../app/lib/jquery.min.js"></script>
+<script type="module" src="../app/dist/app.js"></script>
+<script type="module" src="../app/dist/audctrls.js"></script>
+<script type="module" src="../app/dist/back.js"></script>
+<script type="module" src="../app/dist/copyLinkBtn.js"></script>
+<script type="module" src="../app/dist/footer.js"></script>
+<script type="module" src="../app/dist/keybinds.js"></script>
+<script type="module" src="../app/dist/sprinkle.js"></script>
+<script type="module" src="../app/dist/sw-installer.js"></script>
 
 </html>

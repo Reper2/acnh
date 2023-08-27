@@ -1,0 +1,40 @@
+{
+	"title": "Database for Modal Construction",
+	"description": "From 3D arrays to objects and arrays, I've finally decided to unify them into one database framework.",
+	"type": "object",
+	"properties": {
+		"name": {
+			"description": "Names of each modal item that will be used for display. Use `name2` for making alternative names.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"name2": {
+			"description": "Mostly used for making alternative names such as using original names for custom designs.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"id": {
+			"description": "Unique ids for each of the modal items.\nhttps://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html",
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"img": {
+			"description": "File paths for fetching the display images for each of the modal items.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"nso_url": {
+			"description": "url that sends the user to my Happy Home Network showcase/profile page.",
+			"type": "string"
+		}
+	},
+	"required": ["name", "id"]
+}

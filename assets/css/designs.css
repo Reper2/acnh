@@ -1,0 +1,31 @@
+topdiv, form, button[type=submit], .sets {
+	border-radius: 15px;
+}
+
+topdiv, form, .sets {
+	width: -moz-fit-content;
+	width: fit-content;
+	padding: 7px;
+	display: block;
+	background-color: #f1e7cc;
+}
+
+form, .sets {
+    font-family: "Seurat";
+	color: white;
+    background-color: #f5a3ab;
+}
+
+fieldset {
+	border: none;
+}
+
+button[type=submit] {
+	color: #675a48;
+	background-color: #efe05f;
+	border: none;
+	font-size: initial;
+	block-size: initial;
+	-webkit-text-stroke-width: initial;
+	-webkit-text-stroke-color: initial;
+}

@@ -1,10 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <title>Designs - Reper2's ACNH Website</title>
-    <meta charset="UTF-8" />
-    <link href="../assets/main.css" rel="stylesheet" type="text/css" />
-    <meta http-equiv="Refresh" content="3; url='../comingsoon.html'" />
+    <link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/modal.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/designs.css" rel="stylesheet" type="text/css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL97YTBZQV"></script>
     <script>
@@ -14,49 +16,66 @@
 
         gtag('config', 'G-FL97YTBZQV');
     </script>
-    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
-    <link rel="manifest" href="../site.webmanifest" />
-    <meta id="meta-title" property="og:title" content="Designs - Reper2's ACNH Website" />
-    <meta id="meta-desc" property="og:description" content="In this section of Reper2's ACNH Website, you can discover Reper2's custom designs!" />
-    <meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/assets/nookPhone-app_native/designs.png" />
-    <meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io" />
-    <meta name="theme-color" content="#14d8ee" />
-    <meta property="twitter:card" content="summary" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/app/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/app/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/app/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="meta-title" property="og:title" content="Designs - Reper2's ACNH Website">
+    <meta id="meta-desc" property="og:description" content="In this section of Reper2's ACNH Website, you can discover Reper2's custom designs!">
+    <meta id="meta-image" name="og:image" itemprop="image" content="https://reper2.github.io/acnh/assets/nookPhone-app_native/designs.png">
+    <meta property="og:site_name" content="Reper2's ACNH Website | reper2.github.io">
+    <meta name="theme-color" content="#14d8ee">
+    <meta property="twitter:card" content="summary">
 </head>
 
-<body id="bg">
+<body id="_bg">
     <div id="back"></div>
+    <main id="main">
+        <h1>Reper2's Designs - MA-4116-4314-7050</h1>
+        <topdiv>
+            <form><fieldset>
+                <legend>What names should be used for display of designs?</legend>
+                <div>
+                    <label for="ogname0">Use preferred names</label>
+                    <input type="radio" id="ogname0" value="0" name="ogname" checked>
+                </div>
 
-    <center>
-        <main id="main">
-            <h1>Reper2's Custom Designs</h1>
-        </main>
+                <div>
+                    <label for="ogname1">Use original names</label>
+                    <input type="radio" id="ogname1" value="1" name="ogname">
+                </div>
+                
+                <button type="submit">Update</button>
+            </fieldset></form>
 
-        <div id="buttons" class="flex">
-            <div id="audctrls"></div>
-            <div id="copyDiv"></div>
-            <div id="install"></div>
-        </div>
+            <div>
+                <a title="Pro Designs" href="pro/"><img alt="pro_icon" src="../assets/des-pro.png" width="10%"></a>
+                <a title="QR Designs" href="qr/"><img alt="qr_icon" src="../assets/des-qr.png" width="10%"></a>
+                <a title="Design Sets" href="sets/"><img alt="des_icon" src="../assets/des.png" width="10%"></a>
+            </div>
 
-        <br><audio id="music"></audio>
+            <div id="buttons" class="flex">
+                <div id="audctrls"></div>
+                <div id="copy"></div>
+            </div>
+            <div><audio id="music"></audio></div>
+        </topdiv>
 
-        <footer id="footer" class="bottomLinks"></footer>
-        <footer id="copyright" class="bottomLinks"></footer>
-    </center>
+        <div id="app"></div>
+    </main>
+    
+    <footer id="footer"></footer>
+    <footer id="copyright"></footer>
 </body>
-<script type="text/javascript" src="../scripts/jquery.min.js"></script>
-<script type="module" src="../scripts/modules/sw-installer.mjs"></script>
-<script type="module" src="../scripts/modules/kbd.mjs"></script>
-<script type="module" src="../scripts/modules/background.mjs"></script>
-<script type="module" src="../scripts/modules/music.mjs"></script>
-<script type="module" src="../scripts/modules/back.mjs"></script>
-<script type="text/javascript" src="../scripts/download.js"></script>
-<script type="text/javascript" src="../scripts/audio-controls.js"></script>
-<script type="text/javascript" src="../scripts/copyBtn.js"></script>
-<script type="text/javascript" src="../scripts/clipboard.js"></script>
-<script type="text/javascript" src="../scripts/footer.js"></script>
-<script type="text/javascript" src="../scripts/copyright.js"></script>
+<script src="../app/lib/jquery.min.js"></script>
+<script type="module" src="../app/dist/app.js"></script>
+<script type="module" src="../app/dist/audctrls.js"></script>
+<script type="module" src="../app/dist/back.js"></script>
+<script type="module" src="../app/dist/copyLinkBtn.js"></script>
+<script type="module" src="../app/dist/footer.js"></script>
+<script type="module" src="../app/dist/designs.js"></script>
+<script type="module" src="../app/dist/keybinds.js"></script>
+<script type="module" src="../app/dist/sw-installer.js"></script>
 
 </html>

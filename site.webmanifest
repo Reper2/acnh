@@ -1,20 +1,68 @@
 {
+    "$schema": "http://json.schemastore.org/web-manifest",
+    "lang": "en",
+    "id": "r-acnh",
     "name": "Reper2's ACNH WebApp",
-    "short_name": "Reper2 ACNH",
+    "short_name": "Reper2 acnh",
     "icons": [
         {
-            "src": "./icons/android-chrome-192x192.png",
+            "src": "./icons/app/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "./icons/android-chrome-512x512.png",
+            "src": "./icons/app/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
     "start_url": "./index.html",
-    "theme_color": "#00a6ff",
-    "background_color": "#00a6ff",
-    "display": "standalone"
+    "theme_color": "#ebdaa8",
+    "background_color": "#00d5ff",
+    "display": "standalone",
+    "shortcuts": [
+        {
+            "name": "Home",
+            "url": "./",
+            "icons": [{
+                "type": "image/png",
+                "src": "./icons/shortcuts/default.png"
+            }]
+        },
+        {
+            "name":  "Island Previews",
+            "short_name": "Island",
+            "url": "./island",
+            "icons": [{
+                "type": "image/png",
+                "src": "./icons/shortcuts/map.png"
+            }]
+        },
+        {
+            "name":  "Happy Home Network Showroom",
+            "short_name": "hhn",
+            "url": "./hhn",
+            "icons": [{
+                "type": "image/png",
+                "src": "./icons/shortcuts/hhn.png"
+            }]
+        },
+        {
+            "name": "Designs",
+            "url": "./designs",
+            "icons": [{
+                "type": "image/png",
+                "src": "./icons/shortcuts/designs.png"
+            }]
+        },
+        {
+            "name": "Sprinkle Order Files",
+            "short_name": "Sprinkle",
+            "url": "./sprinkle",
+            "icons": [{
+                "type": "image/png",
+                "src": "./icons/shortcuts/sprinkle.png"
+            }]
+        }
+    ]
 }

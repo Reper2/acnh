@@ -1,0 +1,6 @@
+Site created: 2-3 May 2022
+
+- cmd/tsc.bat compiles the typescript and starts
+	- cmd/modExtResolver.bat which gives instructions on using Find & Replace to add the .js extension to all imports of the compiled typescript, as well as resolving the acnhmsgbox module
+- cmd/sw.bat generates a service worker using workbox-cli
+- cmd/launch.bat opens app.lnk (shortcut to the webapp) and starts a http server on port 2264

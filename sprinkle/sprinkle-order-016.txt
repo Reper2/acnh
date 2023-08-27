@@ -1,0 +1,24 @@
+Master Sword + Other Zelda Order
+
+Item List:
+Double-Edged Sword
+Stone
+Royal Crown
+Cherry-Blossom Branches
+
+Item Codes:
+0000000100003432 double-edged sword (blue)
+09C6 stone
+14BB royal crown
+178F cherry-blossom branches
+
+Command:
+$order 0000000100003432 09C6 14BB 178F
+
+Response:
+I've added you to the queue! I'll message you here when your order is ready
+@Reper2 - Added you to the order queue. Your position is: 1. Your order will start after the current order is complete!
+Your order is starting, please ensure your inventory is empty, then go talk to Orville and stay on the Dodo code entry screen. I will send you the Dodo code shortly.
+I'm waiting for you Reper2! You have 162 seconds to arrive. My island name is Frappe. Your Dodo code is G70MG
+Visitor arriving: Reper2. Your items will be in front of you once you land.
+Your order is complete, Thanks for your order! Stay awesome!

@@ -1,4 +1,4 @@
-"use strict";
+﻿"use strict";
 const footer = {
     _: document.getElementById("footer"),
     content: document.createElement("h5"),

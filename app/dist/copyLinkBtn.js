@@ -1,4 +1,4 @@
-import { copyLink } from "./core.js";
+﻿import { copyLink } from "./core.js";
 const copy = {
     _: document.getElementById("copy"),
     btn: document.createElement("button"),

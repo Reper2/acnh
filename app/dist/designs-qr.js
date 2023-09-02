@@ -1,4 +1,4 @@
-import { fetchDB } from "./core.js";
+﻿import { fetchDB } from "./core.js";
 import Modal from "./modal.js";
 import path from "./paths.js";
 const designs = await fetchDB("designs-qr");

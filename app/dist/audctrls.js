@@ -1,4 +1,4 @@
-import { music, flipNum } from "./core.js";
+﻿import { music, flipNum } from "./core.js";
 const audctrls = {
     _: document.getElementById("audctrls"),
     btn: {

@@ -1,4 +1,4 @@
-import path from "./paths.js";
+﻿import path from "./paths.js";
 const app = document.getElementById("fileSelect");
 const _names = ["sprinkle-order-", "Reper2 - ", "Sprinkle Order "];
 const fileSel = {

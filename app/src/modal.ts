@@ -275,8 +275,7 @@ export default class Modal {
 }
 /*
 	Did you notice any connection between the method names and zelda totk?
-	constructI() - Soldier Construct I
+	constructI - Soldier Construct I
 	constructII - Soldier Construct II
 	constructIII - Soldier Construct III
-	constructIV() can be found in designs-sets.ts
 */

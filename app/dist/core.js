@@ -1,4 +1,4 @@
-import path from "./paths.js";
+﻿import path from "./paths.js";
 const music = document.getElementById("music");
 async function fetchDB(filename) {
     try {

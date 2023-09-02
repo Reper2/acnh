@@ -1,4 +1,4 @@
-import path from "./paths.js";
+﻿import path from "./paths.js";
 const back = {
     _: document.getElementById("back"),
     btn: document.createElement("img")

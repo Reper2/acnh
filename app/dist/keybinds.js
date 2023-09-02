@@ -1,4 +1,4 @@
-import { copyLink } from "./core.js";
+﻿import { copyLink } from "./core.js";
 import path from "./paths.js";
 document.addEventListener("keydown", (k) => {
     if (k.ctrlKey && k.key === "/") {

@@ -1,4 +1,4 @@
-import { coreData, fetchDB, music } from "./core.js";
+﻿import { coreData, fetchDB, music } from "./core.js";
 import ev from "./events.js";
 import time from "./time.js";
 const audio = {

@@ -1,4 +1,4 @@
-const path = {
+﻿const path = {
     rew: "/",
     root: "/acnh/",
     ass: "/acnh/assets/",

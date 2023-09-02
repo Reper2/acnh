@@ -1,4 +1,4 @@
-"use strict";
+﻿"use strict";
 const timer = () => {
     const clock = document.getElementById("clock");
     clock.innerHTML = new Date().toLocaleTimeString();

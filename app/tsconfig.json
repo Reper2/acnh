@@ -2,22 +2,37 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "ES2022",
-    "strict": true,
     "esModuleInterop": true,
+    "moduleDetection": "auto",
+    "moduleResolution": "Node",
+    "strict": true,
     "skipLibCheck": false,
     "forceConsistentCasingInFileNames": true,
     "rootDir": "./src",
     "outDir": "./dist",
     "sourceRoot": "../src",
     "sourceMap": true,
+    "emitBOM": true,
     "removeComments": true,
     "alwaysStrict": true,
+    // "noEmitOnError": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitOverride": true,
-    "diagnostics": true
+    "diagnostics": true,
+    "listEmittedFiles": true
   },
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Recommended"
+  "display": "Recommended",
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "./dist",
+    "../submodules"
+  ]
 }

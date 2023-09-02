@@ -1,4 +1,4 @@
-export const tdy = new Date();
+﻿export const tdy = new Date();
 const time = {
     yr: tdy.getFullYear(),
     mo: tdy.getMonth() + 1,

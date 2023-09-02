@@ -1,4 +1,4 @@
-import { SavUtils, copyLink, coreData } from "./core.js";
+﻿import { SavUtils, copyLink, coreData } from "./core.js";
 const app = document.getElementById("app");
 const errStr = "Optional parameters a_name, id and d are undefined. Please provide values for either a_name and id or d.";
 const row = {

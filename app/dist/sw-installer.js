@@ -1,4 +1,4 @@
-import path from "./paths.js";
+﻿import path from "./paths.js";
 onload = () => {
     if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register(`${path.root}sw.js`).then((reg) => {
